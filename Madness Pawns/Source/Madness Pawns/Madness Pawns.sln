@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Madness Pawns", "Madness Pawns.csproj", "{55281CE8-D7F7-48A9-83B7-618BDE4108EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55281CE8-D7F7-48A9-83B7-618BDE4108EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55281CE8-D7F7-48A9-83B7-618BDE4108EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55281CE8-D7F7-48A9-83B7-618BDE4108EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55281CE8-D7F7-48A9-83B7-618BDE4108EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C40F2C8-7D40-4092-8C44-E0B3779A9149}
+	EndGlobalSection
+EndGlobal
