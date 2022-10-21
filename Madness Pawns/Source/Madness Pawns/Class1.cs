@@ -35,7 +35,7 @@ namespace Madness_Pawns
             }
         }
 
-        [HarmonyPatch(typeof(PawnSkinColors), "GetSkinColor")]
+        /*[HarmonyPatch(typeof(PawnSkinColors), "GetSkinColor")]
         class GetSkinColorPatch
         {
             [HarmonyPostfix]
@@ -43,7 +43,26 @@ namespace Madness_Pawns
             {
                 return new Color(192f / 255f, 190f / 255f, 188f / 255f);
             }
+        }*/
+
+        [HarmonyPatch(typeof(Pawn_StoryTracker))]
+        [HarmonyPatch("SkinColor", MethodType.Getter)]
+        public static class SkinColorPatch
+        {
+            [HarmonyPrefix]
+            public static bool SkinColorPrefix(ref Pawn_StoryTracker __instance, ref Color __result)
+            {
+                Color? color = __instance.skinColorOverride;
+                if (color == null)
+                {
+                    __result = new Color(192f / 255f, 190f / 255f, 188f / 255f);
+                    return false;
+                }
+                __result = color.GetValueOrDefault();
+                return false;
+            }
         }
+
         [HarmonyPatch(typeof(ShaderUtility), "GetSkinShader")]
         class GetSkinShaderPatch
         {
@@ -62,7 +81,7 @@ namespace Madness_Pawns
             [HarmonyPostfix]
             public static GraphicMeshSet HairMeshSetPostfix(GraphicMeshSet result)
             {
-                return MeshPool.humanlikeHairSetNarrow;
+                return MeshPool.GetMeshSetForWidth(MeshPool.HumanlikeHeadNarrowWidth);
             }
         }
 

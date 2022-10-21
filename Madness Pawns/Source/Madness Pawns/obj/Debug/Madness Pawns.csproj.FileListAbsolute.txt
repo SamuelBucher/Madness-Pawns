@@ -7,3 +7,7 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Assemb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Source\Madness Pawns\obj\Debug\Madness Pawns.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Source\Madness Pawns\obj\Debug\Madness Pawns.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Source\Madness Pawns\obj\Debug\Madness Pawns.csproj.AssemblyReference.cache
+C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Source\Madness Pawns\obj\Debug\Madness Pawns.csproj.AssemblyReference.cache
+C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Source\Madness Pawns\obj\Debug\Madness Pawns.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Source\Madness Pawns\obj\Debug\Madness Pawns.dll
+C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Assemblies\Madness Pawns.dll
