@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1280"
+   height="1280"
+   viewBox="0 0 338.66666 338.66668"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="FlakVest_Male_north.svg"
+   inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\FlakVest\FlakVest_Male_north.png"
+   inkscape:export-xdpi="19.200001"
+   inkscape:export-ydpi="19.200001"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="px"
+     showgrid="false"
+     showguides="true"
+     units="px"
+     inkscape:snap-bbox="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:bbox-paths="false"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-page="true"
+     inkscape:zoom="0.48647514"
+     inkscape:cx="600.23622"
+     inkscape:cy="590.98601"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="104.16639,178.68351"
+       orientation="0,-1"
+       id="guide989" />
+    <sodipodi:guide
+       position="169.33332,169.33336"
+       orientation="1,0"
+       id="guide991" />
+    <sodipodi:guide
+       position="106.83393,92.054873"
+       orientation="0,-1"
+       id="guide1046" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33332,165.47704"
+       end_point="169.33332,241.11792"
+       center_point="169.33332,203.29748"
+       id="path-effect6263"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33332,159.98316"
+       end_point="169.33332,246.6118"
+       center_point="169.33332,203.29748"
+       id="path-effect1263"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="640.00001,475.3086"
+       end_point="640.00001,1047.4492"
+       center_point="640.00001,761.37891"
+       id="path-effect1473"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+  </defs>
+  <g
+     inkscape:label="Reference"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
+       id="rect883"
+       style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#0000ff;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 584.91602,445.38281 c -63.18591,0 -96.14521,46.13859 -97.94727,139.54492 l -8.22266,426.19137 c -0.61253,31.7497 19.1831,55.2657 50.66993,55.2657 H 640 750.58398 c 31.48683,0 51.28246,-23.516 50.66993,-55.2657 L 793.03125,584.92773 C 791.22919,491.5214 758.26989,445.38281 695.08398,445.38281 H 640 Z"
+       transform="scale(0.26458334)" />
+    <path
+       style="display:inline;fill:#f9f9f9;stroke:#000000;stroke-width:5.29167;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 104.16639,159.98316 c 2.35717,27.3238 3.24037,58.37182 2.66754,86.62864 H 44.906068 c -8.15055,0 -8.10224,-7.08946 -8.10224,-7.08946 v -70.62119 c 0,-5.1607 2.52125,-8.91799 8.10224,-8.91799 z"
+       id="path965"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\FlakVest\FlakVest_Male_east.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="display:inline;fill:#000000;stroke:#000000;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 36.803828,168.90115 0.1266,12.09719 -24.17825,-4.71296 0.29027,-11.62789 z"
+       id="path3219"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="display:inline;fill:#000000;stroke:#000000;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 36.803828,239.52234 -0.1266,-12.02675 -25.14308,2.87466 -0.31649,12.02675 z"
+       id="path3221"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 35.711988,180.24492 -0.35914,2.81471 -10.56418,-1.67547 2.18065,-16.79443 10.21269,1.47802 -0.37818,2.8334 -6.7359,-1.02562 -1.53761,11.24063 z"
+       id="path3997"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 36.803828,239.52234 0.36113,2.65029 -10.06525,1.26078 -2.04224,-17.36765 9.93708,-1.09613 0.29011,2.71586 -6.40378,0.69829 1.38314,11.90077 z"
+       id="path3997-1"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       id="rect2703"
+       style="display:inline;stroke:#000000;stroke-width:1.32292;stroke-linejoin:round"
+       d="m 64.444225,110.05198 h 15.105259 v 11.94497 H 64.444225 Z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 79.549484,121.99695 v 2.76784 h -10.14336 v -17.44404 h 10.14336 v 2.73123 h -6.64094 v 11.94497 z"
+       id="path3997-1-2"
+       sodipodi:nodetypes="ccccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Body"
+     style="display:inline">
+    <path
+       style="fill:#f9f9f9;fill-opacity:1;stroke:#000000;stroke-width:5.29167;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 169.33332,159.98316 H 157.4528 c -3.58436,0 -7.35982,1.50173 -8.07433,5.62919 -2.13995,24.85401 -3.33952,49.8961 -3.55079,75.13584 0.0368,1.14085 0.0722,5.86361 6.02984,5.86361 h 17.4758 m 0,-86.62864 h 11.88052 c 3.58436,0 7.35982,1.50173 8.07433,5.62919 2.13995,24.85401 3.33952,49.8961 3.55079,75.13584 -0.0368,1.14085 -0.0722,5.86361 -6.02984,5.86361 h -17.4758"
+       id="path1096"
+       inkscape:path-effect="#path-effect1263"
+       inkscape:original-d="m 169.33332,159.98316 -11.88052,0 c -3.58436,0 -7.35982,1.50173 -8.07433,5.62919 -2.13995,24.85401 -3.33952,49.8961 -3.55079,75.13584 0.0368,1.14085 0.0722,5.86361 6.02984,5.86361 l 17.4758,0"
+       sodipodi:nodetypes="cccccc" />
+    <g
+       id="g6261"
+       inkscape:path-effect="#path-effect6263">
+      <path
+         id="rect2703-1"
+         style="display:inline;stroke:#000000;stroke-width:1.32292;stroke-linejoin:round"
+         d="m 123.2829,167.39176 27.63308,2.24007 -0.96499,11.90592 -26.88524,-2.30805 z m 92.10084,0 -27.63308,2.24007 0.96499,11.90592 26.88524,-2.30805 z"
+         sodipodi:nodetypes="ccccc"
+         inkscape:original-d="m 123.2829,167.39176 27.63308,2.24007 -0.96499,11.90592 -26.88524,-2.30805 z" />
+      <path
+         style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 149.95099,181.53775 -0.2236,2.7588 -10.11021,-0.81944 1.40923,-17.38703 10.11021,0.81944 -0.22064,2.72231 -6.61924,-0.5365 -0.96498,11.90593 z m 38.76466,0 0.2236,2.7588 10.11021,-0.81944 -1.40923,-17.38703 -10.11021,0.81944 0.22064,2.72231 6.61924,-0.5365 0.96498,11.90593 z"
+         id="path3997-1-2-6"
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:original-d="m 149.95099,181.53775 -0.2236,2.7588 -10.11021,-0.81944 1.40923,-17.38703 10.11021,0.81944 -0.22064,2.72231 -6.61924,-0.5365 -0.96498,11.90593 z" />
+      <path
+         id="rect2703-13"
+         style="display:inline;stroke:#000000;stroke-width:1.32292;stroke-linejoin:round"
+         d="m 122.34815,228.8526 23.95023,-2.61591 1.0843,11.89565 -25.10597,2.54794 z m 93.97034,0 -23.95023,-2.61591 -1.0843,11.89565 25.10597,2.54794 z"
+         sodipodi:nodetypes="ccccc"
+         inkscape:original-d="m 122.34815,228.8526 23.95023,-2.61591 1.0843,11.89565 -25.10597,2.54794 z" />
+      <path
+         style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 147.38268,238.13234 0.25125,2.75641 -9.23975,0.84221 -1.58347,-17.37202 9.23974,-0.84221 0.24793,2.71995 -5.75179,0.52428 1.08431,11.89566 z m 43.90128,0 -0.25125,2.75641 9.23975,0.84221 1.58347,-17.37202 -9.23974,-0.84221 -0.24793,2.71995 5.75179,0.52428 -1.08431,11.89566 z"
+         id="path3997-1-2-5"
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:original-d="m 147.38268,238.13234 0.25125,2.75641 -9.23975,0.84221 -1.58347,-17.37202 9.23974,-0.84221 0.24793,2.71995 -5.75179,0.52428 1.08431,11.89566 z" />
+    </g>
+  </g>
+</svg>

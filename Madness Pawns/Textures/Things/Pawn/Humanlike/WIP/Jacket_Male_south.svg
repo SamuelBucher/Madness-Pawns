@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1280"
+   height="1280"
+   viewBox="0 0 338.66666 338.66668"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="Jacket_Male_south.svg"
+   inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\Jacket\Jacket_Male_south.png"
+   inkscape:export-xdpi="19.200001"
+   inkscape:export-ydpi="19.200001"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="px"
+     showgrid="false"
+     showguides="false"
+     units="px"
+     inkscape:snap-bbox="false"
+     inkscape:snap-object-midpoints="true"
+     inkscape:bbox-paths="false"
+     inkscape:bbox-nodes="false"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-page="true"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="552.9575"
+     inkscape:cy="663.61972"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="169.33332,169.33335"
+       orientation="0,-1"
+       id="guide989" />
+    <sodipodi:guide
+       position="169.33332,169.33336"
+       orientation="1,0"
+       id="guide991" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3836-4">
+      <stop
+         style="stop-color:#f2f2f2;stop-opacity:1"
+         offset="0"
+         id="stop3832" />
+      <stop
+         style="stop-color:#f9f9f9;stop-opacity:1"
+         offset="0.78469104"
+         id="stop4186" />
+      <stop
+         style="stop-color:#b3b3b3;stop-opacity:1"
+         offset="1"
+         id="stop3834" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="640.00001,475.3086"
+       end_point="640.00001,1047.4492"
+       center_point="640.00001,761.37891"
+       id="path-effect1473"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3836-4"
+       id="radialGradient3954-1-9-6"
+       cx="704.68213"
+       cy="778.31689"
+       fx="704.68213"
+       fy="778.31689"
+       r="176.26749"
+       gradientTransform="matrix(-0.3010367,0,0,-1.3754958,400.27269,1277.6409)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Body"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <path
+       id="rect883"
+       style="fill:#ff0000;fill-opacity:1;stroke:#0000ff;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 584.91602,445.38281 c -63.18591,0 -96.14521,46.13859 -97.94727,139.54492 l -8.22266,426.19137 c -0.61253,31.7497 19.1831,55.2657 50.66993,55.2657 H 640 750.58398 c 31.48683,0 51.28246,-23.516 50.66993,-55.2657 L 793.03125,584.92773 C 791.22919,491.5214 758.26989,445.38281 695.08398,445.38281 H 640 Z"
+       transform="scale(0.26458334)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Shirt">
+    <path
+       id="rect883-7-6-0"
+       style="display:inline;fill:url(#radialGradient3954-1-9-6);fill-opacity:1;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 134.22144,125.03711 c -8.27304,8.27303 -10.0821,14.46111 -10.32767,25.9725 1.21418,40.3931 0.19436,42.73459 -2.11331,82.42332 l 29.38694,7.33497 c 0.56283,2.26128 0.70711,-26.78702 3.64764,-69.23629 0.50799,-8.51704 -6.73157,-17.28654 -7.74995,-29.95529 1.26071,-7.43637 4.19746,-11.87851 22.26823,-11.87851 18.07077,0 21.5626,5.46738 21.93681,13.63714 -1.7473,17.68909 -8.52761,20.73796 -7.56515,28.44337 4.89655,39.20151 1.83117,68.80919 3.26947,68.78476 6.80876,-0.11564 17.11277,-9.76859 29.4848,-9.76859 -3.13889,-39.12989 -3.58969,-40.65495 -2.50255,-79.78484 -0.24404,-11.43923 -4.76763,-21.44432 -9.66581,-26.12264 -7.72572,-7.37894 -20.29382,-8.33448 -34.83501,-8.33448 -15.40571,0 -26.9614,0.21154 -35.23444,8.48458 z"
+       sodipodi:nodetypes="zccccczcssccssz" />
+    <path
+       id="rect883-7-6-0-6"
+       style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:7.9375;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 189.35939,241.01753 c 1.2247,-0.22776 17.13795,-8.07132 29.29772,-9.76859 -3.1389,-39.12989 -5.57407,-42.15165 -4.48694,-81.28154 -0.24404,-11.43923 -2.70965,-21.44432 -7.60782,-26.12264 -7.72573,-7.37894 -22.16472,-8.33448 -36.70591,-8.33448 -15.40571,0 -27.14848,0.21154 -35.42152,8.48458 -8.27303,8.27303 -10.08209,14.46111 -10.32767,25.9725 1.21418,40.3931 0.19437,44.23129 -2.1133,83.92002 10.12756,1.43563 18.71753,3.87873 26.86204,6.8058"
+       sodipodi:nodetypes="cccsszccc"
+       inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\Jacket\rect883-7-6-0-6.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 147.62636,137.83455 c -4.2554,2.86737 -10.7559,13.05133 -12.70608,17.95941 7.47089,6.44975 13.3821,11.28861 19.60748,20.7276"
+       id="path8349"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 184.1888,175.30209 c 5.54122,-7.38566 12.74583,-12.75112 19.74726,-19.1633 -3.00157,-5.94282 -7.14019,-13.25327 -12.47884,-16.7327"
+       id="path8351"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path11673"
+       sodipodi:type="arc"
+       sodipodi:cx="145.52083"
+       sodipodi:cy="184.74532"
+       sodipodi:rx="2.6458335"
+       sodipodi:ry="2.6458335"
+       sodipodi:start="0"
+       sodipodi:end="6.2828537"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="m 148.16666,184.74532 a 2.6458335,2.6458335 0 0 1 -2.64561,2.64583 2.6458335,2.6458335 0 0 1 -2.64606,-2.6454 2.6458335,2.6458335 0 0 1 2.64518,-2.64627 2.6458335,2.6458335 0 0 1 2.64649,2.64496" />
+    <path
+       style="fill:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path11673-0"
+       sodipodi:type="arc"
+       sodipodi:cx="144.59479"
+       sodipodi:cy="203.72917"
+       sodipodi:rx="2.6458335"
+       sodipodi:ry="2.6458335"
+       sodipodi:start="0"
+       sodipodi:end="6.2828537"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="m 147.24062,203.72917 a 2.6458335,2.6458335 0 0 1 -2.64561,2.64584 2.6458335,2.6458335 0 0 1 -2.64606,-2.6454 2.6458335,2.6458335 0 0 1 2.64518,-2.64627 2.6458335,2.6458335 0 0 1 2.64649,2.64495" />
+    <path
+       style="fill:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path11673-8"
+       sodipodi:type="arc"
+       sodipodi:cx="143.53647"
+       sodipodi:cy="222.38229"
+       sodipodi:rx="2.6458335"
+       sodipodi:ry="2.6458335"
+       sodipodi:start="0"
+       sodipodi:end="6.2828537"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="m 146.1823,222.38229 a 2.6458335,2.6458335 0 0 1 -2.64561,2.64584 2.6458335,2.6458335 0 0 1 -2.64605,-2.6454 2.6458335,2.6458335 0 0 1 2.64517,-2.64627 2.6458335,2.6458335 0 0 1 2.64649,2.64496" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 188.72069,184.93696 5.54301,-0.38328"
+       id="path12627" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 190.12028,204.03751 5.52193,-0.61668"
+       id="path12627-4" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 190.90093,222.53232 5.54813,-0.30006"
+       id="path12627-2" />
+  </g>
+</svg>

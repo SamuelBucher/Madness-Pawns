@@ -9,11 +9,14 @@ Ridged head
 Wide chin head
 Furry body
 Child body
-Child shirt
-Child romper
-Child parka
+
 Heavy brow
 Facial ridges
 Red eyes
 Grey eyes
 Small horns
+
+Child shirt
+Child romper
+Child parka
+More...
