@@ -75,11 +75,11 @@ namespace Madness_Pawns
             }
         }
 
-        [HarmonyPatch(typeof(PawnRenderer), "OffsetBeardLocationForCrownType")]
+        [HarmonyPatch(typeof(PawnRenderer), "OffsetBeardLocationForHead")]
         class OffsetBeardLocationForCrownTypePatch
         {
             [HarmonyPrefix]
-            public static bool OffsetBeardLocationForCrownTypePrefix(ref Vector3 __result, Vector3 beardLoc, Rot4 headFacing)
+            public static bool OffsetBeardLocationForHeadPrefix(ref Vector3 __result, Vector3 beardLoc, Rot4 headFacing)
             {
                 __result = beardLoc;
 
@@ -95,40 +95,6 @@ namespace Madness_Pawns
                 }
 
                 return false;
-            }
-        }
-
-        [HarmonyPatch(typeof(PawnRenderer), "BaseHeadOffsetAt")]
-        class BaseHeadOffsetAtPatch
-        {
-            [HarmonyPrefix]
-            public static bool BaseHeadOffsetAtPrefix(ref PawnRenderer __instance, ref Vector3 __result, Rot4 rotation)
-            {
-                FieldInfo fld = typeof(PawnRenderer).GetField("pawn");
-                Pawn instancePawn = (Pawn)fld.GetValue(__instance);
-
-                BodyTypeDef bodyType = Misc.getPawnBodyType(instancePawn);
-
-                Vector2 vector = bodyType.headOffset * Mathf.Sqrt(instancePawn.ageTracker.CurLifeStage.bodySizeFactor);
-                switch (rotation.AsInt)
-                {
-                    case 0:
-                        __result =  new Vector3(0f, 0f, vector.y);
-                        return false;
-                    case 1:
-                        __result = new Vector3(vector.x, 0f, vector.y);
-                        return false;
-                    case 2:
-                        __result = new Vector3(0f, 0f, vector.y);
-                        return false;
-                    case 3:
-                        __result = new Vector3(-vector.x, 0f, vector.y);
-                        return false;
-                    default:
-                        Log.Error("BaseHeadOffsetAt error in " + instancePawn);
-                        __result = Vector3.zero;
-                        return false;
-                }
             }
         }
 
@@ -189,7 +155,7 @@ namespace Madness_Pawns
         }
     }
 
-    [HarmonyPatch(typeof(PawnGraphicSet), "ResolveApparelGraphics")]
+    /*[HarmonyPatch(typeof(PawnGraphicSet), "ResolveApparelGraphics")]
     class ResolveApparelGraphicsPatch
     {
         [HarmonyPrefix]
@@ -243,7 +209,7 @@ namespace Madness_Pawns
                     __instance.bodyTattooGraphic = null;
             }
         }
-    }
+    }*/
 
     public class Misc
     {

@@ -1,0 +1,12 @@
+Merge normal Madness Pawns and Thin Edition
+
+Spritework:
+Furry head
+Gaunt head
+Ridged head
+Wide chin head
+Furry body
+Child body
+Child shirt
+Child romper
+Child parka
