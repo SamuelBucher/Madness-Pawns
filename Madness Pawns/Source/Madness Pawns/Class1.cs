@@ -107,12 +107,7 @@ namespace Madness_Pawns
                 FieldInfo fld = typeof(PawnRenderer).GetField("pawn");
                 Pawn instancePawn = (Pawn)fld.GetValue(__instance);
 
-                BodyTypeDef bodyType;
-
-                if (instancePawn.gender == Gender.Female && LoadedModManager.GetMod<MadnessPawns>().GetSettings<Settings>().enableFemaleBodyType)
-                    bodyType = BodyTypeDefOf.Female;
-                else
-                    bodyType = BodyTypeDefOf.Male;
+                BodyTypeDef bodyType = Misc.getPawnBodyType(instancePawn);
 
                 Vector2 vector = bodyType.headOffset * Mathf.Sqrt(instancePawn.ageTracker.CurLifeStage.bodySizeFactor);
                 switch (rotation.AsInt)
@@ -146,12 +141,7 @@ namespace Madness_Pawns
                 __instance.ClearCache();
                 __instance.apparelGraphics.Clear();
 
-                BodyTypeDef bodyType;
-
-                if (__instance.pawn.gender == Gender.Female && LoadedModManager.GetMod<MadnessPawns>().GetSettings<Settings>().enableFemaleBodyType)
-                    bodyType = BodyTypeDefOf.Female;
-                else
-                    bodyType = BodyTypeDefOf.Male;
+                BodyTypeDef bodyType = Misc.getPawnBodyType(__instance.pawn);
 
                 using (List<Apparel>.Enumerator enumerator = __instance.pawn.apparel.WornApparel.GetEnumerator())
                 {
@@ -168,9 +158,8 @@ namespace Madness_Pawns
                 return false;
             }
         }
-    }
 
-    [HarmonyPatch(typeof(PawnGraphicSet), "ResolveAllGraphics")]
+        [HarmonyPatch(typeof(PawnGraphicSet), "ResolveAllGraphics")]
         class ResolveAllGraphicsPatch
         {
             [HarmonyPostfix]
@@ -178,25 +167,7 @@ namespace Madness_Pawns
             {
                 if (__instance.pawn.RaceProps.Humanlike)
                 {
-                    //string bodyDessicatedGraphicPath;
-
-                    /*if (__instance.pawn.gender == Gender.Female && LoadedModManager.GetMod<MadnessPawns>().GetSettings<Settings>().enableFemaleBodyType)
-                    {
-                        bodyNakedGraphicPath = "Things/Pawn/Humanlike/Bodies/Naked_Female";
-                        bodyDessicatedGraphicPath = "Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Female";
-                    }
-                    else
-                    {
-                        bodyNakedGraphicPath = "Things/Pawn/Humanlike/Bodies/Naked_Male";
-                        bodyDessicatedGraphicPath = "Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male";
-                    }*/
-
-                    BodyTypeDef bodyType;
-
-                    if (__instance.pawn.gender == Gender.Female && LoadedModManager.GetMod<MadnessPawns>().GetSettings<Settings>().enableFemaleBodyType)
-                        bodyType = BodyTypeDefOf.Female;
-                    else
-                        bodyType = BodyTypeDefOf.Male;
+                    BodyTypeDef bodyType = Misc.getPawnBodyType(__instance.pawn);
 
                     Color color = __instance.pawn.story.SkinColorOverriden ? (PawnGraphicSet.RottingColorDefault * __instance.pawn.story.SkinColor) : PawnGraphicSet.RottingColorDefault;
 
@@ -216,6 +187,78 @@ namespace Madness_Pawns
                 }
             }
         }
+    }
+
+    [HarmonyPatch(typeof(PawnGraphicSet), "ResolveApparelGraphics")]
+    class ResolveApparelGraphicsPatch
+    {
+        [HarmonyPrefix]
+        public static bool ResolveApparelGraphicsPrefix(ref PawnGraphicSet __instance)
+        {
+            __instance.ClearCache();
+            __instance.apparelGraphics.Clear();
+
+            BodyTypeDef bodyType = Misc.getPawnBodyType(__instance.pawn);
+
+            using (List<Apparel>.Enumerator enumerator = __instance.pawn.apparel.WornApparel.GetEnumerator())
+            {
+                while (enumerator.MoveNext())
+                {
+                    ApparelGraphicRecord item;
+                    if (ApparelGraphicRecordGetter.TryGetGraphicApparel(enumerator.Current, bodyType, out item))
+                    {
+                        __instance.apparelGraphics.Add(item);
+                    }
+                }
+            }
+
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(PawnGraphicSet), "ResolveAllGraphics")]
+    class ResolveAllGraphicsPatch
+    {
+        [HarmonyPostfix]
+        public static void ResolveAllGraphicsPostfix(ref PawnGraphicSet __instance)
+        {
+            if (__instance.pawn.RaceProps.Humanlike)
+            {
+                BodyTypeDef bodyType = Misc.getPawnBodyType(__instance.pawn);
+
+                Color color = __instance.pawn.story.SkinColorOverriden ? (PawnGraphicSet.RottingColorDefault * __instance.pawn.story.SkinColor) : PawnGraphicSet.RottingColorDefault;
+
+                __instance.nakedGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyNakedGraphicPath, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, __instance.pawn.story.SkinColor);
+                __instance.rottingGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyNakedGraphicPath, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, color);
+                __instance.dessicatedGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyDessicatedGraphicPath, ShaderDatabase.Cutout);
+                __instance.headStumpGraphic = null;
+
+                if ((__instance.pawn.style != null && ModsConfig.IdeologyActive) && (__instance.pawn.style.BodyTattoo != null && __instance.pawn.style.BodyTattoo != TattooDefOf.NoTattoo_Body))
+                {
+                    Color skinColor = __instance.pawn.story.SkinColor;
+                    skinColor.a *= 0.8f;
+                    __instance.bodyTattooGraphic = GraphicDatabase.Get<Graphic_Multi>(__instance.pawn.style.BodyTattoo.texPath, ShaderDatabase.CutoutSkinOverlay, Vector2.one, skinColor, Color.white, null, bodyType.bodyNakedGraphicPath);
+                }
+                else
+                    __instance.bodyTattooGraphic = null;
+            }
+        }
+    }
+
+    public class Misc
+    {
+        public static BodyTypeDef getPawnBodyType(Pawn pawn)
+        {
+            if (pawn.story.bodyType == BodyTypeDefOf.Baby)
+                return BodyTypeDefOf.Baby;
+            if (pawn.story.bodyType == BodyTypeDefOf.Child)
+                return BodyTypeDefOf.Child;
+            if (pawn.gender == Gender.Female && LoadedModManager.GetMod<MadnessPawns>().GetSettings<Settings>().enableFemaleBodyType)
+                return BodyTypeDefOf.Female;
+
+            return BodyTypeDefOf.Male;
+        }
+    }
 
     public class Settings : ModSettings
     {
