@@ -1,3 +1,5 @@
+Implement furry body
+Implement head variation
 Merge normal Madness Pawns and Thin Edition
 
 Spritework:
@@ -10,3 +12,8 @@ Child body
 Child shirt
 Child romper
 Child parka
+Heavy brow
+Facial ridges
+Red eyes
+Grey eyes
+Small horns

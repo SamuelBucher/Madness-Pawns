@@ -137,6 +137,7 @@ namespace Madness_Pawns
 
                     Color color = __instance.pawn.story.SkinColorOverriden ? (PawnGraphicSet.RottingColorDefault * __instance.pawn.story.SkinColor) : PawnGraphicSet.RottingColorDefault;
 
+                    __instance.headGraphic = __instance.pawn.story.headType.GetGraphic(__instance.pawn.story.SkinColor, false, __instance.pawn.story.SkinColorOverriden);
                     __instance.nakedGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyNakedGraphicPath, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, __instance.pawn.story.SkinColor);
                     __instance.rottingGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyNakedGraphicPath, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, color);
                     __instance.dessicatedGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyDessicatedGraphicPath, ShaderDatabase.Cutout);
@@ -224,6 +225,18 @@ namespace Madness_Pawns
 
             return BodyTypeDefOf.Male;
         }
+
+        /*public static BodyTypeDef getPawnHeadType(Pawn pawn)
+        {
+            if (pawn.story.bodyType == BodyTypeDefOf.Baby)
+                return BodyTypeDefOf.Baby;
+            if (pawn.story.bodyType == BodyTypeDefOf.Child)
+                return BodyTypeDefOf.Child;
+            if (pawn.gender == Gender.Female && LoadedModManager.GetMod<MadnessPawns>().GetSettings<Settings>().enableFemaleBodyType)
+                return BodyTypeDefOf.Female;
+
+            return BodyTypeDefOf.Male;
+        }*/
     }
 
     public class Settings : ModSettings
