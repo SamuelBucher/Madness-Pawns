@@ -64,35 +64,108 @@ namespace Madness_Pawns
             }
         }
 
-        [HarmonyPatch(typeof(PawnGraphicSet))]
+        /*[HarmonyPatch(typeof(PawnGraphicSet))]
         [HarmonyPatch("HairMeshSet", MethodType.Getter)]
         public static class HairMeshSetPatch
         {
             [HarmonyPostfix]
-            public static GraphicMeshSet HairMeshSetPostfix(GraphicMeshSet result)
+            public static GraphicMeshSet HairMeshSetPostfix()
             {
                 return MeshPool.GetMeshSetForWidth(MeshPool.HumanlikeHeadNarrowWidth);
             }
+        }*/
+
+        [HarmonyPatch(typeof(HumanlikeMeshPoolUtility), "GetHumanlikeHairSetForPawn")]
+        public static class GetHumanlikeHairSetForPawnPatch
+        {
+            [HarmonyPrefix]
+            public static bool GetHumanlikeHairSetForPawnPrefix(ref GraphicMeshSet __result, Pawn pawn)
+            {
+                Vector2 vector = new Vector2(1.3f, 1.5f);
+                if (ModsConfig.BiotechActive && pawn.ageTracker.CurLifeStage.headSizeFactor != null)
+                {
+                    vector *= pawn.ageTracker.CurLifeStage.headSizeFactor.Value;
+                }
+                __result = MeshPool.GetMeshSetForWidth(vector.x, vector.y);
+
+                return false;
+            }
         }
 
-        [HarmonyPatch(typeof(PawnRenderer), "OffsetBeardLocationForHead")]
+        [HarmonyPatch(typeof(HumanlikeMeshPoolUtility), "GetHumanlikeBeardSetForPawn")]
+        public static class GetHumanlikeBeardSetForPawnPatch
+        {
+            [HarmonyPrefix]
+            public static bool GetHumanlikeBeardSetForPawnPrefix(ref GraphicMeshSet __result, Pawn pawn)
+            {
+                Vector2 vector = new Vector2(1.3f, 1.5f);
+                if (ModsConfig.BiotechActive && pawn.ageTracker.CurLifeStage.headSizeFactor != null)
+                {
+                    vector *= pawn.ageTracker.CurLifeStage.headSizeFactor.Value;
+                }
+                __result = MeshPool.GetMeshSetForWidth(vector.x, vector.y);
+
+                return false;
+            }
+        }
+
+        /*[HarmonyPatch(typeof(PawnRenderer), "OffsetBeardLocationForHead")]
         class OffsetBeardLocationForCrownTypePatch
         {
             [HarmonyPrefix]
-            public static bool OffsetBeardLocationForHeadPrefix(ref Vector3 __result, Vector3 beardLoc, Rot4 headFacing)
+            public static bool OffsetBeardLocationForHeadPrefix(ref PawnRenderer __instance, ref Vector3 __result, HeadTypeDef head, Vector3 beardLoc, Rot4 headFacing)
             {
-                __result = beardLoc;
-
                 if (headFacing == Rot4.East)
                 {
-                    __result += Vector3.right * -0.034f;
-                    __result += Vector3.forward * 0.03f;
+                    beardLoc += Vector3.right * -0.034f;
+                    beardLoc += Vector3.forward * 0.03f;
                 }
                 else if (headFacing == Rot4.West)
                 {
-                    __result += Vector3.right * 0.034f;
-                    __result += Vector3.forward * 0.03f;
+                    beardLoc += Vector3.right * 0.034f;
+                    beardLoc += Vector3.forward * 0.03f;
                 }
+                beardLoc.y += 0.026061773f;
+                beardLoc += head.beardOffset;
+                beardLoc += __instance.pawn.style.beardDef.GetOffset(__instance.pawn.story.headType, headFacing);
+                __result = beardLoc;
+
+                return false;
+            }
+        }*/
+
+        /*[HarmonyPatch(typeof(PawnRenderer), "OffsetBeardLocationForHead")]
+        class OffsetBeardLocationForHeadPatch
+        {
+            [HarmonyPostfix]
+            public static void OffsetBeardLocationForHeadPostfix(ref Vector3 __result)
+            {
+                __result += Vector3.back * 0.03f;
+            }
+        }*/
+
+        [HarmonyPatch(typeof(BeardDef), "GetOffset")]
+        class GetOffsetPatch
+        {
+            [HarmonyPrefix]
+            public static bool GetOffsetPrefix(ref BeardDef __instance, ref Vector3 __result, Rot4 rot)
+            {
+                if (rot == Rot4.North)
+                {
+                    __result = Vector3.zero;
+                    return false;
+                }
+                if (rot == Rot4.South)
+                {
+                    __result = __instance.offsetNarrowSouth;
+                    return false;
+                }
+                if (rot == Rot4.East)
+                {
+                    __result = __instance.offsetNarrowEast;
+                    return false;
+                }
+                __result = new Vector3(-__instance.offsetNarrowEast.x, 0f, __instance.offsetNarrowEast.z);
 
                 return false;
             }
@@ -137,7 +210,7 @@ namespace Madness_Pawns
 
                     Color color = __instance.pawn.story.SkinColorOverriden ? (PawnGraphicSet.RottingColorDefault * __instance.pawn.story.SkinColor) : PawnGraphicSet.RottingColorDefault;
 
-                    __instance.headGraphic = __instance.pawn.story.headType.GetGraphic(__instance.pawn.story.SkinColor, false, __instance.pawn.story.SkinColorOverriden);
+                    //__instance.headGraphic = __instance.pawn.story.headType.GetGraphic(__instance.pawn.story.SkinColor, false, __instance.pawn.story.SkinColorOverriden);
                     __instance.nakedGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyNakedGraphicPath, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, __instance.pawn.story.SkinColor);
                     __instance.rottingGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyNakedGraphicPath, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, color);
                     __instance.dessicatedGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyDessicatedGraphicPath, ShaderDatabase.Cutout);
