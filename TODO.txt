@@ -4,12 +4,12 @@ Fix beard offset individually
 Merge normal Madness Pawns and Thin Edition
 
 Spritework:
-Furry head
 Gaunt head
+Gaunt furry head
 Ridged head
-Wide chin head
 Furry body
 Child body
+Child furry body
 
 Heavy brow
 Facial ridges
