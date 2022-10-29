@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1280"
+   height="1280"
+   viewBox="0 0 338.66666 338.66668"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="Naked_FurChild_north.svg"
+   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Bodies\Naked_FurChild_north.png"
+   inkscape:export-xdpi="19.200001"
+   inkscape:export-ydpi="19.200001"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="px"
+     showgrid="false"
+     showguides="false"
+     units="px"
+     inkscape:snap-bbox="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:bbox-paths="false"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:snap-page="true"
+     inkscape:zoom="1.3759595"
+     inkscape:cx="589.40689"
+     inkscape:cy="668.98772"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2"
+     inkscape:guide-bbox="true"
+     inkscape:snap-global="true">
+    <sodipodi:guide
+       position="169.33332,169.33335"
+       orientation="0,-1"
+       id="guide989" />
+    <sodipodi:guide
+       position="169.33332,169.33336"
+       orientation="1,0"
+       id="guide991" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3836">
+      <stop
+         style="stop-color:#b3b3b3;stop-opacity:1"
+         offset="0"
+         id="stop3832" />
+      <stop
+         style="stop-color:#b3b3b3;stop-opacity:1"
+         offset="0.57771683"
+         id="stop4186" />
+      <stop
+         style="stop-color:#f9f9f9;stop-opacity:1"
+         offset="1"
+         id="stop3834" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="640.00001,475.3086"
+       end_point="640.00001,1047.4492"
+       center_point="640.00001,761.37891"
+       id="path-effect1473"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3836"
+       id="radialGradient3954"
+       cx="771.68018"
+       cy="778.31689"
+       fx="771.68018"
+       fy="778.31689"
+       r="176.26749"
+       gradientTransform="matrix(-0.13223088,0,0,-1.0352212,271.37324,996.07103)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Body"
+     style="display:inline">
+    <path
+       id="rect883"
+       style="fill:url(#radialGradient3954);fill-opacity:1;stroke:#000000;stroke-width:6.13399;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 157.74121,120.4277 c -13.29711,0 -20.2332,9.16582 -20.61243,27.72176 l -1.73042,84.66641 c -0.1289,6.30734 4.03696,10.97899 10.66319,10.97899 h 23.27177 23.27177 c 6.62623,0 10.79209,-4.67165 10.66319,-10.97899 l -1.73042,-84.66641 c -0.37923,-18.55594 -7.31532,-27.72176 -20.61243,-27.72176 h -11.59211 z"
+       inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Bodies\Naked_Male_north.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 137.06981,167.16474 c 0,0 4.27869,-0.2776 8.90166,-6.12429 -1.76761,5.98266 -8.01986,12.07561 -8.01986,12.07561 z"
+       id="path880"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 136.00538,202.8647 c 0,0 4.442,-1.03309 8.92899,-7.83157 -2.17551,7.6143 -9.00864,14.46841 -9.00864,14.46841 z"
+       id="path882"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 201.89489,166.63853 c 0,0 -4.1234,-0.98078 -8.06652,-6.82747 1.63164,6.79848 7.88389,12.93009 7.88389,12.93009 z"
+       id="path1012"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 202.48142,200.77284 c 0,0 -2.46843,0.008 -8.17916,-7.47032 0.95179,7.20639 7.98687,14.47807 7.98687,14.47807 z"
+       id="path1014"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 158.25472,137.4874 c 0,0 -4.61496,13.07573 1.34603,24.22855 5.38412,-9.42221 11.53741,-12.88344 11.53741,-12.88344 0,0 -6.53787,0.96145 -10.96054,5.7687 -2.30748,-5.19183 -1.9229,-17.11381 -1.9229,-17.11381 z"
+       id="path1207"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 170.17671,196.13587 c 0,0 5.96099,12.49885 7.49931,24.61312 8.65305,-8.07618 10.76824,-23.65167 10.76824,-23.65167 0,0 -5.19183,11.34511 -9.03763,15.19091 -2.69206,-9.80679 -9.22992,-16.15236 -9.22992,-16.15236 z"
+       id="path1209"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+  <g
+     inkscape:label="Reference"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <image
+       width="338.66666"
+       height="338.66666"
+       preserveAspectRatio="none"
+       style="display:inline;image-rendering:optimizeSpeed"
+       xlink:href="data:image/png;base64,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 4o5dAPBz5r1/EE/wXiOgWT4REREREREREREREREREREREREREREREREREREREREREREV2f8ZweKy TqzEIAAAAABJRU5ErkJggg== "
+       id="image868"
+       x="-8.2470706e-06"
+       y="-8.2470706e-06" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Reference 1"
+     style="display:none">
+    <path
+       id="rect883-5"
+       style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:6.13141;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 157.75708,120.39528 c -13.27893,0 -20.20553,9.17062 -20.58424,27.73631 l -1.72805,84.71094 c -0.12872,6.31066 4.03145,10.98476 10.64861,10.98476 h 23.23992 23.23992 c 6.61715,0 10.77733,-4.6741 10.64861,-10.98476 l -1.72806,-84.71094 c -0.3787,-18.56569 -7.30531,-27.73631 -20.58423,-27.73631 h -11.57624 z" />
+  </g>
+</svg>

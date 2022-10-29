@@ -9,8 +9,8 @@
    id="svg5"
    shape-rendering="crispEdges"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   sodipodi:docname="Male_Oval_Normal_south.svg"
-   inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
+   sodipodi:docname="None_Gaunt_Average_south.svg"
+   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Genes\None_Gaunt_Average_south.png"
    inkscape:export-xdpi="19.200001"
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -31,17 +31,21 @@
      units="px"
      showguides="false"
      inkscape:zoom="1"
-     inkscape:cx="545"
-     inkscape:cy="661.5"
+     inkscape:cx="564"
+     inkscape:cy="638.5"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer4"
      inkscape:guide-bbox="true"
      inkscape:snap-object-midpoints="false"
-     inkscape:snap-global="false">
+     inkscape:snap-global="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true">
     <inkscape:grid
        type="xygrid"
        id="grid23"
@@ -59,6 +63,34 @@
   </sodipodi:namedview>
   <defs
      id="defs2">
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,192.65503"
+       end_point="169.33333,219.02901"
+       center_point="169.33333,205.84202"
+       id="path-effect7195"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,-571.77864"
+       end_point="169.33333,-444.62253"
+       center_point="169.33333,-508.20059"
+       id="path-effect1218"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
     <linearGradient
        inkscape:collect="always"
        id="linearGradient133751">
@@ -108,16 +140,25 @@
      id="layer2"
      inkscape:label="Head"
      style="display:inline">
-    <ellipse
-       style="mix-blend-mode:luminosity;fill:url(#radialGradient246293);fill-opacity:1;stroke:#000000;stroke-width:9.81062;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+    <path
        id="path584"
-       cx="169.33333"
-       cy="173.1015"
-       rx="49.254143"
-       ry="63.578056"
-       inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
-       inkscape:export-xdpi="9.6000004"
-       inkscape:export-ydpi="9.6000004" />
+       style="mix-blend-mode:luminosity;fill:url(#radialGradient246293);stroke:#000000;stroke-width:9.81062;stroke-linejoin:round"
+       d="m 169.33333,236.67956 c -14.30533,0 -19.23949,-4.54426 -23.55464,-15.02256 -17.55429,-8.78637 -25.6995,-32.82301 -25.6995,-48.5555 0,-35.11319 22.05183,-63.57805 49.25414,-63.57805 m 0,127.15611 c 14.30533,0 19.23949,-4.54426 23.55464,-15.02256 17.55429,-8.78637 25.6995,-32.82301 25.6995,-48.5555 0,-35.11319 -22.05183,-63.57805 -49.25414,-63.57805"
+       sodipodi:nodetypes="cccc"
+       inkscape:path-effect="#path-effect1218"
+       inkscape:original-d="m 169.33333,236.67956 c -14.30533,0 -19.23949,-4.54426 -23.55464,-15.02256 -17.55429,-8.78637 -25.6995,-32.82301 -25.6995,-48.5555 0,-35.11319 22.05183,-63.57805 49.25414,-63.57805" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Shading">
+    <path
+       style="display:inline;fill:#000000;fill-opacity:0.295455;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 131.3581,207.37246 18.84526,12.22129 c -7.12302,-18.47363 -7.09352,-23.18979 -26.43907,-36.93875 z m 75.95046,0 -18.84526,12.22129 c 7.12302,-18.47363 7.09352,-23.18979 26.43907,-36.93875 z"
+       id="path6005"
+       inkscape:path-effect="#path-effect7195"
+       inkscape:original-d="m 131.3581,207.37246 18.84526,12.22129 c -7.12302,-18.47363 -7.09352,-23.18979 -26.43907,-36.93875 z"
+       sodipodi:nodetypes="cccc" />
   </g>
   <g
      inkscape:groupmode="layer"

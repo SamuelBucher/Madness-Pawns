@@ -9,8 +9,8 @@
    id="svg5"
    shape-rendering="crispEdges"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   sodipodi:docname="Male_Oval_Normal_south.svg"
-   inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
+   sodipodi:docname="FurCovered_Gaunt_Normal_north.svg"
+   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\FurCovered_Gaunt_Normal_north.png"
    inkscape:export-xdpi="19.200001"
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -31,17 +31,20 @@
      units="px"
      showguides="false"
      inkscape:zoom="1"
-     inkscape:cx="545"
-     inkscape:cy="661.5"
+     inkscape:cx="699"
+     inkscape:cy="660.5"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer2"
      inkscape:guide-bbox="true"
      inkscape:snap-object-midpoints="false"
-     inkscape:snap-global="false">
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:bbox-paths="false"
+     inkscape:bbox-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid23"
@@ -63,15 +66,15 @@
        inkscape:collect="always"
        id="linearGradient133751">
       <stop
-         style="stop-color:#f2f2f2;stop-opacity:1"
+         style="stop-color:#b3b3b3;stop-opacity:1"
          offset="0"
          id="stop133747" />
       <stop
-         style="stop-color:#f2f2f2;stop-opacity:1"
-         offset="0.80000001"
+         style="stop-color:#b3b3b3;stop-opacity:1"
+         offset="0.76650232"
          id="stop246521" />
       <stop
-         style="stop-color:#b3b3b3;stop-opacity:1"
+         style="stop-color:#f2f2f2;stop-opacity:1"
          offset="1"
          id="stop133749" />
     </linearGradient>
@@ -80,12 +83,26 @@
        xlink:href="#linearGradient133751"
        id="radialGradient246293"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-0.98685122,0,4.4420411e-6,-1.3702958,357.30059,439.34568)"
-       cx="172.19751"
-       cy="194.29756"
-       fx="172.19751"
-       fy="194.29756"
+       gradientTransform="matrix(2.7908399,-5.0143488e-6,0,3.823818,168.01023,-88.719285)"
+       cx="169.12103"
+       cy="206.50333"
+       fx="169.12103"
+       fy="206.50333"
        r="54.159453" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,-571.77864"
+       end_point="169.33333,-444.62253"
+       center_point="169.33333,-508.20059"
+       id="path-effect1218"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
   </defs>
   <g
      inkscape:label="Template"
@@ -108,34 +125,16 @@
      id="layer2"
      inkscape:label="Head"
      style="display:inline">
-    <ellipse
-       style="mix-blend-mode:luminosity;fill:url(#radialGradient246293);fill-opacity:1;stroke:#000000;stroke-width:9.81062;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+    <path
        id="path584"
-       cx="169.33333"
-       cy="173.1015"
-       rx="49.254143"
-       ry="63.578056"
-       inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
-       inkscape:export-xdpi="9.6000004"
-       inkscape:export-ydpi="9.6000004" />
+       style="mix-blend-mode:luminosity;fill:url(#radialGradient246293);stroke:#000000;stroke-width:37.0795"
+       d="m 640,413.94727 c -97.97095,0 -162.26458,52.95227 -185.28516,91.42578 l 42.3086,-7.625 c -36.98589,41.99845 -70.27912,96.372 -72.19141,185.46484 l 29.44336,-17.49414 c 0.0834,1.36835 0.20955,2.76835 0.32227,4.16016 1.00503,73.46998 27.29237,145.14718 45.57422,172.72656 l 18.43359,-26.92188 c 8.13634,8.10399 20.41362,16.09213 32.36914,22.07618 7.6492,19.13487 18.63517,37.59556 37.02344,47.18945 12.68812,6.51391 29.18225,9.58789 52.00195,9.58789 22.79035,0 39.2715,-3.06585 51.95312,-9.5625 6.50634,-3.33312 12.01353,-7.57357 16.84571,-12.77344 0.0307,-0.033 0.0612,-0.0665 0.0918,-0.0996 1.58652,-1.71426 3.10463,-3.52921 4.5586,-5.45312 0.016,-0.0211 0.0329,-0.0414 0.0488,-0.0625 2.91038,-3.85924 5.58062,-8.14541 8.10351,-12.86914 0.0758,-0.14174 0.15106,-0.28716 0.22656,-0.42969 1.18578,-2.24034 2.34241,-4.57781 3.47461,-7.01563 0.0799,-0.17198 0.16054,-0.34265 0.24024,-0.51562 1.17901,-2.56014 2.33788,-5.21686 3.48242,-7.99609 11.95552,-5.98405 24.2328,-13.97219 32.36914,-22.07618 l 18.43359,26.92188 c 18.26079,-27.54762 44.51022,-99.09148 45.57227,-172.47266 0.11927,-1.44914 0.30703,-2.94921 0.39453,-4.37304 l 29.37305,17.45312 C 853.25568,594.12005 819.96245,539.7465 782.97656,497.74805 l 42.3086,7.625 C 802.26458,466.89954 737.97095,413.94727 640,413.94727 Z"
+       transform="scale(0.26458334)"
+       sodipodi:nodetypes="scccccccccssscscscscccccccccs" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Face"
-     style="display:inline"
-     sodipodi:insensitive="true">
-    <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:3.96875;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 169.33333,140.36099 c 0,65.48103 0,65.48103 0,65.48103"
-       id="path1875" />
-    <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:3.96875;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 144.63762,173.1015 c 24.16654,0 24.16654,0 49.39141,0"
-       id="path2880"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
-       inkscape:export-xdpi="9.6000004"
-       inkscape:export-ydpi="9.6000004" />
-  </g>
+     style="display:inline" />
 </svg>
