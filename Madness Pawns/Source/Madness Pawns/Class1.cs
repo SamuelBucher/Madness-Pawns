@@ -227,6 +227,25 @@ namespace Madness_Pawns
                 }
             }
         }
+
+        [HarmonyPatch(typeof(FurDef), "GetFurBodyGraphicPath")]
+        class GetFurBodyGraphicPathPatch
+        {
+            [HarmonyPrefix]
+            public static bool GetFurBodyGraphicPathPrefix(ref FurDef __instance, ref string __result, Pawn pawn)
+            {
+                for (int i = 0; i < __instance.bodyTypeGraphicPaths.Count; i++)
+                {
+                    if (/*__instance.bodyTypeGraphicPaths[i].bodyType == pawn.story.bodyType*/ __instance.bodyTypeGraphicPaths[i].bodyType == Misc.getPawnBodyType(pawn))
+                    {
+                        __result =  __instance.bodyTypeGraphicPaths[i].texturePath; ;
+                        return false;
+                    }
+                }
+                __result = null;
+                return false;
+            }
+        }
     }
 
     /*[HarmonyPatch(typeof(PawnGraphicSet), "ResolveApparelGraphics")]

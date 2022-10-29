@@ -1,4 +1,3 @@
-Implement furry body
 Implement head variation
 Fix beard offset individually
 Merge normal Madness Pawns and Thin Edition
