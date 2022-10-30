@@ -109,30 +109,32 @@ namespace Madness_Pawns
             }
         }
 
-        /*[HarmonyPatch(typeof(PawnRenderer), "OffsetBeardLocationForHead")]
-        class OffsetBeardLocationForCrownTypePatch
+        [HarmonyPatch(typeof(PawnRenderer), "OffsetBeardLocationForHead")]
+        class OffsetBeardLocationForHeadPatch
         {
             [HarmonyPrefix]
-            public static bool OffsetBeardLocationForHeadPrefix(ref PawnRenderer __instance, ref Vector3 __result, HeadTypeDef head, Vector3 beardLoc, Rot4 headFacing)
+            public static bool OffsetBeardLocationForHeadPrefix(ref PawnRenderer __instance, ref Vector3 __result, HeadTypeDef head, Rot4 headFacing, Vector3 beardLoc)
             {
+                //var pawn = typeof(PawnRenderer).GetField("pawn");
+                //var pawn = PawnRenderer.GetType().GetField("MethodName");
+                Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
+
                 if (headFacing == Rot4.East)
                 {
-                    beardLoc += Vector3.right * -0.034f;
-                    beardLoc += Vector3.forward * 0.03f;
+                    beardLoc += Vector3.right * -0.05f;
                 }
                 else if (headFacing == Rot4.West)
                 {
-                    beardLoc += Vector3.right * 0.034f;
-                    beardLoc += Vector3.forward * 0.03f;
+                    beardLoc += Vector3.left * -0.05f;
                 }
                 beardLoc.y += 0.026061773f;
-                beardLoc += head.beardOffset;
-                beardLoc += __instance.pawn.style.beardDef.GetOffset(__instance.pawn.story.headType, headFacing);
+                beardLoc += new Vector3(0, 0, -0.05f);
+                beardLoc += pawn.style.beardDef.GetOffset(pawn.story.headType, headFacing);
                 __result = beardLoc;
 
                 return false;
             }
-        }*/
+        }
 
         /*[HarmonyPatch(typeof(PawnRenderer), "OffsetBeardLocationForHead")]
         class OffsetBeardLocationForHeadPatch
