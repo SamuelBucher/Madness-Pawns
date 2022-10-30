@@ -22,7 +22,7 @@ namespace Madness_Pawns
             Harmony harmony = new Harmony(id: "rimworld.SamBucher.MadnessPawns");
             harmony.PatchAll();
         }
-
+        
         [HarmonyPatch(typeof(PawnGraphicSet), "CalculateHairMats")]
         class CalculateHairMatsPatch
         {
@@ -60,9 +60,42 @@ namespace Madness_Pawns
             public static void GetSkinShaderPostfix(ref Shader __result, bool skinColorOverriden)
             {
                 if (!skinColorOverriden)
-                    __result = ShaderDatabase.Transparent;
+                    __result = ShaderDatabase.Cutout;
             }
         }
+
+        /*[HarmonyPatch(typeof(PawnGraphicSet), "ResolveGeneGraphics")]
+        class ResolveGeneGraphicsPatch
+        {
+            [HarmonyPrefix]
+            public static bool ResolveGeneGraphicsPrefix(ref PawnGraphicSet __instance)
+            {
+                if (!ModsConfig.BiotechActive || __instance.pawn.genes == null)
+                {
+                    return false;
+                }
+                Color rottingColor = __instance.pawn.story.SkinColorOverriden ? (PawnGraphicSet.RottingColorDefault * __instance.pawn.story.SkinColor) : PawnGraphicSet.RottingColorDefault;
+                //Shader skinShader = ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden);
+
+                Shader skinShader;
+                if (__instance.pawn.story.SkinColorOverriden)
+                    skinShader = ShaderDatabase.CutoutSkinColorOverride;
+                else
+                    skinShader = ShaderDatabase.CutoutSkin;
+
+                __instance.geneGraphics.Clear();
+                foreach (Gene gene in __instance.pawn.genes.GenesListForReading)
+                {
+                    if (gene.def.HasGraphic && gene.Active)
+                    {
+                        ValueTuple<Graphic, Graphic> graphics = gene.def.graphicData.GetGraphics(__instance.pawn, skinShader, rottingColor);
+                        __instance.geneGraphics.Add(new GeneGraphicRecord(graphics.Item1, graphics.Item2, gene));
+                    }
+                }
+
+                return false;
+            }
+        }*/
 
         /*[HarmonyPatch(typeof(PawnGraphicSet))]
         [HarmonyPatch("HairMeshSet", MethodType.Getter)]
@@ -136,13 +169,110 @@ namespace Madness_Pawns
             }
         }
 
-        /*[HarmonyPatch(typeof(PawnRenderer), "OffsetBeardLocationForHead")]
-        class OffsetBeardLocationForHeadPatch
+        [HarmonyPatch(typeof(PawnRenderer), "DrawBodyGenes")]
+        class DrawBodyGenesPatch
         {
-            [HarmonyPostfix]
-            public static void OffsetBeardLocationForHeadPostfix(ref Vector3 __result)
+            [HarmonyPrefix]
+            public static bool DrawBodyGenesPrefix(ref PawnRenderer __instance, Vector3 rootLoc, Quaternion quat, float angle, Rot4 bodyFacing, RotDrawMode bodyDrawType, PawnRenderFlags flags)
             {
-                __result += Vector3.back * 0.03f;
+                Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
+
+                MethodInfo OverrideMaterialIfNeeded = __instance.GetType().GetMethod("OverrideMaterialIfNeeded", BindingFlags.NonPublic | BindingFlags.Instance);
+
+                Vector2 bodyGraphicScale = Misc.getPawnBodyType(pawn).bodyGraphicScale;
+                float num = (bodyGraphicScale.x + bodyGraphicScale.y) / 2f;
+                foreach (GeneGraphicRecord geneGraphicRecord in __instance.graphics.geneGraphics)
+                {
+                    GeneGraphicData graphicData = geneGraphicRecord.sourceGene.def.graphicData;
+                    if (graphicData.drawLoc == GeneDrawLoc.Tailbone && (bodyDrawType != RotDrawMode.Dessicated || geneGraphicRecord.sourceGene.def.graphicData.drawWhileDessicated))
+                    {
+                        Vector3 v = graphicData.DrawOffsetAt(bodyFacing);
+                        v.x *= bodyGraphicScale.x;
+                        v.z *= bodyGraphicScale.y;
+                        Vector3 s = new Vector3(graphicData.drawScale * num, 1f, graphicData.drawScale * num);
+                        Matrix4x4 matrix = Matrix4x4.TRS(rootLoc + v.RotatedBy(angle), quat, s);
+                        Material material = geneGraphicRecord.graphic.MatAt(bodyFacing, null);
+                        material = (flags.FlagSet(PawnRenderFlags.Cache) ? material : (Material)OverrideMaterialIfNeeded.Invoke(__instance, new object[] { material, pawn, flags.FlagSet(PawnRenderFlags.Portrait)}));
+                        GenDraw.DrawMeshNowOrLater((bodyFacing == Rot4.West) ? MeshPool.GridPlaneFlip(Vector2.one) : MeshPool.GridPlane(Vector2.one), matrix, material, flags.FlagSet(PawnRenderFlags.DrawNow));
+                    }
+                }
+
+                return false;
+            }
+        }
+
+        [HarmonyPatch(typeof(PawnRenderer), "BaseHeadOffsetAt")]
+        class BaseHeadOffsetAtPatch
+        {
+            [HarmonyPrefix]
+            public static bool BaseHeadOffsetAtPrefix(ref PawnRenderer __instance, ref Vector3 __result, Rot4 rotation)
+            {
+                Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
+
+                Vector2 vector = Misc.getPawnBodyType(pawn).headOffset * Mathf.Sqrt(pawn.ageTracker.CurLifeStage.bodySizeFactor);
+                switch (rotation.AsInt)
+                {
+                    case 0:
+                        __result = new Vector3(0f, 0f, vector.y);
+                        return false;
+                    case 1:
+                        __result = new Vector3(vector.x + 0.05f, 0f, vector.y);
+                        return false;
+                    case 2:
+                        __result = new Vector3(0f, 0f, vector.y);
+                        return false;
+                    case 3:
+                        __result = new Vector3(-vector.x - 0.05f, 0f, vector.y);
+                        return false;
+                    default:
+                        Log.Error("BaseHeadOffsetAt error in " + pawn);
+                        __result = Vector3.zero;
+                        return false;
+                }
+            }
+        }
+
+        /*[HarmonyPatch(typeof(PawnRenderer), "GetBodyOverlayMeshSet")]
+        class GetBodyOverlayMeshSetPatch
+        {
+            [HarmonyPrefix]
+            public static bool GetBodyOverlayMeshSetPrefix(ref PawnRenderer __instance, ref GraphicMeshSet __result)
+            {
+                Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
+
+                if (!pawn.RaceProps.Humanlike)
+                {
+                    __result = HumanlikeMeshPoolUtility.GetHumanlikeBodySetForPawn(pawn);
+                    return false;
+                }
+                BodyTypeDef bodyType = Misc.getPawnBodyType(pawn);
+                if (bodyType == BodyTypeDefOf.Male)
+                {
+                    __result = MeshPool.humanlikeBodySet_Male;
+                    return false;
+                }
+                if (bodyType == BodyTypeDefOf.Female)
+                {
+                    __result = MeshPool.humanlikeBodySet_Female;
+                    return false;
+                }
+                if (bodyType == BodyTypeDefOf.Thin)
+                {
+                    __result = MeshPool.humanlikeBodySet_Thin;
+                    return false;
+                }
+                if (bodyType == BodyTypeDefOf.Fat)
+                {
+                    __result = MeshPool.humanlikeBodySet_Fat;
+                    return false;
+                }
+                if (bodyType == BodyTypeDefOf.Hulk)
+                {
+                    __result = MeshPool.humanlikeBodySet_Hulk;
+                    return false;
+                }
+                __result = HumanlikeMeshPoolUtility.GetHumanlikeBodySetForPawn(pawn);
+                return false;
             }
         }*/
 
