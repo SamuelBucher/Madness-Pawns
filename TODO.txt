@@ -1,5 +1,3 @@
-Merge normal Madness Pawns and Thin Edition
-
 Spritework:
 Heavy brow
 Facial ridges

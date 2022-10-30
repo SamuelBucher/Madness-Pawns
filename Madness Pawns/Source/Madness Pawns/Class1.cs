@@ -316,7 +316,8 @@ namespace Madness_Pawns
                 return BodyTypeDefOf.Child;
             if (pawn.gender == Gender.Female && LoadedModManager.GetMod<MadnessPawns>().GetSettings<Settings>().enableFemaleBodyType)
                 return BodyTypeDefOf.Female;
-
+            if (LoadedModManager.GetMod<MadnessPawns>().GetSettings<Settings>().thinBodies)
+                return BodyTypeDefOf.Thin;
             return BodyTypeDefOf.Male;
         }
 
@@ -338,12 +339,14 @@ namespace Madness_Pawns
         public bool renderMaleHair;
         public bool renderFemaleHair;
         public bool enableFemaleBodyType;
+        public bool thinBodies;
 
         public override void ExposeData()
         {
             Scribe_Values.Look(ref renderMaleHair, "renderMaleHair", false);
             Scribe_Values.Look(ref renderFemaleHair, "renderFemaleHair", false);
-            Scribe_Values.Look(ref enableFemaleBodyType, "enableFemaleBodyType", true);
+            Scribe_Values.Look(ref enableFemaleBodyType, "enableFemaleBodyType", false);
+            Scribe_Values.Look(ref thinBodies, "thinBodies", false);
             base.ExposeData();
         }
     }
@@ -364,6 +367,7 @@ namespace Madness_Pawns
             listingStandard.CheckboxLabeled("Render hair on men", ref settings.renderMaleHair, "Requires reload");
             listingStandard.CheckboxLabeled("Render hair on women", ref settings.renderFemaleHair, "Requires reload");
             listingStandard.CheckboxLabeled("Enable different body type for women", ref settings.enableFemaleBodyType, "Requires reload");
+            listingStandard.CheckboxLabeled("Use vanilla thin body instead of standard grunt body (for modded apparel compatability)", ref settings.thinBodies, "Requires reload");
             listingStandard.End();
             base.DoSettingsWindowContents(inRect);
         }
