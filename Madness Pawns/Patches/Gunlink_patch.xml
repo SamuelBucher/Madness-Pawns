@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
+	<!--<Operation Class="PatchOperationFindMod">
     <mods>
         <li>Royalty</li>
     </mods>
@@ -12,5 +12,13 @@
 			</li>	
 		</operations>
     </match>
+	</Operation>-->
+	
+	<Operation Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.royalty">
+		  <xpath>/Defs/ThingDef[defName="Apparel_Gunlink"]/apparel/hatRenderedFrontOfFace</xpath>
+		</li>
+	  </operations>
 	</Operation>
 </Patch>
