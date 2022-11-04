@@ -1,5 +1,7 @@
+Fix eye gene offset for head shape 
+Fix eye implant body and head offset
+
 Spritework:
-Heavy brow
 Facial ridges
 Red eyes
 Grey eyes
@@ -9,7 +11,11 @@ Center horn
 Child shirt
 Child romper
 Child parka
-More...
+Airwire headset (Engineer mask)
+Mechlord suit
+Face mask
 
-Bionic eyes
-Archotech eyes
+Bionic eye
+Archotech eye
+
+Ritual masks?

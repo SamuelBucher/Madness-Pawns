@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
-	  <operations>
-		<li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.biotech">
-		  <xpath>Defs/GeneDef[defName="Nose_Pig"]/graphicData/narrowCrownHorizontalOffset</xpath>
-		</li>
-	  </operations>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		   <operations>
+			<li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.biotech">
+			  <xpath>Defs/GeneDef[defName="Nose_Pig"]/graphicData/narrowCrownHorizontalOffset</xpath>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="ludeon.rimworld.biotech">
+				<xpath>Defs/GeneDef[defName="Eyes_Gray"]/displayOrderInCategory</xpath>
+				<value>
+					<displayOrderInCategory>0</displayOrderInCategory>				
+				</value>
+			</li>
+		  </operations>
+		</match>
 	</Operation>
 </Patch>

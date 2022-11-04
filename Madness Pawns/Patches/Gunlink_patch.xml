@@ -5,7 +5,6 @@
         <li>Royalty</li>
     </mods>
 	<match Class="PatchOperationSequence">
-        <success>Always</success>
         <operations>
 			<li Class="PatchOperationRemove">
 				<xpath>/Defs/ThingDef[defName="Apparel_Gunlink"]/apparel/hatRenderedFrontOfFace</xpath>

@@ -142,6 +142,29 @@ namespace Madness_Pawns
             }
         }
 
+        /*[HarmonyPatch(typeof(HumanlikeMeshPoolUtility), "GetHumanlikeBodySetForPawn")]
+        public static class GetHumanlikeBodySetForPawnPatch
+        {
+            [HarmonyPrefix]
+            public static bool GetHumanlikeBodySetForPawnPrefix(ref GraphicMeshSet __result, Pawn pawn)
+            {
+                if (ModsConfig.BiotechActive && pawn.ageTracker.CurLifeStage.bodyWidth != null)
+                {
+                    BodyTypeDef bodyType = Misc.getPawnBodyType(pawn);
+
+                    if (bodyType == BodyTypeDefOf.Child || bodyType == BodyTypeDefOf.Thin)
+                        __result = MeshPool.GetMeshSetForWidth(pawn.ageTracker.CurLifeStage.bodyWidth.Value);
+                    else
+                        __result = MeshPool.GetMeshSetForWidth(1.5f);
+
+                    return false;
+                }
+                __result = MeshPool.humanlikeBodySet;
+
+                return false;
+            }
+        }*/
+
         [HarmonyPatch(typeof(PawnRenderer), "OffsetBeardLocationForHead")]
         class OffsetBeardLocationForHeadPatch
         {
@@ -229,6 +252,48 @@ namespace Madness_Pawns
                         __result = Vector3.zero;
                         return false;
                 }
+            }
+        }
+
+        //Unknown
+        [HarmonyPatch(typeof(PawnRenderer), "HeadGeneDrawLocation")]
+        class HeadGeneDrawLocationPatch
+        {
+            [HarmonyPrefix]
+            public static bool HeadGeneDrawLocationPrefix(ref PawnRenderer __instance, ref Vector3 __result, GeneDef geneDef, Rot4 headFacing, Vector3 geneLoc, GeneDrawLayer layer)
+            {
+                if (layer != GeneDrawLayer.PostSkin)
+                {
+                    if (layer - GeneDrawLayer.PostHair <= 1)
+                    {
+                        geneLoc.y += 0.03335328f;
+                    }
+                    else
+                    {
+                        geneLoc.y += 0.028957527f;
+                    }
+                }
+                else
+                {
+                    geneLoc.y += 0.026061773f;
+                }
+                geneLoc += geneDef.graphicData.DrawOffsetAt(headFacing);
+                float narrowCrownHorizontalOffset = geneDef.graphicData.narrowCrownHorizontalOffset;
+                if (narrowCrownHorizontalOffset != 0f && headFacing.IsHorizontal)
+                {
+                    if (headFacing == Rot4.East)
+                    {
+                        geneLoc += Vector3.right * -narrowCrownHorizontalOffset;
+                    }
+                    else if (headFacing == Rot4.West)
+                    {
+                        geneLoc += Vector3.right * narrowCrownHorizontalOffset;
+                    }
+                    geneLoc += Vector3.forward * -narrowCrownHorizontalOffset;
+                }
+                __result = geneLoc;
+
+                return false;
             }
         }
 
