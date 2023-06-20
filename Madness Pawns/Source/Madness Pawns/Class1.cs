@@ -464,16 +464,35 @@ namespace Madness_Pawns
         {
             List<HeadTypeDef> headDefList = DefDatabase<HeadTypeDef>.AllDefsListForReading;
 
+            //Conditional female head
             if (pawn.gender == Gender.Female && LoadedModManager.GetMod<MadnessPawns>().GetSettings<Settings>().differentFemaleHead)
             {
-                if (pawn.story.headType.defName.Contains("HeavyJaw"))
+                if (pawn.story.headType.defName.Contains("Furskin"))
+                {
+                    if (pawn.story.headType.defName.Contains("Heavy"))
+                        return headDefList.Find(x => x.defName == "Furskin_Heavy2");
+                    if (pawn.story.headType.defName.Contains("Gaunt"))
+                        return headDefList.Find(x => x.defName == "Furskin_Narrow1");
+                    return headDefList.Find(x => x.defName == "Furskin_Average2");
+                }
+
+                if (pawn.story.headType.defName.Contains("Heavy"))
                     return headDefList.Find(x => x.defName == "Female_HeavyJawNormal");
                 if (pawn.story.headType.defName.Contains("Gaunt"))
                     return headDefList.Find(x => x.defName == "Female_NarrowNormal");
                 return headDefList.Find(x => x.defName == "Female_AverageNormal");
             }
 
-            if (pawn.story.headType.defName.Contains("HeavyJaw"))
+            //Standard choice
+            if (pawn.story.headType.defName.Contains("Furskin"))
+            {
+                if (pawn.story.headType.defName.Contains("Heavy"))
+                    return headDefList.Find(x => x.defName == "Furskin_Heavy1");
+                if (pawn.story.headType.defName.Contains("Gaunt"))
+                    return pawn.story.headType;
+                return headDefList.Find(x => x.defName == "Furskin_Average1");
+            }
+            if (pawn.story.headType.defName.Contains("Heavy"))
                 return headDefList.Find(x => x.defName == "Male_HeavyJawNormal");
             if (pawn.story.headType.defName.Contains("Gaunt"))
                 return pawn.story.headType;
