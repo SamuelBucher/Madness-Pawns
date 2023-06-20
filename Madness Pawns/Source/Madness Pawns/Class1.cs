@@ -445,62 +445,6 @@ namespace Madness_Pawns
         }
     }
 
-    /*[HarmonyPatch(typeof(PawnGraphicSet), "ResolveApparelGraphics")]
-    class ResolveApparelGraphicsPatch
-    {
-        [HarmonyPrefix]
-        public static bool ResolveApparelGraphicsPrefix(ref PawnGraphicSet __instance)
-        {
-            __instance.ClearCache();
-            __instance.apparelGraphics.Clear();
-
-            BodyTypeDef bodyType = Misc.getPawnBodyType(__instance.pawn);
-
-            using (List<Apparel>.Enumerator enumerator = __instance.pawn.apparel.WornApparel.GetEnumerator())
-            {
-                while (enumerator.MoveNext())
-                {
-                    ApparelGraphicRecord item;
-                    if (ApparelGraphicRecordGetter.TryGetGraphicApparel(enumerator.Current, bodyType, out item))
-                    {
-                        __instance.apparelGraphics.Add(item);
-                    }
-                }
-            }
-
-            return false;
-        }
-    }
-
-    [HarmonyPatch(typeof(PawnGraphicSet), "ResolveAllGraphics")]
-    class ResolveAllGraphicsPatch
-    {
-        [HarmonyPostfix]
-        public static void ResolveAllGraphicsPostfix(ref PawnGraphicSet __instance)
-        {
-            if (__instance.pawn.RaceProps.Humanlike)
-            {
-                BodyTypeDef bodyType = Misc.getPawnBodyType(__instance.pawn);
-
-                Color color = __instance.pawn.story.SkinColorOverriden ? (PawnGraphicSet.RottingColorDefault * __instance.pawn.story.SkinColor) : PawnGraphicSet.RottingColorDefault;
-
-                __instance.nakedGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyNakedGraphicPath, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, __instance.pawn.story.SkinColor);
-                __instance.rottingGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyNakedGraphicPath, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, color);
-                __instance.dessicatedGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyDessicatedGraphicPath, ShaderDatabase.Cutout);
-                __instance.headStumpGraphic = null;
-
-                if ((__instance.pawn.style != null && ModsConfig.IdeologyActive) && (__instance.pawn.style.BodyTattoo != null && __instance.pawn.style.BodyTattoo != TattooDefOf.NoTattoo_Body))
-                {
-                    Color skinColor = __instance.pawn.story.SkinColor;
-                    skinColor.a *= 0.8f;
-                    __instance.bodyTattooGraphic = GraphicDatabase.Get<Graphic_Multi>(__instance.pawn.style.BodyTattoo.texPath, ShaderDatabase.CutoutSkinOverlay, Vector2.one, skinColor, Color.white, null, bodyType.bodyNakedGraphicPath);
-                }
-                else
-                    __instance.bodyTattooGraphic = null;
-            }
-        }
-    }*/
-
     public class Misc
     {
         public static BodyTypeDef getPawnBodyType(Pawn pawn)
@@ -533,6 +477,7 @@ namespace Madness_Pawns
     {
         public bool renderMaleHair;
         public bool renderFemaleHair;
+        public bool enableFemaleHeadType;
         public bool enableFemaleBodyType;
         public bool thinBodies;
 
@@ -540,6 +485,7 @@ namespace Madness_Pawns
         {
             Scribe_Values.Look(ref renderMaleHair, "renderMaleHair", false);
             Scribe_Values.Look(ref renderFemaleHair, "renderFemaleHair", false);
+            Scribe_Values.Look(ref enableFemaleHeadType, "enableFemaleHeadType", false);
             Scribe_Values.Look(ref enableFemaleBodyType, "enableFemaleBodyType", false);
             Scribe_Values.Look(ref thinBodies, "thinBodies", false);
             base.ExposeData();
@@ -561,6 +507,7 @@ namespace Madness_Pawns
             listingStandard.Begin(inRect);
             listingStandard.CheckboxLabeled("Render hair on men", ref settings.renderMaleHair, "Requires reload");
             listingStandard.CheckboxLabeled("Render hair on women", ref settings.renderFemaleHair, "Requires reload");
+            listingStandard.CheckboxLabeled("Enable different head type for women", ref settings.enableFemaleHeadType, "Requires reload");
             listingStandard.CheckboxLabeled("Enable different body type for women", ref settings.enableFemaleBodyType, "Requires reload");
             listingStandard.CheckboxLabeled("Use vanilla thin body instead of standard grunt body (for modded apparel compatability)", ref settings.thinBodies, "Requires reload");
             listingStandard.End();

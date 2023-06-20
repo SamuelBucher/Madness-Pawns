@@ -9,8 +9,8 @@
    id="svg5"
    shape-rendering="crispEdges"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   sodipodi:docname="Male_Oval_Normal_south.svg"
-   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
+   sodipodi:docname="FacialRidgesC_south.svg"
+   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\HeadAttachments\FacialRidges\FacialRidgesC_south.png"
    inkscape:export-xdpi="19.200001"
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -31,14 +31,14 @@
      units="px"
      showguides="true"
      inkscape:zoom="1"
-     inkscape:cx="545.5"
-     inkscape:cy="618.5"
+     inkscape:cx="634.5"
+     inkscape:cy="630.5"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer3"
      inkscape:guide-bbox="true"
      inkscape:snap-object-midpoints="false"
      inkscape:snap-global="true">
@@ -59,6 +59,34 @@
   </sodipodi:namedview>
   <defs
      id="defs2">
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="639.40476,485.78321"
+       end_point="639.40476,703.57033"
+       center_point="639.40476,594.67677"
+       id="path-effect9478"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,141.15521"
+       end_point="169.33333,198.30521"
+       center_point="169.33333,169.73021"
+       id="path-effect943"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
     <linearGradient
        inkscape:collect="always"
        id="linearGradient133751">
@@ -91,7 +119,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Face"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <g
        inkscape:groupmode="layer"
@@ -125,5 +153,14 @@
   <g
      inkscape:groupmode="layer"
      id="layer1"
-     inkscape:label="New" />
+     inkscape:label="Ridges">
+    <path
+       id="path9305"
+       style="opacity:0.25;fill:#000000;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 572.11634,481.89057 c -18.72062,-4.31282 -27.30671,20.56298 -11.60743,29.62696 25.32977,14.62415 51.8273,40.82646 61.10547,60.88281 5.00482,-30.12582 -2.81562,-79.75515 -49.49804,-90.50977 z m -41.42303,57.58404 c -28.8754,0 -39.68974,28.78057 -30.04473,43.46474 40.36492,-8.28625 75.12338,5.96796 116.90596,28.54884 0,-25.87716 -56.09393,-72.01358 -86.86123,-72.01358 z m -29.17632,77.14743 c -22.00855,8.38634 -22.10262,34.85302 -14.5954,37.63347 0,0 12.82303,-15.44015 37.94783,-16.20775 62.04791,-1.89565 92.15759,10.22578 92.15759,10.22578 -21.96558,-26.13627 -84.9185,-43.30837 -115.51002,-31.6515 z M 706.69318,481.89057 c 18.72062,-4.31282 27.30671,20.56298 11.60743,29.62696 -25.32977,14.62415 -51.8273,40.82646 -61.10547,60.88281 -5.00482,-30.12582 2.81562,-79.75515 49.49804,-90.50977 z m 41.42303,57.58404 c 28.8754,0 39.68974,28.78057 30.04473,43.46474 -40.36492,-8.28625 -75.12338,5.96796 -116.90596,28.54884 0,-25.87716 56.09393,-72.01358 86.86123,-72.01358 z m 29.17632,77.14743 c 22.00855,8.38634 22.10262,34.85302 14.5954,37.63347 0,0 -12.82303,-15.44015 -37.94783,-16.20775 -62.04791,-1.89565 -92.15759,10.22578 -92.15759,10.22578 21.96558,-26.13627 84.9185,-43.30837 115.51002,-31.6515 z"
+       transform="matrix(0.23789585,0,0,0.23789585,17.221591,12.957147)"
+       inkscape:path-effect="#path-effect9478"
+       inkscape:original-d="m 572.11634,481.89057 c -18.72062,-4.31282 -27.30671,20.56298 -11.60743,29.62696 25.32977,14.62415 51.8273,40.82646 61.10547,60.88281 5.00482,-30.12582 -2.81562,-79.75515 -49.49804,-90.50977 z m -41.42303,57.58404 c -28.8754,0 -39.68974,28.78057 -30.04473,43.46474 40.36492,-8.28625 75.12338,5.96796 116.90596,28.54884 0,-25.87716 -56.09393,-72.01358 -86.86123,-72.01358 z m -29.17632,77.14743 c -22.00855,8.38634 -22.10262,34.85302 -14.5954,37.63347 0,0 12.82303,-15.44015 37.94783,-16.20775 62.04791,-1.89565 92.15759,10.22578 92.15759,10.22578 -21.96558,-26.13627 -84.9185,-43.30837 -115.51002,-31.6515 z"
+       sodipodi:nodetypes="sscssccsscscs" />
+  </g>
 </svg>

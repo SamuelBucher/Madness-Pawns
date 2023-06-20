@@ -9,8 +9,8 @@
    id="svg5"
    shape-rendering="crispEdges"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   sodipodi:docname="Male_Oval_Normal_south.svg"
-   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
+   sodipodi:docname="FacialRidgesB_south.svg"
+   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\HeadAttachments\FacialRidges\FacialRidgesB_south.png"
    inkscape:export-xdpi="19.200001"
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -30,9 +30,9 @@
      showgrid="false"
      units="px"
      showguides="true"
-     inkscape:zoom="1"
-     inkscape:cx="545.5"
-     inkscape:cy="618.5"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="612.1777"
+     inkscape:cy="577.88302"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -41,7 +41,10 @@
      inkscape:current-layer="layer1"
      inkscape:guide-bbox="true"
      inkscape:snap-object-midpoints="false"
-     inkscape:snap-global="true">
+     inkscape:snap-global="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-smooth-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid23"
@@ -56,9 +59,27 @@
        position="169.33333,165.56612"
        orientation="0,-1"
        id="guide98" />
+    <sodipodi:guide
+       position="165.59156,183.87051"
+       orientation="1,0"
+       id="guide3406" />
   </sodipodi:namedview>
   <defs
      id="defs2">
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,174.95406"
+       end_point="169.33333,218.61031"
+       center_point="169.33333,196.78218"
+       id="path-effect1257"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
     <linearGradient
        inkscape:collect="always"
        id="linearGradient133751">
@@ -91,8 +112,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Face"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:none">
     <g
        inkscape:groupmode="layer"
        id="layer2"
@@ -125,5 +145,14 @@
   <g
      inkscape:groupmode="layer"
      id="layer1"
-     inkscape:label="New" />
+     inkscape:label="Ridges">
+    <path
+       style="opacity:0.25;fill:#000000;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 169.33333,133.88003 c -1.73494,0 -2.29368,2.39112 -2.29368,2.9639 -2.73427,1.24973 -13.59844,4.56358 -13.59844,6.42933 0,0.27041 0.8618,0.46481 2.12636,0.61562 0.26885,1.08773 2.79363,1.38504 3.38173,0.24434 3.50349,0.26091 6.8341,0.33372 6.8341,0.68788 0,1.29154 -20.947,5.62343 -20.947,7.71946 0,0.44684 1.36187,0.74831 3.38791,0.96608 0.29903,1.0937 2.60247,1.30474 3.1284,0.2322 6.13508,0.41379 14.23885,0.42111 14.23885,1.05732 0,1.87147 -27.91468,5.16264 -27.91468,8.91008 0,0.41403 1.97051,0.73919 4.41962,0.99388 0.41004,1.15249 2.27792,1.3007 2.8616,0.26722 7.43827,0.51061 17.90371,0.61845 17.90371,0.61845 0,0 2.6358,1.05907 6.47152,1.05907 m 0,-32.76483 c 1.73494,0 2.29368,2.39112 2.29368,2.9639 2.73427,1.24973 13.59844,4.56358 13.59844,6.42933 0,0.27041 -0.8618,0.46481 -2.12636,0.61562 -0.26885,1.08773 -2.79363,1.38504 -3.38173,0.24434 -3.50349,0.26091 -6.8341,0.33372 -6.8341,0.68788 0,1.29154 20.947,5.62343 20.947,7.71946 0,0.44684 -1.36187,0.74831 -3.38791,0.96608 -0.29903,1.0937 -2.60247,1.30474 -3.1284,0.2322 -6.13508,0.41379 -14.23885,0.42111 -14.23885,1.05732 0,1.87147 27.91468,5.16264 27.91468,8.91008 0,0.41403 -1.97051,0.73919 -4.41962,0.99388 -0.41004,1.15249 -2.27792,1.3007 -2.8616,0.26722 -7.43827,0.51061 -17.90371,0.61845 -17.90371,0.61845 0,0 -2.6358,1.05907 -6.47152,1.05907"
+       id="path953"
+       sodipodi:nodetypes="ccscccscccscccc"
+       inkscape:path-effect="#path-effect1257"
+       inkscape:original-d="m 169.33333,133.88003 c -1.73494,0 -2.29368,2.39112 -2.29368,2.9639 -2.73427,1.24973 -13.59844,4.56358 -13.59844,6.42933 0,0.27041 0.8618,0.46481 2.12636,0.61562 0.26885,1.08773 2.79363,1.38504 3.38173,0.24434 3.50349,0.26091 6.8341,0.33372 6.8341,0.68788 0,1.29154 -20.947,5.62343 -20.947,7.71946 0,0.44684 1.36187,0.74831 3.38791,0.96608 0.29903,1.0937 2.60247,1.30474 3.1284,0.2322 6.13508,0.41379 14.23885,0.42111 14.23885,1.05732 0,1.87147 -27.91468,5.16264 -27.91468,8.91008 0,0.41403 1.97051,0.73919 4.41962,0.99388 0.41004,1.15249 2.27792,1.3007 2.8616,0.26722 7.43827,0.51061 17.90371,0.61845 17.90371,0.61845 0,0 2.6358,1.05907 6.47152,1.05907"
+       transform="matrix(1.2190641,0,0,1.2190641,-37.094854,-39.043521)" />
+  </g>
 </svg>

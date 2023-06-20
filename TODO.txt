@@ -1,12 +1,16 @@
 Fix eye gene offset for head shape 
 Fix eye implant body and head offset
+Implement optional female head based on Liz
 
-Spritework:
+Testing:
 Facial ridges
-Red eyes
-Grey eyes
 Small horns
 Center horn
+
+Spritework:
+Red eyes
+Grey eyes
+Female head
 
 Child shirt
 Child romper

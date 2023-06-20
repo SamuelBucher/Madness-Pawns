@@ -9,8 +9,8 @@
    id="svg5"
    shape-rendering="crispEdges"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   sodipodi:docname="Male_Oval_Normal_south.svg"
-   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
+   sodipodi:docname="CenterHorn_south.svg"
+   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\HeadAttachments\CenterHorn\CenterHorn_south.png"
    inkscape:export-xdpi="19.200001"
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -31,8 +31,8 @@
      units="px"
      showguides="true"
      inkscape:zoom="1"
-     inkscape:cx="545.5"
-     inkscape:cy="618.5"
+     inkscape:cx="640.5"
+     inkscape:cy="585.5"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -59,6 +59,34 @@
   </sodipodi:namedview>
   <defs
      id="defs2">
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,162.98333"
+       end_point="169.33333,210.34375"
+       center_point="169.33333,186.66354"
+       id="path-effect8278"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,108.61147"
+       end_point="169.33333,139.14423"
+       center_point="169.33333,123.87785"
+       id="path-effect2628"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
     <linearGradient
        inkscape:collect="always"
        id="linearGradient133751">
@@ -91,7 +119,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Face"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <g
        inkscape:groupmode="layer"
@@ -125,5 +153,14 @@
   <g
      inkscape:groupmode="layer"
      id="layer1"
-     inkscape:label="New" />
+     inkscape:label="New"
+     style="display:inline">
+    <path
+       style="fill:#4d4d4d;stroke:#000000;stroke-width:3.96875;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 169.33333,64.558335 -11.50937,52.519795 c 0,7.25706 4.76217,12.30312 11.50937,12.30312 m 0,-64.822915 11.50937,52.519795 c 0,7.25706 -4.76217,12.30312 -11.50937,12.30312"
+       id="path7831"
+       sodipodi:nodetypes="ccc"
+       inkscape:path-effect="#path-effect8278"
+       inkscape:original-d="m 169.33333,64.558335 -11.50937,52.519795 c 0,7.25706 4.76217,12.30312 11.50937,12.30312" />
+  </g>
 </svg>

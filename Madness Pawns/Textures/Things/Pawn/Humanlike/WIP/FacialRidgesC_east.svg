@@ -9,8 +9,8 @@
    id="svg5"
    shape-rendering="crispEdges"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   sodipodi:docname="Male_Oval_Normal_east.svg"
-   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_east.png"
+   sodipodi:docname="FacialRidgesC_east.svg"
+   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\HeadAttachments\FacialRidges\FacialRidgesC_east.png"
    inkscape:export-xdpi="19.200001"
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -30,9 +30,9 @@
      showgrid="false"
      units="px"
      showguides="true"
-     inkscape:zoom="1"
-     inkscape:cx="569.5"
-     inkscape:cy="684.5"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="661.49839"
+     inkscape:cy="628.26438"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -40,7 +40,8 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      inkscape:guide-bbox="true"
-     inkscape:snap-object-midpoints="true">
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-global="true">
     <inkscape:grid
        type="xygrid"
        id="grid23"
@@ -89,18 +90,47 @@
        fx="208.53574"
        fy="214.82936"
        r="54.159453" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,141.15521"
+       end_point="169.33333,198.30521"
+       center_point="169.33333,169.73021"
+       id="path-effect943"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="639.40476,485.78321"
+       end_point="639.40476,703.57033"
+       center_point="639.40476,594.67677"
+       id="path-effect9478"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
   </defs>
   <g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Face"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <g
        inkscape:groupmode="layer"
        id="layer2"
        inkscape:label="Head"
-       style="display:inline">
+       style="display:inline"
+       sodipodi:insensitive="true">
       <ellipse
          style="mix-blend-mode:luminosity;fill:url(#radialGradient246293);fill-opacity:1;stroke:#000000;stroke-width:9.81062;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="path584"
@@ -132,5 +162,13 @@
   <g
      inkscape:groupmode="layer"
      id="layer1"
-     inkscape:label="New" />
+     inkscape:label="Ridges"
+     style="display:inline">
+    <path
+       id="path9305"
+       style="opacity:0.25;fill:#000000;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 542.62519,482.677 c -19.78412,-8.50747 -37.00643,18.85792 -19.47174,28.84053 15.93312,9.07082 64.4102,34.53502 83.51875,61.66924 0,-31.40247 -38.00422,-79.31097 -64.04701,-90.50977 z m -18.22332,57.58404 c -28.8754,0 -39.68974,28.78057 -30.04473,43.46474 40.36492,-8.28625 75.12338,5.96796 116.90596,28.54884 0,-25.87716 -56.09393,-72.01358 -86.86123,-72.01358 z m -22.88488,76.361 c -22.00855,8.38634 -22.10262,34.85302 -14.5954,37.63347 0,0 12.82303,-15.44015 37.94783,-16.20775 62.04791,-1.89565 95.30331,10.22578 95.30331,10.22578 -21.96558,-26.13627 -88.06422,-43.30837 -118.65574,-31.6515 z m 177.98684,-90.4858 c -15.87776,13.51251 -27.96981,33.00151 -34.10515,46.2641 -3.56202,-25.42625 10.38254,-54.75499 18.19023,-72.91512 z m 19.01737,65.87193 c -12.99391,5.17892 -26.30243,11.85471 -40.41194,19.48002 0,-12.598 13.29491,-29.99767 30.48992,-44.53787 z m 11.30184,47.12389 c -32.25832,2.78794 -48.04053,9.14148 -48.04053,9.14148 8.99085,-10.69798 24.84869,-19.89411 42.54352,-26.22614 z"
+       transform="matrix(0.23789585,0,0,0.23789585,49.276165,9.162587)"
+       sodipodi:nodetypes="sscssccsscscscccccccccccc" />
+  </g>
 </svg>
