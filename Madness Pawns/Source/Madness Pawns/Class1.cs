@@ -407,7 +407,7 @@ namespace Madness_Pawns
 
                     Color color = __instance.pawn.story.SkinColorOverriden ? (PawnGraphicSet.RottingColorDefault * __instance.pawn.story.SkinColor) : PawnGraphicSet.RottingColorDefault;
 
-                    //__instance.headGraphic = __instance.pawn.story.headType.GetGraphic(__instance.pawn.story.SkinColor, false, __instance.pawn.story.SkinColorOverriden);
+                    __instance.headGraphic = Misc.getPawnHeadType(__instance.pawn).GetGraphic(__instance.pawn.story.SkinColor, false, __instance.pawn.story.SkinColorOverriden);
                     __instance.nakedGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyNakedGraphicPath, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, __instance.pawn.story.SkinColor);
                     __instance.rottingGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyNakedGraphicPath, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, color);
                     __instance.dessicatedGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyDessicatedGraphicPath, ShaderDatabase.Cutout);
@@ -460,24 +460,32 @@ namespace Madness_Pawns
             return BodyTypeDefOf.Male;
         }
 
-        /*public static BodyTypeDef getPawnHeadType(Pawn pawn)
+        public static HeadTypeDef getPawnHeadType(Pawn pawn)
         {
-            if (pawn.story.bodyType == BodyTypeDefOf.Baby)
-                return BodyTypeDefOf.Baby;
-            if (pawn.story.bodyType == BodyTypeDefOf.Child)
-                return BodyTypeDefOf.Child;
-            if (pawn.gender == Gender.Female && LoadedModManager.GetMod<MadnessPawns>().GetSettings<Settings>().enableFemaleBodyType)
-                return BodyTypeDefOf.Female;
+            List<HeadTypeDef> headDefList = DefDatabase<HeadTypeDef>.AllDefsListForReading;
 
-            return BodyTypeDefOf.Male;
-        }*/
+            if (pawn.gender == Gender.Female && LoadedModManager.GetMod<MadnessPawns>().GetSettings<Settings>().differentFemaleHead)
+            {
+                if (pawn.story.headType.defName.Contains("HeavyJaw"))
+                    return headDefList.Find(x => x.defName == "Female_HeavyJawNormal");
+                if (pawn.story.headType.defName.Contains("Gaunt"))
+                    return headDefList.Find(x => x.defName == "Female_NarrowNormal");
+                return headDefList.Find(x => x.defName == "Female_AverageNormal");
+            }
+
+            if (pawn.story.headType.defName.Contains("HeavyJaw"))
+                return headDefList.Find(x => x.defName == "Male_HeavyJawNormal");
+            if (pawn.story.headType.defName.Contains("Gaunt"))
+                return pawn.story.headType;
+            return headDefList.Find(x => x.defName == "Male_AverageNormal");
+        }
     }
 
     public class Settings : ModSettings
     {
         public bool renderMaleHair;
         public bool renderFemaleHair;
-        public bool enableFemaleHeadType;
+        public bool differentFemaleHead;
         public bool enableFemaleBodyType;
         public bool thinBodies;
 
@@ -485,7 +493,7 @@ namespace Madness_Pawns
         {
             Scribe_Values.Look(ref renderMaleHair, "renderMaleHair", false);
             Scribe_Values.Look(ref renderFemaleHair, "renderFemaleHair", false);
-            Scribe_Values.Look(ref enableFemaleHeadType, "enableFemaleHeadType", false);
+            Scribe_Values.Look(ref differentFemaleHead, "differentFemaleHead", false);
             Scribe_Values.Look(ref enableFemaleBodyType, "enableFemaleBodyType", false);
             Scribe_Values.Look(ref thinBodies, "thinBodies", false);
             base.ExposeData();
@@ -507,7 +515,7 @@ namespace Madness_Pawns
             listingStandard.Begin(inRect);
             listingStandard.CheckboxLabeled("Render hair on men", ref settings.renderMaleHair, "Requires reload");
             listingStandard.CheckboxLabeled("Render hair on women", ref settings.renderFemaleHair, "Requires reload");
-            listingStandard.CheckboxLabeled("Enable different head type for women", ref settings.enableFemaleHeadType, "Requires reload");
+            listingStandard.CheckboxLabeled("Enable alt head for women", ref settings.differentFemaleHead, "Requires reload");
             listingStandard.CheckboxLabeled("Enable different body type for women", ref settings.enableFemaleBodyType, "Requires reload");
             listingStandard.CheckboxLabeled("Use vanilla thin body instead of standard grunt body (for modded apparel compatability)", ref settings.thinBodies, "Requires reload");
             listingStandard.End();

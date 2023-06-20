@@ -1,6 +1,7 @@
 Fix eye gene offset for head shape 
 Fix eye implant body and head offset
 Implement optional female head based on Liz
+Variation to hear fur?
 
 Testing:
 Facial ridges
