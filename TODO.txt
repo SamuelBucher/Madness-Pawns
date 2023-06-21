@@ -1,22 +1,19 @@
 Fix eye gene offset for head shape 
 Fix eye implant body and head offset
 Implement optional female head based on Liz
-Variation to hear fur?
 
 Testing:
-Facial ridges
 Small horns
 Center horn
 
 Spritework:
 Red eyes
 Grey eyes
-Female head
 
 Child shirt
 Child romper
 Child parka
-Airwire headset (Engineer mask)
+Airwire headset and/or Array headset(Engineer mask)
 Mechlord suit
 Face mask
 
@@ -24,3 +21,7 @@ Bionic eye
 Archotech eye
 
 Ritual masks?
+
+Long term goals:
+Hair
+Beards

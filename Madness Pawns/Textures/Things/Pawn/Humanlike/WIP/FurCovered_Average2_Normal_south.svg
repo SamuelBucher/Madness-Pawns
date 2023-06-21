@@ -9,8 +9,8 @@
    id="svg5"
    shape-rendering="crispEdges"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   sodipodi:docname="Male_HeavyJaw_Normal_south.svg"
-   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_HeavyJaw_Normal_south.png"
+   sodipodi:docname="FurCovered_Average2_Normal_south.svg"
+   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\FurCovered_Average2_Normal_south.png"
    inkscape:export-xdpi="19.200001"
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -31,20 +31,23 @@
      units="px"
      showguides="true"
      inkscape:zoom="1"
-     inkscape:cx="631.5"
-     inkscape:cy="650.5"
+     inkscape:cx="825.5"
+     inkscape:cy="653.5"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer3"
      inkscape:guide-bbox="true"
-     inkscape:snap-object-midpoints="false"
+     inkscape:snap-object-midpoints="true"
      inkscape:snap-global="true"
-     inkscape:object-paths="true"
-     inkscape:snap-smooth-nodes="true"
      inkscape:snap-bbox="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:object-nodes="true"
+     inkscape:object-paths="false"
+     inkscape:snap-intersection-paths="true"
      inkscape:snap-bbox-midpoints="true">
     <inkscape:grid
        type="xygrid"
@@ -60,19 +63,15 @@
        position="169.33333,165.56612"
        orientation="0,-1"
        id="guide98" />
-    <sodipodi:guide
-       position="169.33333,101.98806"
-       orientation="0,-1"
-       id="guide2671" />
   </sodipodi:namedview>
   <defs
      id="defs2">
     <inkscape:path-effect
        effect="mirror_symmetry"
-       start_point="169.33333,-284.17656"
-       end_point="169.33333,-157.02044"
-       center_point="169.33333,-220.5985"
-       id="path-effect1272"
+       start_point="169.33333,444.03798"
+       end_point="169.33333,571.1941"
+       center_point="169.33333,507.61604"
+       id="path-effect1797"
        is_visible="true"
        lpeversion="1.1"
        mode="free"
@@ -102,19 +101,47 @@
        xlink:href="#linearGradient133751"
        id="radialGradient246293"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-0.98685122,4.3965629e-6,0,-1.8832487,357.30142,537.61865)"
-       cx="174.07423"
-       cy="190.60818"
-       fx="174.07423"
-       fy="190.60818"
+       gradientTransform="matrix(-0.98685122,0,4.4420411e-6,-1.3702958,357.30059,439.34568)"
+       cx="172.19751"
+       cy="194.29756"
+       fx="172.19751"
+       fy="194.29756"
        r="54.159453" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,162.26983"
+       end_point="169.33333,183.93127"
+       center_point="169.33333,173.10055"
+       id="path-effect2786"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="164.56532,168.80302"
+       end_point="164.56532,177.53426"
+       center_point="164.56532,173.16864"
+       id="path-effect1193"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
   </defs>
   <g
      inkscape:label="Template"
      inkscape:groupmode="layer"
      id="layer1"
-     sodipodi:insensitive="true"
-     style="display:none">
+     style="display:none"
+     sodipodi:insensitive="true">
     <image
        width="338.66666"
        height="338.66666"
@@ -132,29 +159,35 @@
      style="display:inline">
     <path
        id="path584"
-       style="mix-blend-mode:luminosity;fill:url(#radialGradient246293);stroke:#000000;stroke-width:9.81062"
-       d="m 169.33333,236.67956 h -26.25778 c -17.27759,0 -23.00917,-11.48101 -23.00917,-27.60135 l 0.0128,-35.97671 c 0,-35.11319 22.05183,-63.57805 49.25414,-63.57805 m 1e-5,127.15611 h 26.25778 c 17.27759,0 23.00917,-11.48101 23.00917,-27.60135 l -0.0128,-35.97671 c 0,-35.11319 -22.05183,-63.57805 -49.25414,-63.57805"
-       sodipodi:nodetypes="ccccc"
-       inkscape:path-effect="#path-effect1272"
-       inkscape:original-d="m 169.33333,236.67956 h -26.25778 c -17.27759,0 -23.00917,-11.48101 -23.00917,-27.60135 l 0.0128,-35.97671 c 0,-35.11319 22.05183,-63.57805 49.25414,-63.57805"
-       transform="translate(0,-9.5e-4)" />
-    <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:3.96875;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 169.33333,140.36099 0,75.20964"
-       id="path1875"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:3.96875;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 144.63762,173.1015 c 24.16654,0 24.16654,0 49.39141,0"
-       id="path2880"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
-       inkscape:export-xdpi="9.6000004"
-       inkscape:export-ydpi="9.6000004" />
+       style="mix-blend-mode:luminosity;fill:url(#radialGradient246293);stroke:#000000;stroke-width:7.9375;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none"
+       d="m 169.33333,236.67956 c -15.98005,0 -24.58067,-7.96202 -32.75069,-15.73615 l -2.70982,6.93347 c -10.34675,-12.59329 -15.38779,-31.25646 -13.60654,-51.78196 l -7.86306,4.67158 c 0.13203,-22.52257 9.89715,-39.2225 19.10099,-49.0709 l -11.19415,2.01759 c 0,0 13.9109,-24.18974 49.02327,-24.18974 m 0,127.15611 c 15.98005,0 24.58067,-7.96202 32.75069,-15.73615 l 2.70982,6.93347 c 10.34675,-12.59329 15.38779,-31.25646 13.60654,-51.78196 l 7.86306,4.67158 c -0.13203,-22.52257 -9.89715,-39.2225 -19.10099,-49.0709 l 11.19415,2.01759 c 0,0 -13.9109,-24.18974 -49.02327,-24.18974"
+       inkscape:path-effect="#path-effect1797"
+       inkscape:original-d="m 169.33333,236.67956 c -15.98005,0 -24.58067,-7.96202 -32.75069,-15.73615 l -2.70982,6.93347 c -10.34675,-12.59329 -15.38779,-31.25646 -13.60654,-51.78196 l -7.86306,4.67158 c 0.13203,-22.52257 9.89715,-39.2225 19.10099,-49.0709 l -11.19415,2.01759 c 0,0 13.9109,-24.18974 49.02327,-24.18974"
+       sodipodi:nodetypes="cccccccc" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Face"
-     style="display:inline" />
+     style="display:inline">
+    <path
+       style="display:inline;fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 136.82639,167.77323 -3.83646,-2.38124 c 0,0 6.14022,25.52562 34.13125,14.05775 -3.82152,-14.26212 -11.70044,-19.98448 -20.40668,-19.98448 -7.20585,0 -9.88811,6.62076 -9.88811,8.30797 z m 65.01388,0 3.83646,-2.38124 c 0,0 -6.14022,25.52562 -34.13125,14.05775 3.82152,-14.26212 11.70044,-19.98448 20.40668,-19.98448 7.20585,0 9.88811,6.62076 9.88811,8.30797 z"
+       id="path2267"
+       sodipodi:nodetypes="cccsc"
+       inkscape:path-effect="#path-effect2786"
+       inkscape:original-d="m 136.82639,167.77323 -3.83646,-2.38124 c 0,0 6.14022,25.52562 34.13125,14.05775 -3.82152,-14.26212 -11.70044,-19.98448 -20.40668,-19.98448 -7.20585,0 -9.88811,6.62076 -9.88811,8.30797 z"
+       transform="translate(0,1.4957692)" />
+    <path
+       style="display:inline;fill:#ffffff;stroke:#808080;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path1191"
+       inkscape:path-effect="#path-effect1193"
+       sodipodi:type="arc"
+       sodipodi:cx="150.74635"
+       sodipodi:cy="174.6219"
+       sodipodi:rx="2.778125"
+       sodipodi:ry="5.6885414"
+       transform="translate(4.76801,0.95995522)"
+       d="m 153.52448,174.6219 c 0,3.1417 -1.24381,5.68854 -2.77813,5.68854 -1.53431,0 -2.77812,-2.54684 -2.77812,-5.68854 0,-3.14169 1.24381,-5.68854 2.77812,-5.68854 1.53432,0 2.77813,2.54685 2.77813,5.68854 z m 22.08168,0 c 0,3.1417 1.24381,5.68854 2.77813,5.68854 1.53431,0 2.77812,-2.54684 2.77812,-5.68854 0,-3.14169 -1.24381,-5.68854 -2.77812,-5.68854 -1.53432,0 -2.77813,2.54685 -2.77813,5.68854 z" />
+  </g>
 </svg>

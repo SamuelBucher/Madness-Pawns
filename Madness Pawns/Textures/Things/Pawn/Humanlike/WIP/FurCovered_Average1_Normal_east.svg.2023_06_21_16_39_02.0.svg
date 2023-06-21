@@ -9,8 +9,8 @@
    id="svg5"
    shape-rendering="crispEdges"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   sodipodi:docname="FacialRidgesA_east.svg"
-   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\HeadAttachments\FacialRidges\FacialRidgesA_east.png"
+   sodipodi:docname="FurCovered_Average1_Normal_east.svg"
+   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\FurCovered_Average1_Normal_east.png"
    inkscape:export-xdpi="19.200001"
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -30,22 +30,21 @@
      showgrid="false"
      units="px"
      showguides="true"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="645.58849"
-     inkscape:cy="632.86057"
+     inkscape:zoom="1"
+     inkscape:cx="608"
+     inkscape:cy="720.5"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer3"
      inkscape:guide-bbox="true"
      inkscape:snap-object-midpoints="true"
+     inkscape:snap-to-guides="false"
+     inkscape:snap-global="true"
      inkscape:snap-bbox="true"
-     inkscape:snap-smooth-nodes="true"
-     inkscape:snap-bbox-midpoints="true"
-     inkscape:object-paths="true"
-     inkscape:snap-global="false">
+     inkscape:snap-bbox-midpoints="true">
     <inkscape:grid
        type="xygrid"
        id="grid23"
@@ -64,10 +63,6 @@
        position="169.33333,169.33334"
        orientation="1,0"
        id="guide116815" />
-    <sodipodi:guide
-       position="51.382736,172.55178"
-       orientation="0,-1"
-       id="guide1411" />
   </sodipodi:namedview>
   <defs
      id="defs2">
@@ -98,57 +93,41 @@
        fx="208.53574"
        fy="214.82936"
        r="54.159453" />
-    <inkscape:path-effect
-       effect="mirror_symmetry"
-       start_point="169.33333,141.15521"
-       end_point="169.33333,198.30521"
-       center_point="169.33333,169.73021"
-       id="path-effect943"
-       is_visible="true"
-       lpeversion="1.1"
-       mode="free"
-       discard_orig_path="false"
-       fuse_paths="false"
-       oposite_fuse="false"
-       split_items="false"
-       split_open="false" />
-    <inkscape:path-effect
-       effect="mirror_symmetry"
-       start_point="169.33333,141.15521"
-       end_point="169.33333,198.30521"
-       center_point="169.33333,169.73021"
-       id="path-effect889"
-       is_visible="true"
-       lpeversion="1.1"
-       mode="free"
-       discard_orig_path="false"
-       fuse_paths="false"
-       oposite_fuse="false"
-       split_items="false"
-       split_open="false" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient133751"
+       id="radialGradient246293-0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-1.0552926,0,5.3720846e-6,-1.4548685,544.31649,491.45997)"
+       cx="208.53574"
+       cy="214.82936"
+       fx="208.53574"
+       fy="214.82936"
+       r="54.159454" />
   </defs>
+  <g
+     inkscape:label="Template"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:none"
+     sodipodi:insensitive="true" />
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Head"
-     style="display:none">
-    <ellipse
-       style="mix-blend-mode:luminosity;fill:url(#radialGradient246293);fill-opacity:1;stroke:#000000;stroke-width:9.81062;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
        id="path584"
-       cx="169.33333"
-       cy="169.33333"
-       rx="49.254143"
-       ry="63.578056"
-       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Back.png"
-       inkscape:export-xdpi="9.6000004"
-       inkscape:export-ydpi="9.6000004" />
+       style="mix-blend-mode:luminosity;fill:url(#radialGradient246293);stroke:#000000;stroke-width:7.9375;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 218.58747,169.33333 c 0,35.11319 -22.05183,63.57805 -49.25414,63.57805 -10.90173,0 -20.88677,-4.1245 -28.9547,-11.40667 l -2.7576,5.95364 c -9.91678,-12.44437 -13.74005,-27.86087 -15.11428,-38.02962 l -8.2604,6.27342 c -2.01529,-18.53749 0.14805,-41.92279 8.7018,-56.40427 l -9.19518,1.77878 c 8.83775,-16.68113 19.66379,-22.63124 30.07846,-26.68238 l -7.6938,-2.91114 c 0,0 14.55254,-5.72787 33.1957,-5.72787 20.4766,0 31.45627,5.93674 42.02456,17.03441 l -7.88719,1.07203 c 7.92942,9.10567 15.11677,26.96005 15.11677,45.47162 z"
+       sodipodi:nodetypes="ssccccccccsccs" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="Face_M"
-     style="display:none"
-     sodipodi:insensitive="true">
+     inkscape:label="Face"
+     style="display:inline">
     <path
        style="display:inline;fill:none;stroke:#000000;stroke-width:3.96875;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 195.81481,136.96208 c 8.02558,21.43473 7.84902,43.27037 0,65.48103"
@@ -165,45 +144,60 @@
        inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Back.png"
        inkscape:export-xdpi="9.6000004"
        inkscape:export-ydpi="9.6000004" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="Face_F"
-     style="display:none">
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 168.01041,146.84376 c -0.49382,0.52739 -16.39315,6.35906 -23.41563,22.19861 -6.45039,-5.9329 -3.05434,-30.92096 -2.9104,-30.79758 -0.61675,-0.50676 -12.61826,24.74269 3.83645,45.21737 0,0 4.35699,-24.6932 22.48958,-36.6184 z"
+       id="path8562"
+       sodipodi:nodetypes="ccccc" />
+    <ellipse
+       style="display:inline;mix-blend-mode:luminosity;fill:url(#radialGradient246293-0);fill-opacity:1;stroke:#000000;stroke-width:9.81062;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path584-7"
+       cx="295.14728"
+       cy="176.74167"
+       rx="49.254143"
+       ry="63.578056"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Back.png"
+       inkscape:export-xdpi="9.6000004"
+       inkscape:export-ydpi="9.6000004" />
     <path
        id="path2267"
        style="display:inline;fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 178.34458,157.80687 c -7.20585,0 -9.88829,6.6208 -9.88829,8.30802 l -3.83646,-2.38125 c 0,0 6.14022,25.52592 34.13125,14.05805 -3.82152,-14.26212 -11.70026,-19.98482 -20.4065,-19.98482 z"
+       d="m 304.15853,165.24161 c -7.20585,0 -9.88828,6.6208 -9.88828,8.30802 l -3.83646,-2.38125 c 0,0 6.14022,25.52592 34.13125,14.05805 -3.82152,-14.26212 -11.70027,-19.98482 -20.40651,-19.98482 z"
        sodipodi:nodetypes="scccs" />
     <ellipse
        style="display:inline;fill:#ffffff;stroke:#808080;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="path1191"
-       cx="191.47401"
-       cy="172.89095"
+       cx="317.28796"
+       cy="180.32568"
        rx="2.778125"
        ry="5.6885414" />
     <path
-       d="m 218.76322,157.80686 c -6.18331,0 -11.77892,5.72271 -14.49302,19.98483 19.87966,11.46787 24.24054,-14.05806 24.24054,-14.05806 l -2.72471,2.38125 c 0,-1.68721 -1.90511,-8.30802 -7.02281,-8.30802 z"
+       d="m 344.57718,165.2416 c -6.18331,0 -11.77892,5.72271 -14.49302,19.98483 19.87966,11.46787 24.24054,-14.05806 24.24054,-14.05806 l -2.72471,2.38125 c 0,-1.68721 -1.90511,-8.30802 -7.02281,-8.30802 z"
        style="display:inline;fill:#000000;stroke:none;stroke-width:0.222975px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="path2436" />
     <ellipse
        style="display:inline;fill:#ffffff;stroke:#808080;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="path1191-9"
-       cx="213.03598"
-       cy="172.89095"
+       cx="338.84991"
+       cy="180.32568"
        rx="2.778125"
        ry="5.6885414" />
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer1"
-     inkscape:label="Ridges"
-     style="display:inline">
-    <path
-       id="path941-4"
-       style="display:inline;opacity:0.3;fill:#000000;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 181.46987,114.08224 c -0.79491,-0.0105 -1.40784,0.45353 -1.59421,1.44901 -2.72786,14.57047 -10.67439,30.09451 -11.97705,34.14675 -4.38233,13.63228 7.24907,27.73733 19.91351,27.73733 0.9791,0 1.53349,-0.59613 0.8661,-1.11001 -1.98334,-1.52714 -12.36209,-4.34037 -13.63069,-13.82706 -0.0831,-0.62139 -0.12713,-1.27165 -0.12713,-1.95182 0,-3.85906 2.3637,-14.87507 14.24978,-14.87507 10.66922,0 18.37252,8.08013 18.37252,8.08013 7.32603,-3.54689 4.7956,-10.7487 4.7956,-10.7487 0,0 0.92409,7.20181 8.25012,10.7487 0,0 4.03655,-3.56106 9.87177,-5.95504 l -4.36211,-11.84754 c -6.72428,0.20394 -12.48802,1.7691 -14.78055,2.9177 -5.73708,-2.8744 -26.26107,-8.35746 -36.12789,11.41222 0,-2.25315 3.96699,-6.61923 6.86573,-11.0696 3.78361,-5.80891 5.17851,-13.64512 4.99194,-16.6672 -0.32628,-5.28537 -3.546,-8.41289 -5.57744,-8.4398 z"
-       sodipodi:nodetypes="sssssssscccccccsss" />
+     id="layer4"
+     inkscape:label="Face 1"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <ellipse
+       style="display:inline;mix-blend-mode:luminosity;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path584-9"
+       cx="169.33333"
+       cy="169.30695"
+       rx="49.254143"
+       ry="63.578056"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Back.png"
+       inkscape:export-xdpi="9.6000004"
+       inkscape:export-ydpi="9.6000004" />
   </g>
 </svg>

@@ -36,8 +36,8 @@
      inkscape:snap-bbox-midpoints="false"
      inkscape:snap-page="true"
      inkscape:zoom="2"
-     inkscape:cx="618"
-     inkscape:cy="1001.75"
+     inkscape:cx="618.25"
+     inkscape:cy="601.75"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -160,7 +160,7 @@
      inkscape:label="Reference"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <path
        id="rect883-0"
