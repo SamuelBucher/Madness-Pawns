@@ -1,6 +1,6 @@
 Fix eye gene offset for head shape 
 Fix eye implant body and head offset
-Implement optional female head based on Liz
+Fix heavy brow
 
 Testing:
 Small horns
@@ -9,6 +9,8 @@ Center horn
 Spritework:
 Red eyes
 Grey eyes
+Bionic eye
+Archotech eye
 
 Child shirt
 Child romper
@@ -16,9 +18,6 @@ Child parka
 Airwire headset and/or Array headset(Engineer mask)
 Mechlord suit
 Face mask
-
-Bionic eye
-Archotech eye
 
 Ritual masks?
 
