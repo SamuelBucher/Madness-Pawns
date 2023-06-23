@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1280"
+   height="1280"
+   viewBox="0 0 338.66666 338.66668"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="KidShirt_Child_north.svg"
+   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\KidShirt_Child_north.png"
+   inkscape:export-xdpi="19.200001"
+   inkscape:export-ydpi="19.200001"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="px"
+     showgrid="false"
+     showguides="true"
+     units="px"
+     inkscape:snap-bbox="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:bbox-paths="false"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-page="true"
+     inkscape:zoom="1.3759595"
+     inkscape:cx="607.21265"
+     inkscape:cy="769.28137"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:guide-bbox="true"
+     inkscape:snap-global="true"
+     inkscape:snap-smooth-nodes="true">
+    <sodipodi:guide
+       position="169.33332,169.33335"
+       orientation="0,-1"
+       id="guide989" />
+    <sodipodi:guide
+       position="169.33332,169.33336"
+       orientation="1,0"
+       id="guide991" />
+    <sodipodi:guide
+       position="137.12878,190.51722"
+       orientation="0.99979121,-0.020433824"
+       id="guide963" />
+    <sodipodi:guide
+       position="201.53785,190.51722"
+       orientation="0.99979121,0.020433942"
+       id="guide1166" />
+    <sodipodi:guide
+       position="169.33332,94.871813"
+       orientation="0,-1"
+       id="guide1273" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="640.00001,475.3086"
+       end_point="640.00001,1047.4492"
+       center_point="640.00001,761.37891"
+       id="path-effect1473"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3836"
+       id="radialGradient3954"
+       cx="771.68018"
+       cy="778.31689"
+       fx="771.68018"
+       fy="778.31689"
+       r="176.26749"
+       gradientTransform="matrix(-0.13223088,0,0,-1.0352212,271.37324,996.07103)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3836">
+      <stop
+         style="stop-color:#b3b3b3;stop-opacity:1"
+         offset="0"
+         id="stop3832" />
+      <stop
+         style="stop-color:#b3b3b3;stop-opacity:1"
+         offset="0.57771683"
+         id="stop4186" />
+      <stop
+         style="stop-color:#f9f9f9;stop-opacity:1"
+         offset="1"
+         id="stop3834" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Body"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
+       id="rect883"
+       style="fill:#ff0000;fill-opacity:1;stroke:#0000ff;stroke-width:6.13399;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 157.74121,120.4277 c -13.29711,0 -20.2332,9.16582 -20.61243,27.72176 l -1.73042,84.66641 c -0.1289,6.30734 4.03696,10.97899 10.66319,10.97899 h 23.27177 23.27177 c 6.62623,0 10.79209,-4.67165 10.66319,-10.97899 l -1.73042,-84.66641 c -0.37923,-18.55594 -7.31532,-27.72176 -20.61243,-27.72176 h -11.59211 z"
+       inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Bodies\Naked_Male_north.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Shirt">
+    <path
+       id="rect883-2"
+       style="display:inline;fill:url(#radialGradient3954);fill-opacity:1;stroke:#000000;stroke-width:6.13399;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 157.74121,120.4277 c -13.29711,0 -20.2332,9.16582 -20.61243,27.72176 -0.65162,31.8818 -1.30319,63.7636 -1.95481,95.6454 11.38645,0 22.7729,0 34.15935,0 11.38645,0 22.7729,0 34.15935,0 -0.65161,-31.8818 -1.30321,-63.7636 -1.95481,-95.6454 -0.37923,-18.55594 -7.31532,-27.72176 -20.61243,-27.72176 h -11.59211 z"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\KidShirt\KidShirt_Child_north.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001"
+       sodipodi:nodetypes="scccccscs" />
+  </g>
+</svg>
