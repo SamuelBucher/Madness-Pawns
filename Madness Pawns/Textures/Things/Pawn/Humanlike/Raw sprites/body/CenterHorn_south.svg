@@ -30,9 +30,9 @@
      showgrid="false"
      units="px"
      showguides="true"
-     inkscape:zoom="1"
-     inkscape:cx="640.5"
-     inkscape:cy="585.5"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="577.70624"
+     inkscape:cy="564.97832"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -41,7 +41,7 @@
      inkscape:current-layer="layer1"
      inkscape:guide-bbox="true"
      inkscape:snap-object-midpoints="false"
-     inkscape:snap-global="true">
+     inkscape:snap-global="false">
     <inkscape:grid
        type="xygrid"
        id="grid23"
@@ -161,6 +161,7 @@
        id="path7831"
        sodipodi:nodetypes="ccc"
        inkscape:path-effect="#path-effect8278"
-       inkscape:original-d="m 169.33333,64.558335 -11.50937,52.519795 c 0,7.25706 4.76217,12.30312 11.50937,12.30312" />
+       inkscape:original-d="m 169.33333,64.558335 -11.50937,52.519795 c 0,7.25706 4.76217,12.30312 11.50937,12.30312"
+       transform="matrix(1.1522999,0,0,1.1522999,-25.789454,-27.864699)" />
   </g>
 </svg>

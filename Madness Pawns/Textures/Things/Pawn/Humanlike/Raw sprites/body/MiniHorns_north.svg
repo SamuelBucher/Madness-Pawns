@@ -9,8 +9,8 @@
    id="svg5"
    shape-rendering="crispEdges"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   sodipodi:docname="CenterHorn_east.svg"
-   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\HeadAttachments\CenterHorn\CenterHorn_east.png"
+   sodipodi:docname="MiniHorns_north.svg"
+   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\HeadAttachments\MiniHorns\MiniHorns_north.png"
    inkscape:export-xdpi="19.200001"
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -30,9 +30,9 @@
      showgrid="false"
      units="px"
      showguides="true"
-     inkscape:zoom="0.5"
-     inkscape:cx="555"
-     inkscape:cy="589"
+     inkscape:zoom="1"
+     inkscape:cx="683.5"
+     inkscape:cy="615.5"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -41,8 +41,7 @@
      inkscape:current-layer="layer1"
      inkscape:guide-bbox="true"
      inkscape:snap-object-midpoints="true"
-     inkscape:snap-global="false"
-     inkscape:snap-smooth-nodes="true">
+     inkscape:snap-bbox="true">
     <inkscape:grid
        type="xygrid"
        id="grid23"
@@ -54,21 +53,9 @@
        orientation="1,0"
        id="guide96" />
     <sodipodi:guide
-       position="169.33333,169.35973"
+       position="169.33333,165.56612"
        orientation="0,-1"
-       id="guide116813" />
-    <sodipodi:guide
-       position="169.33333,169.33334"
-       orientation="1,0"
-       id="guide116815" />
-    <sodipodi:guide
-       position="287.74236,277.90291"
-       orientation="0,-1"
-       id="guide4891" />
-    <sodipodi:guide
-       position="287.74237,213.07999"
-       orientation="0,-1"
-       id="guide4893" />
+       id="guide98" />
   </sodipodi:namedview>
   <defs
      id="defs2">
@@ -76,15 +63,15 @@
        inkscape:collect="always"
        id="linearGradient133751">
       <stop
-         style="stop-color:#f2f2f2;stop-opacity:1"
+         style="stop-color:#b3b3b3;stop-opacity:1"
          offset="0"
          id="stop133747" />
       <stop
-         style="stop-color:#f2f2f2;stop-opacity:1"
+         style="stop-color:#b3b3b3;stop-opacity:1"
          offset="0.76650232"
          id="stop246521" />
       <stop
-         style="stop-color:#b3b3b3;stop-opacity:1"
+         style="stop-color:#f2f2f2;stop-opacity:1"
          offset="1"
          id="stop133749" />
     </linearGradient>
@@ -93,11 +80,11 @@
        xlink:href="#linearGradient133751"
        id="radialGradient246293"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1.0552926,0,5.3720846e-6,-1.4548685,418.50255,484.05163)"
-       cx="208.53574"
-       cy="214.82936"
-       fx="208.53574"
-       fy="214.82936"
+       gradientTransform="matrix(0.73840974,-1.3267131e-6,0,1.0117185,44.452708,-23.473644)"
+       cx="169.12103"
+       cy="206.50333"
+       fx="169.12103"
+       fy="206.50333"
        r="54.159453" />
     <inkscape:path-effect
        effect="mirror_symmetry"
@@ -105,20 +92,6 @@
        end_point="169.33333,139.14423"
        center_point="169.33333,123.87785"
        id="path-effect2628"
-       is_visible="true"
-       lpeversion="1.1"
-       mode="free"
-       discard_orig_path="false"
-       fuse_paths="false"
-       oposite_fuse="false"
-       split_items="false"
-       split_open="false" />
-    <inkscape:path-effect
-       effect="mirror_symmetry"
-       start_point="169.33333,162.98333"
-       end_point="169.33333,210.34375"
-       center_point="169.33333,186.66354"
-       id="path-effect8278"
        is_visible="true"
        lpeversion="1.1"
        mode="free"
@@ -143,38 +116,25 @@
          style="mix-blend-mode:luminosity;fill:url(#radialGradient246293);fill-opacity:1;stroke:#000000;stroke-width:9.81062;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="path584"
          cx="169.33333"
-         cy="169.33333"
+         cy="173.1015"
          rx="49.254143"
          ry="63.578056"
          inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Back.png"
          inkscape:export-xdpi="9.6000004"
          inkscape:export-ydpi="9.6000004" />
     </g>
-    <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:3.96875;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 195.81481,136.96208 c 8.02558,21.43473 7.84902,43.27037 0,65.48103"
-       id="path1875"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Back.png"
-       inkscape:export-xdpi="9.6000004"
-       inkscape:export-ydpi="9.6000004" />
-    <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:3.61878;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 178.25921,169.30694 c 13.67535,0 26.95818,0 41.06466,0"
-       id="path2880"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Back.png"
-       inkscape:export-xdpi="9.6000004"
-       inkscape:export-ydpi="9.6000004" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="New">
     <path
-       style="fill:#4d4d4d;stroke:#000000;stroke-width:3.96875;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 209.41772,60.76376 -35.66786,47.97999 c -4.81341,17.10751 19.01214,22.65047 23.6468,10.57072 z"
-       id="path4928"
-       sodipodi:nodetypes="cccc" />
+       style="fill:#666666;stroke:#000000;stroke-width:3.96875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 130.04271,106.3625 c 3.54057,5.04751 7.46352,8.44232 11.19299,10.79856 -3.87881,2.98272 -7.28921,6.66805 -10.46428,10.70639 -3.76686,-10.21649 -0.72871,-21.50495 -0.72871,-21.50495 z m 78.58124,0 c -3.54057,5.04751 -7.46352,8.44232 -11.19299,10.79856 3.87881,2.98272 7.28921,6.66805 10.46428,10.70639 3.76686,-10.21649 0.72871,-21.50495 0.72871,-21.50495 z"
+       id="path917"
+       sodipodi:nodetypes="cccc"
+       inkscape:path-effect="#path-effect2628"
+       inkscape:original-d="m 130.04271,106.3625 c 3.54057,5.04751 7.46352,8.44232 11.19299,10.79856 -3.87881,2.98272 -7.28921,6.66805 -10.46428,10.70639 -3.76686,-10.21649 -0.72871,-21.50495 -0.72871,-21.50495 z"
+       transform="matrix(1.1936896,0,0,1.1936896,-32.798119,-27.389524)" />
   </g>
 </svg>

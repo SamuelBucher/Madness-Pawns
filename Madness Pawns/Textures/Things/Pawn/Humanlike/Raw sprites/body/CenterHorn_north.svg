@@ -31,8 +31,8 @@
      units="px"
      showguides="true"
      inkscape:zoom="1"
-     inkscape:cx="695.5"
-     inkscape:cy="526.5"
+     inkscape:cx="672.5"
+     inkscape:cy="566.5"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -41,7 +41,8 @@
      inkscape:current-layer="layer1"
      inkscape:guide-bbox="true"
      inkscape:snap-object-midpoints="true"
-     inkscape:snap-bbox="true">
+     inkscape:snap-bbox="true"
+     inkscape:snap-global="false">
     <inkscape:grid
        type="xygrid"
        id="grid23"
@@ -149,6 +150,9 @@
        sodipodi:nodetypes="ccc"
        inkscape:path-effect="#path-effect8278"
        inkscape:original-d="m 169.33333,64.558335 -9.42694,43.017225 c 5e-5,1e-5 3.87069,-0.61775 9.42694,-0.61775"
-       transform="translate(0,-9.4600001e-4)" />
+       transform="matrix(1.2318615,0,0,1.2318615,-39.261876,-32.656552)"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\HeadAttachments\CenterHorn\path7831.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
   </g>
 </svg>

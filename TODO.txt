@@ -1,10 +1,7 @@
 Fix eye gene offset for head shape 
 Fix eye implant body and head offset
-Fix heavy brow
 
 Testing:
-Small horns
-Center horn
 
 Spritework:
 Red eyes
