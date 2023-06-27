@@ -9,7 +9,7 @@
    id="svg5"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
    sodipodi:docname="ShirtButton_Male_north.svg"
-   inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\ShirtButton\ShirtButton_Male_north.png"
+   inkscape:export-filename="D:\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\ShirtButton\ShirtButton_Male_north.png"
    inkscape:export-xdpi="19.200001"
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -35,9 +35,9 @@
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-midpoints="true"
      inkscape:snap-page="true"
-     inkscape:zoom="0.68797974"
-     inkscape:cx="523.27122"
-     inkscape:cy="782.72654"
+     inkscape:zoom="2.751919"
+     inkscape:cx="667.3525"
+     inkscape:cy="565.9687"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -219,11 +219,11 @@
        transform="scale(0.26458334)"
        sodipodi:nodetypes="cccccccsssc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 169.33332,173.49722 c -27.96674,-0.37775 -29.01268,-26.37811 -29.28462,-32.2248 0,-19.80686 2.96181,-16.24004 4.04282,-20.27444 m 25.2418,52.49924 c 27.96674,-0.37775 29.01268,-26.37811 29.28462,-32.2248 0,-19.80686 -2.96181,-16.24004 -4.04282,-20.27444"
+       style="fill:none;stroke:#000000;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 169.33332,173.49722 c -27.96674,-0.37775 -31.24163,-27.71815 -31.30367,-33.57083 -0.0891,-8.40758 0.79498,-12.36102 1.92479,-14.43546 m 29.37888,48.00629 c 27.96674,-0.37775 31.24163,-27.71815 31.30367,-33.57083 0.0891,-8.40758 -0.79498,-12.36102 -1.92479,-14.43546"
        id="path896"
-       sodipodi:nodetypes="ccc"
-       inkscape:original-d="m 169.33332,173.49722 c -27.96674,-0.37775 -29.01268,-26.37811 -29.28462,-32.2248 0,-19.80686 2.96181,-16.24004 4.04282,-20.27444"
+       sodipodi:nodetypes="csc"
+       inkscape:original-d="m 169.33332,173.49722 c -27.96674,-0.37775 -31.24163,-27.71815 -31.30367,-33.57083 -0.0891,-8.40758 0.79498,-12.36102 1.92479,-14.43546"
        inkscape:path-effect="#path-effect1187" />
     <path
        id="rect883-7-6"
@@ -232,12 +232,12 @@
        transform="scale(0.26458334)"
        sodipodi:nodetypes="ccccccc" />
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 169.33332,163.2995 c -25.86523,0 -23.86317,-27.37645 -23.86317,-39.86031 m 23.86317,39.86031 c 25.86523,0 23.86317,-27.37645 23.86317,-39.86031"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 169.33332,163.2995 c -25.86523,0 -24.65637,-27.35241 -24.65637,-39.83627 m 24.65637,39.83627 c 25.86523,0 24.65637,-27.35241 24.65637,-39.83627"
        id="path894-8"
        sodipodi:nodetypes="cc"
        transform="translate(0,-0.18757053)"
-       inkscape:original-d="m 169.33332,163.2995 c -25.86523,0 -23.86317,-27.37645 -23.86317,-39.86031"
+       inkscape:original-d="m 169.33332,163.2995 c -25.86523,0 -24.65637,-27.35241 -24.65637,-39.83627"
        inkscape:path-effect="#path-effect5456" />
   </g>
 </svg>

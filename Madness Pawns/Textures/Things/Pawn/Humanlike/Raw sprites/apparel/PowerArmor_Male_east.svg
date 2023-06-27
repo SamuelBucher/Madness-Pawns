@@ -9,7 +9,7 @@
    id="svg5"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
    sodipodi:docname="PowerArmor_Male_east.svg"
-   inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\PowerArmor\PowerArmor_Male_east.png"
+   inkscape:export-filename="D:\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\PowerArmor\PowerArmor_Male_east.png"
    inkscape:export-xdpi="19.200001"
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -36,7 +36,7 @@
      inkscape:snap-bbox-midpoints="false"
      inkscape:snap-page="true"
      inkscape:zoom="0.62144379"
-     inkscape:cx="618.72048"
+     inkscape:cx="572.85953"
      inkscape:cy="662.16769"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
@@ -365,7 +365,7 @@
      inkscape:label="Reference"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <path
        id="rect883-0"
