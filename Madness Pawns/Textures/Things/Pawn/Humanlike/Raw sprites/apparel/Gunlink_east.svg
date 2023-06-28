@@ -10,7 +10,7 @@
    shape-rendering="crispEdges"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
    sodipodi:docname="Gunlink_east.svg"
-   inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\Gunlink\Gunlink_east.png"
+   inkscape:export-filename="D:\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\Gunlink\Gunlink_east.png"
    inkscape:export-xdpi="19.200001"
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -122,39 +122,39 @@
      style="display:inline">
     <path
        id="rect2432"
-       style="display:inline;fill:#666666;stroke:#000000;stroke-width:1.67341;stroke-linecap:round;stroke-linejoin:round"
-       d="m 106.56658,163.93113 h 126.15951 c 0,0 1.44074,0.40483 1.44074,5.37581 0,4.97098 -1.44074,5.37581 -1.44074,5.37581 H 106.56658 c 0,0 -1.85779,-0.60441 -1.85779,-5.37581 0,-4.7714 1.85779,-5.37581 1.85779,-5.37581 z"
+       style="display:inline;fill:#666666;stroke:#000000;stroke-width:1.77881;stroke-linecap:round;stroke-linejoin:round"
+       d="m 106.62033,163.22737 h 126.05024 c 0,0 1.43949,0.45783 1.43949,6.07956 0,5.62174 -1.43949,6.07957 -1.43949,6.07957 H 106.62033 c 0,0 -1.85618,-0.68354 -1.85618,-6.07957 0,-5.39602 1.85618,-6.07956 1.85618,-6.07956 z"
        sodipodi:nodetypes="cczcczc" />
     <path
        id="rect1020"
-       style="display:inline;fill:#666666;stroke:#000000;stroke-width:1.69678;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 108.11788,156.4729 h 101.45515 c 0,0 6.9292,2.07409 6.9292,4.55261 0,4.24973 -4.25771,4.45765 -4.25771,8.28144 0,3.82379 4.25771,3.56992 4.25771,8.60772 0,2.00812 -6.9292,4.22634 -6.9292,4.22634 H 108.11788 c 0,0 -3.42284,-2.9589 -3.42284,-12.83406 0,-9.87516 3.42284,-12.83405 3.42284,-12.83405 z"
+       style="display:inline;fill:#666666;stroke:#000000;stroke-width:1.80365;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 108.17028,154.79278 h 101.36728 c 0,0 6.9232,2.34561 6.9232,5.1486 0,4.80606 -4.25402,5.0412 -4.25402,9.36557 0,4.32436 4.25402,4.03726 4.25402,9.73456 0,2.271 -6.9232,4.77961 -6.9232,4.77961 H 108.17028 c 0,0 -3.41987,-3.34625 -3.41987,-14.51417 0,-11.16793 3.41987,-14.51417 3.41987,-14.51417 z"
        sodipodi:nodetypes="ccszscczc" />
     <rect
-       style="display:inline;fill:#333333;stroke:#000000;stroke-width:1.69678;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="display:inline;fill:#333333;stroke:#000000;stroke-width:1.80365;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect5888"
-       width="94.711349"
-       height="3.674861"
-       x="103.08469"
-       y="167.40669"
-       ry="1.8374305" />
+       width="94.629318"
+       height="4.1559391"
+       x="103.14145"
+       y="167.15793"
+       ry="2.0779696" />
     <path
        id="rect6155"
-       style="display:inline;fill:#4d4d4d;stroke:#000000;stroke-width:1.69678;stroke-linecap:round;stroke-linejoin:round"
-       d="m 150.61252,153.3012 h 44.70604 c 1.17188,0 2.11533,2.86664 2.11533,3.88535 v 24.28234 c 0,1.01871 -0.94345,3.84179 -2.11533,3.84179 h -44.70604 c 0,-4.28815 -0.0591,-2.93902 2.31418,-2.91088 v -26.17212 c -2.50188,-0.58276 -2.31418,2.06497 -2.31418,-2.92648 z"
+       style="display:inline;fill:#4d4d4d;stroke:#000000;stroke-width:1.80365;stroke-linecap:round;stroke-linejoin:round"
+       d="m 150.62812,151.20587 h 44.66732 c 1.17086,0 2.11349,3.24192 2.11349,4.39399 v 27.46115 c 0,1.15207 -0.94263,4.34472 -2.11349,4.34472 h -44.66732 c 0,-4.84951 -0.059,-3.32376 2.31217,-3.29194 v -29.59833 c -2.49971,-0.65905 -2.31217,2.3353 -2.31217,-3.30959 z"
        sodipodi:nodetypes="csssscccc" />
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:1.69678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 156.8819,153.27577 c 0,16.03017 0,16.03017 0,16.03017 l 22.78834,0.001"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:1.80365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 156.89207,151.17711 c 0,18.12869 0,18.12869 0,18.12869 l 22.7686,0.001"
        id="path6727" />
     <path
        id="rect5470"
-       style="fill:#333333;stroke:#000000;stroke-width:1.925;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 180.22639,152.65261 c 0,0 -14.05096,0.64866 -14.05096,16.65437 0,16.00571 14.05096,16.65437 14.05096,16.65437 h 23.32923 v -33.30874 z"
+       style="fill:#333333;stroke:#000000;stroke-width:2.04624;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 180.21634,150.47238 c 0,0 -14.03879,0.73357 -14.03879,18.8346 0,18.10103 14.03879,18.8346 14.03879,18.8346 h 23.30902 v -37.6692 z"
        sodipodi:nodetypes="cscccc" />
     <g
        id="g5322"
-       transform="matrix(0.96889835,0,0,0.9965418,-3.8021764,-14.804233)">
+       transform="matrix(0.96805915,0,0,1.1269997,-3.6528354,-38.906349)">
       <path
          style="display:inline;fill:#333333;stroke:#000000;stroke-width:1.72679;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="path6830"
@@ -184,8 +184,8 @@
     </g>
     <path
        id="rect7506"
-       style="display:inline;fill:#333333;stroke:#000000;stroke-width:1.69678;stroke-linecap:round;stroke-linejoin:round"
-       d="m 223.46343,162.31919 h 5.70702 c 0,0 1.34046,2.2026 1.34046,6.98775 0,4.78516 -1.34046,6.98774 -1.34046,6.98774 h -5.70702 c 0,0 1.34047,-2.2259 1.34047,-6.98774 0,-4.76184 -1.34047,-6.98775 -1.34047,-6.98775 z"
+       style="display:inline;fill:#333333;stroke:#000000;stroke-width:1.80365;stroke-linecap:round;stroke-linejoin:round"
+       d="m 223.41593,161.40441 h 5.70208 c 0,0 1.33929,2.49095 1.33929,7.90252 0,5.41159 -1.33929,7.90251 -1.33929,7.90251 h -5.70208 c 0,0 1.33931,-2.51729 1.33931,-7.90251 0,-5.38521 -1.33931,-7.90252 -1.33931,-7.90252 z"
        sodipodi:nodetypes="cczcczc" />
   </g>
 </svg>

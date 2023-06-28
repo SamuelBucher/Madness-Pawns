@@ -10,7 +10,7 @@
    shape-rendering="crispEdges"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
    sodipodi:docname="Gunlink_north.svg"
-   inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\Gunlink\Gunlink_north.png"
+   inkscape:export-filename="D:\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\Gunlink\Gunlink_north.png"
    inkscape:export-xdpi="19.200001"
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -30,9 +30,9 @@
      showgrid="false"
      units="px"
      showguides="true"
-     inkscape:zoom="4"
-     inkscape:cx="866.875"
-     inkscape:cy="659.125"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="646.64915"
+     inkscape:cy="643.11362"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -111,13 +111,13 @@
      style="display:inline">
     <path
        id="rect2432"
-       style="display:inline;fill:#666666;stroke:#000000;stroke-width:1.70013;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 184.91818,160.27807 -7.73238,7.45157 h -71.594 c 0,0 -1.44778,0.4045 -1.44778,5.37091 0,4.96641 1.44778,5.37091 1.44778,5.37091 h 71.594 l 7.73238,7.45157 h 46.8165 c 0,0 2.20917,-2.95639 2.20917,-12.82248 0,-9.86609 -2.20917,-12.82248 -2.20917,-12.82248 z"
+       style="display:inline;fill:#666666;stroke:#000000;stroke-width:1.80435;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 184.90628,158.64638 -7.72626,8.3998 h -71.53726 c 0,0 -1.44663,0.45597 -1.44663,6.05437 0,5.5984 1.44663,6.05437 1.44663,6.05437 h 71.53726 l 7.72626,8.3998 h 46.77939 c 0,0 2.20742,-3.3326 2.20742,-14.45417 0,-11.12157 -2.20742,-14.45417 -2.20742,-14.45417 z"
        sodipodi:nodetypes="cccsccccscc" />
     <path
        id="rect5888"
-       style="display:inline;fill:#333333;stroke:#000000;stroke-width:1.70013;stroke-linecap:round;stroke-linejoin:round"
-       d="m 177.04124,165.28008 c -1.24013,0.98956 -0.77033,2.32589 -0.0761,2.98566 0.69413,0.65979 5.59466,4.83481 5.59466,4.83481 l -5.59466,4.83481 c -0.93575,0.80873 -0.78355,2.24262 0,2.91981 0.78354,0.67718 2.33834,0.93287 3.45455,0.066 l 6.67871,-5.77222 h 46.16513 c 1.32333,0 2.38836,-0.92046 2.38836,-2.06419 v -0.0936 c 0,-1.14374 -1.06503,-2.06419 -2.38836,-2.06419 h -46.3104 l -6.53344,-5.6467 c -0.75585,-0.65324 -2.13822,-0.98956 -3.37835,0 z"
+       style="display:inline;fill:#333333;stroke:#000000;stroke-width:1.80435;stroke-linecap:round;stroke-linejoin:round"
+       d="m 177.03558,164.28491 c -1.23915,1.11548 -0.76972,2.62186 -0.076,3.36559 0.69358,0.74375 5.59023,5.45005 5.59023,5.45005 l -5.59023,5.45005 c -0.93501,0.91164 -0.78293,2.528 0,3.29136 0.78292,0.76335 2.33649,1.05158 3.45181,0.0744 l 6.67342,-6.50675 h 46.12854 c 1.32228,0 2.38647,-1.03759 2.38647,-2.32686 v -0.10551 c 0,-1.28928 -1.06419,-2.32686 -2.38647,-2.32686 h -46.2737 l -6.52826,-6.36526 c -0.75525,-0.73636 -2.13652,-1.11548 -3.37567,0 z"
        sodipodi:nodetypes="zzcczccssssccz" />
   </g>
 </svg>
