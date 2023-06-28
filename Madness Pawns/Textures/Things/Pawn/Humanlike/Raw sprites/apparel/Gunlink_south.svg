@@ -15,7 +15,6 @@
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -30,9 +29,9 @@
      showgrid="false"
      units="px"
      showguides="true"
-     inkscape:zoom="2"
-     inkscape:cx="612.5"
-     inkscape:cy="664.75"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="700.38925"
+     inkscape:cy="685.54001"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -41,7 +40,7 @@
      inkscape:current-layer="layer3"
      inkscape:guide-bbox="true"
      inkscape:snap-object-midpoints="true"
-     inkscape:snap-global="false"
+     inkscape:snap-global="true"
      inkscape:snap-smooth-nodes="true">
     <inkscape:grid
        type="xygrid"
@@ -102,60 +101,6 @@
        oposite_fuse="false"
        split_items="false"
        split_open="false" />
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient133751">
-      <stop
-         style="stop-color:#f2f2f2;stop-opacity:1"
-         offset="0"
-         id="stop133747" />
-      <stop
-         style="stop-color:#f2f2f2;stop-opacity:1"
-         offset="0.78231996"
-         id="stop246521" />
-      <stop
-         style="stop-color:#b3b3b3;stop-opacity:1"
-         offset="1"
-         id="stop133749" />
-    </linearGradient>
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient133751"
-       id="radialGradient246293"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-0.78152819,1.9043265e-6,8.5380687e-8,-1.3364326,322.30169,432.7658)"
-       cx="186.87245"
-       cy="194.29758"
-       fx="186.87245"
-       fy="194.29758"
-       r="54.159453" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient133751-7"
-       id="radialGradient246293-4"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-0.98685122,0,4.4420411e-6,-1.3702958,357.3006,439.34472)"
-       cx="172.19751"
-       cy="194.29756"
-       fx="172.19751"
-       fy="194.29756"
-       r="54.159454" />
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient133751-7">
-      <stop
-         style="stop-color:#f2f2f2;stop-opacity:1"
-         offset="0"
-         id="stop133747-5" />
-      <stop
-         style="stop-color:#f2f2f2;stop-opacity:1"
-         offset="0.80000001"
-         id="stop246521-9" />
-      <stop
-         style="stop-color:#b3b3b3;stop-opacity:1"
-         offset="1"
-         id="stop133749-5" />
-    </linearGradient>
     <inkscape:path-effect
        effect="mirror_symmetry"
        start_point="169.33333,162.26983"
@@ -189,28 +134,28 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="HeadF"
-     sodipodi:insensitive="true"
-     style="display:none">
+     style="display:none"
+     sodipodi:insensitive="true">
     <ellipse
-       style="display:inline;mix-blend-mode:luminosity;fill:url(#radialGradient246293-4);fill-opacity:1;stroke:#000000;stroke-width:9.81062;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path584-1"
+       style="display:inline;mix-blend-mode:normal;fill:#ff0000;fill-opacity:1;stroke:#0000ff;stroke-width:11.2822;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path584-9"
        cx="169.33333"
        cy="173.10056"
-       rx="49.254143"
-       ry="63.578056"
+       rx="56.642292"
+       ry="73.114799"
        inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
        inkscape:export-xdpi="9.6000004"
        inkscape:export-ydpi="9.6000004" />
     <path
-       style="display:inline;fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;mix-blend-mode:normal;fill:#00ff00;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 136.82639,167.77323 -3.83646,-2.38124 c 0,0 6.14022,25.52562 34.13125,14.05775 -3.82152,-14.26212 -11.70044,-19.98448 -20.40668,-19.98448 -7.20585,0 -9.88811,6.62076 -9.88811,8.30797 z m 65.01388,0 3.83646,-2.38124 c 0,0 -6.14022,25.52562 -34.13125,14.05775 3.82152,-14.26212 11.70044,-19.98448 20.40668,-19.98448 7.20585,0 9.88811,6.62076 9.88811,8.30797 z"
        id="path2267"
        sodipodi:nodetypes="cccsc"
        inkscape:path-effect="#path-effect2786"
        inkscape:original-d="m 136.82639,167.77323 -3.83646,-2.38124 c 0,0 6.14022,25.52562 34.13125,14.05775 -3.82152,-14.26212 -11.70044,-19.98448 -20.40668,-19.98448 -7.20585,0 -9.88811,6.62076 -9.88811,8.30797 z"
-       transform="translate(6.4570312e-6,1.4957561)" />
+       transform="matrix(1.15,0,0,1.15,-25.400052,-24.245071)" />
     <path
-       style="display:inline;fill:#ffffff;stroke:#808080;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       style="display:inline;mix-blend-mode:normal;fill:#ff00ff;stroke:#808080;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="path1191"
        inkscape:path-effect="#path-effect1193"
        sodipodi:type="arc"
@@ -218,7 +163,7 @@
        sodipodi:cy="174.6219"
        sodipodi:rx="2.778125"
        sodipodi:ry="5.6885414"
-       transform="translate(4.7680115,0.95994209)"
+       transform="matrix(1.15,0,0,1.15,-19.916844,-24.861258)"
        d="m 153.52448,174.6219 c 0,3.1417 -1.24381,5.68854 -2.77813,5.68854 -1.53431,0 -2.77812,-2.54684 -2.77812,-5.68854 0,-3.14169 1.24381,-5.68854 2.77812,-5.68854 1.53432,0 2.77813,2.54685 2.77813,5.68854 z m 22.08168,0 c 0,3.1417 1.24381,5.68854 2.77813,5.68854 1.53431,0 2.77812,-2.54684 2.77812,-5.68854 0,-3.14169 -1.24381,-5.68854 -2.77812,-5.68854 -1.53432,0 -2.77813,2.54685 -2.77813,5.68854 z" />
   </g>
   <g
@@ -228,22 +173,22 @@
      style="display:none"
      sodipodi:insensitive="true">
     <ellipse
-       style="mix-blend-mode:luminosity;fill:url(#radialGradient246293);fill-opacity:1;stroke:#000000;stroke-width:9.81062;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="display:inline;mix-blend-mode:normal;fill:#ff0000;fill-opacity:1;stroke:#0000ff;stroke-width:11.1829;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path584"
        cx="169.33333"
-       cy="173.1015"
-       rx="49.254143"
-       ry="63.578056"
-       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Back.png"
+       cy="173.10056"
+       rx="56.143692"
+       ry="72.471359"
+       inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
        inkscape:export-xdpi="9.6000004"
        inkscape:export-ydpi="9.6000004" />
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:3.96875;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 169.33333,140.36099 c 0,65.48103 0,65.48103 0,65.48103"
+       style="display:inline;mix-blend-mode:normal;fill:none;stroke:#00ff00;stroke-width:4.5239;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 169.33333,135.78136 c 0,74.64052 0,74.64052 0,74.64052"
        id="path1875" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:3.96875;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 144.63762,173.1015 c 24.16654,0 24.16654,0 49.39141,0"
+       style="display:inline;mix-blend-mode:normal;fill:none;stroke:#00ff00;stroke-width:4.5239;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 141.18318,173.10162 c 27.54696,0 27.54696,0 56.30029,0"
        id="path2880"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
@@ -263,10 +208,10 @@
     <path
        id="rect5609"
        style="fill:#333333;stroke:#000000;stroke-width:1.69643;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 272.78561,173.8344 2.84427,-4.58655 v -6.84277 h -33.56746 v 11.42932 m 4.75992,0 v -6.85801 h 24.04711 v 2.27146 l -2.84427,4.58655 m 4.76043,0 2.84427,4.58655 v 6.84277 H 242.06242 V 173.8344 m 4.75992,0 v 6.85801 h 24.04711 v -2.27146 l -2.84427,-4.58655"
+       d="m 272.78561,173.8344 2.84427,-4.58655 0,-7.37981 h -33.56746 l 0,11.96636 m 4.75992,0 0,-7.39505 h 24.04711 v 2.8085 l -2.84427,4.58655 m 4.76043,0 2.84427,4.58655 0,7.37981 h -33.56746 l 0,-11.96636 m 4.75992,0 0,7.39505 h 24.04711 v -2.8085 l -2.84427,-4.58655"
        sodipodi:nodetypes="cccccccccc"
        inkscape:path-effect="#path-effect2824"
-       inkscape:original-d="m 272.78561,173.8344 2.84427,-4.58655 v -6.84277 h -33.56746 v 11.42932 m 4.75992,0 v -6.85801 h 24.04711 v 2.27146 l -2.84427,4.58655"
+       inkscape:original-d="m 272.78561,173.8344 2.84427,-4.58655 0,-7.37981 h -33.56746 l 0,11.96636 m 4.75992,0 0,-7.39505 h 24.04711 v 2.8085 l -2.84427,4.58655"
        transform="matrix(0.9993463,0,0,1.1085044,-64.279346,-19.595653)"
        inkscape:export-filename="D:\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\Gunlink\Gunlink_south.png"
        inkscape:export-xdpi="19.200001"
@@ -354,7 +299,7 @@
        ry="0" />
     <path
        style="color:#000000;fill:#333333;stroke-width:1.78551;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none"
-       d="m 211.17079,182.76376 v -4.579 l -2.84241,-5.08421 2.84241,-5.08421 v -4.79896 l -4.75732,0.44797 v 4.35099 l -2.84241,5.08421 2.84241,5.08421 v 5.26754 z"
+       d="m 211.17079,182.76376 v -4.579 l -2.84241,-5.08421 2.84241,-5.08421 0,-5.39427 -4.75732,0.44797 0,4.9463 -2.84241,5.08421 2.84241,5.08421 v 5.26754 z"
        id="path9093"
        sodipodi:nodetypes="ccccccccccc"
        inkscape:export-filename="D:\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\Gunlink\Gunlink_south.png"
@@ -362,7 +307,7 @@
        inkscape:export-ydpi="19.200001" />
     <path
        style="color:#000000;fill:#000000;stroke-width:1.05251;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none"
-       d="m 210.32239,161.3725 v 6.37606 l -2.71502,4.8562 c -0.16988,0.30368 -0.16988,0.68792 0,0.99159 l 2.71502,4.8562 v 6.37824 l 0.84906,1.87926 c 0.46769,-4e-4 0.84675,-0.42086 0.8471,-0.93964 v -7.58416 c 1.6e-4,-0.17515 -0.0438,-0.34687 -0.12687,-0.49579 l -2.56668,-4.58991 2.56668,-4.58773 c 0.083,-0.14893 0.12703,-0.32065 0.12687,-0.49579 v -7.58633 c -3.5e-4,-0.51878 -0.37941,-0.93924 -0.8471,-0.93963 z m -4.75665,5.06621 v 1.30985 l -2.71502,4.8562 c -0.16988,0.30368 -0.16988,0.68792 0,0.99159 l 2.71502,4.8562 v 1.30986 l 0.8471,1.88143 c 0.46846,8e-4 0.84871,-0.42 0.84906,-0.93964 v -2.51795 c -4.3e-4,-0.17536 -0.0451,-0.34709 -0.12883,-0.49579 l -2.56472,-4.58991 2.56472,-4.58773 c 0.0838,-0.14871 0.1284,-0.32044 0.12883,-0.49579 v -2.51796 c -3.6e-4,-0.51962 -0.3806,-0.94042 -0.84906,-0.93962 z"
+       d="m 210.32239,160.77719 0,6.97137 -2.71502,4.8562 c -0.16988,0.30368 -0.16988,0.68792 0,0.99159 l 2.71502,4.8562 v 6.37824 l 0.84906,1.87926 c 0.46769,-4e-4 0.84675,-0.42086 0.8471,-0.93964 v -7.58416 c 1.6e-4,-0.17515 -0.0438,-0.34687 -0.12687,-0.49579 l -2.56668,-4.58991 2.56668,-4.58773 c 0.083,-0.14893 0.12703,-0.32065 0.12687,-0.49579 l 0,-8.18164 c -3.5e-4,-0.51878 -0.37941,-0.93924 -0.8471,-0.93963 z m -4.75665,5.06621 0,1.90516 -2.71502,4.8562 c -0.16988,0.30368 -0.16988,0.68792 0,0.99159 l 2.71502,4.8562 v 1.30986 l 0.8471,2.47674 c 0.46846,8e-4 0.84871,-0.42 0.84906,-0.93964 l 0,-3.11326 c -4.3e-4,-0.17536 -0.0451,-0.34709 -0.12883,-0.49579 l -2.56472,-4.58991 2.56472,-4.58773 c 0.0838,-0.14871 0.1284,-0.32044 0.12883,-0.49579 l 0,-3.11327 c -3.6e-4,-0.51962 -0.3806,-0.94042 -0.84906,-0.93962 z"
        id="path9095"
        sodipodi:nodetypes="cccccccccccccccccccccccccccccccc"
        inkscape:export-filename="D:\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\Gunlink\Gunlink_south.png"
