@@ -1,20 +1,23 @@
 Fix eye gene offset for head shape 
 Fix eye implant body and head offset
+Figure out what to do with the fact that there is no east or west view of eye hediffs
 
 Testing:
+
 
 Spritework:
 Red eyes
 Grey eyes
 Bionic eye
 Archotech eye
+Missing eye
 
 Airwire headset (Deimos gear)
 Array headset (Engineer mask)
 Integrator headset (2BDamned mask)
 Gas mask
 War mask (Tricky)
-Visage mask?
+
 
 Long term goals:
 Hair

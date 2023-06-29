@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		   <operations>
+			<li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.biotech">
+			  <xpath>Defs/ThingDef[defName="Apparel_GasMask"]/apparel/hatRenderedFrontOfFace</xpath>
+			</li>
+		  </operations>
+		</match>
+	</Operation>
+</Patch>
