@@ -465,7 +465,7 @@ namespace Madness_Pawns
             List<HeadTypeDef> headDefList = DefDatabase<HeadTypeDef>.AllDefsListForReading;
 
             //Conditional female head
-            if (pawn.gender == Gender.Female && LoadedModManager.GetMod<MadnessPawns>().GetSettings<Settings>().differentFemaleHead)
+            /*if (pawn.gender == Gender.Female && LoadedModManager.GetMod<MadnessPawns>().GetSettings<Settings>().differentFemaleHead)
             {
                 if (pawn.story.headType.defName.Contains("Furskin"))
                 {
@@ -481,7 +481,7 @@ namespace Madness_Pawns
                 if (pawn.story.headType.defName.Contains("Gaunt"))
                     return headDefList.Find(x => x.defName == "Female_NarrowNormal");
                 return headDefList.Find(x => x.defName == "Female_AverageNormal");
-            }
+            }*/
 
             //Standard choice
             if (pawn.story.headType.defName.Contains("Furskin"))
@@ -504,7 +504,7 @@ namespace Madness_Pawns
     {
         public bool renderMaleHair;
         public bool renderFemaleHair;
-        public bool differentFemaleHead;
+        //public bool differentFemaleHead;
         public bool enableFemaleBodyType;
         public bool thinBodies;
 
@@ -512,7 +512,7 @@ namespace Madness_Pawns
         {
             Scribe_Values.Look(ref renderMaleHair, "renderMaleHair", false);
             Scribe_Values.Look(ref renderFemaleHair, "renderFemaleHair", false);
-            Scribe_Values.Look(ref differentFemaleHead, "differentFemaleHead", false);
+            //Scribe_Values.Look(ref differentFemaleHead, "differentFemaleHead", false);
             Scribe_Values.Look(ref enableFemaleBodyType, "enableFemaleBodyType", false);
             Scribe_Values.Look(ref thinBodies, "thinBodies", false);
             base.ExposeData();
@@ -534,7 +534,7 @@ namespace Madness_Pawns
             listingStandard.Begin(inRect);
             listingStandard.CheckboxLabeled("Render hair on men", ref settings.renderMaleHair, "Requires reload");
             listingStandard.CheckboxLabeled("Render hair on women", ref settings.renderFemaleHair, "Requires reload");
-            listingStandard.CheckboxLabeled("Enable alt head for women", ref settings.differentFemaleHead, "Requires reload");
+            //listingStandard.CheckboxLabeled("Enable alt head for women", ref settings.differentFemaleHead, "Requires reload");
             listingStandard.CheckboxLabeled("Enable different body type for women", ref settings.enableFemaleBodyType, "Requires reload");
             listingStandard.CheckboxLabeled("Use vanilla thin body instead of standard grunt body (for modded apparel compatability)", ref settings.thinBodies, "Requires reload");
             listingStandard.End();
