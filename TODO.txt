@@ -8,7 +8,7 @@ Red eyes
 Grey eyes
 Bionic eye
 Archotech eye
-Missing eye
+Missing eye(?)
 
 Airwire headset (Deimos gear)
 Array headset (Engineer mask)
@@ -24,4 +24,4 @@ Revise old sprites
 Fix eye gene and implant body type offset
 
 Female specific head option
-Draw both eye hediffs on the side view (eye genes are symetric)
+Draw both eye hediffs on the side view (eye genes are symetric, messing with scaling might work)
