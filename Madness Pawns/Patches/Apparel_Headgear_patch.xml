@@ -2,14 +2,27 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.royalty">
+					<xpath>/Defs/ThingDef[defName="Apparel_Gunlink"]/apparel/hatRenderedFrontOfFace</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
 			<li>Biotech</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-		   <operations>
-			<li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.biotech">
-			  <xpath>Defs/ThingDef[defName="Apparel_GasMask"]/apparel/hatRenderedFrontOfFace</xpath>
-			</li>
-		  </operations>
+			<operations>
+				<li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.biotech">
+					<xpath>Defs/ThingDef[defName="Apparel_GasMask"]/apparel/hatRenderedFrontOfFace</xpath>
+				</li>
+			</operations>
 		</match>
 	</Operation>
 </Patch>
