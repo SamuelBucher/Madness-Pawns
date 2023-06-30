@@ -1,6 +1,4 @@
-Fix eye gene offset for head shape 
-Fix eye implant body and head offset
-Figure out what to do with the fact that there is no east or west view of eye hediffs
+
 
 Testing:
 
@@ -22,3 +20,8 @@ Long term goals:
 Hair
 Beards
 Tattoos
+Revise old sprites
+Fix eye gene and implant body type offset
+
+Female specific head option
+Draw both eye hediffs on the side view (eye genes are symetric)
