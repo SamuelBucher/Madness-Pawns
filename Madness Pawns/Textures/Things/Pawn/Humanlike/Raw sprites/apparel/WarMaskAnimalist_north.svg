@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1280"
+   height="1280"
+   viewBox="0 0 338.66666 338.66668"
+   version="1.1"
+   id="svg5"
+   shape-rendering="crispEdges"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="WarMaskAnimalist_north.svg"
+   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist_north.png"
+   inkscape:export-xdpi="19.200001"
+   inkscape:export-ydpi="19.200001"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     showguides="true"
+     inkscape:zoom="0.5"
+     inkscape:cx="528"
+     inkscape:cy="621"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer3"
+     inkscape:guide-bbox="true"
+     inkscape:snap-object-midpoints="false"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-page="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid23"
+       visible="true"
+       enabled="true"
+       dotted="false" />
+    <sodipodi:guide
+       position="169.33333,165.56612"
+       orientation="1,0"
+       id="guide96" />
+    <sodipodi:guide
+       position="169.33333,165.56612"
+       orientation="0,-1"
+       id="guide98" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="324.90833,104.86321"
+       end_point="324.90833,248.39737"
+       center_point="324.90833,176.63029"
+       id="path-effect1267"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,53.41381"
+       end_point="169.33333,239.16116"
+       center_point="169.33333,146.28749"
+       id="path-effect936"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,108.88561"
+       end_point="169.33333,123.66561"
+       center_point="169.33333,116.27561"
+       id="path-effect1104"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,150.33239"
+       end_point="169.33333,162.49317"
+       center_point="169.33333,156.41278"
+       id="path-effect2848"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="639.99997,736.26616"
+       end_point="639.99997,856.82084"
+       center_point="639.99997,796.5435"
+       id="path-effect2446"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Original"
+     sodipodi:insensitive="true"
+     style="display:none">
+    <path
+       style="fill:#999999;fill-opacity:1;stroke:#000000;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 169.33333,111.92798 -49.97076,-7.06479 -9.72861,6.92229 -4.11595,73.71052 9.35444,47.93426 54.46088,14.96709 m 0,-136.46937 49.97076,-7.06479 9.72861,6.92229 4.11595,73.71052 -9.35444,47.93426 -54.46088,14.96709"
+       id="path901"
+       inkscape:path-effect="#path-effect936"
+       inkscape:original-d="m 169.33333,111.92798 -49.97076,-7.06479 -9.72861,6.92229 -4.11595,73.71052 9.35444,47.93426 54.46088,14.96709"
+       sodipodi:nodetypes="cccccc"
+       transform="translate(-169.33333,2.0299986e-5)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 109.63396,111.78548 59.69937,8.3744 m 59.69937,-8.3744 -59.69937,8.3744"
+       id="path971"
+       inkscape:path-effect="#path-effect1104"
+       inkscape:original-d="m 109.63396,111.78548 59.69937,8.3744"
+       sodipodi:nodetypes="cc"
+       transform="translate(-169.33333,2.029999e-5)" />
+    <path
+       style="opacity:0.2;fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 324.90833,111.928 -49.97076,-7.06479 -9.72861,6.92229 -4.11595,73.71052 9.35444,47.93426 54.46088,14.96709 z m 0,0 49.97076,-7.06479 9.72861,6.92229 4.11595,73.71052 -9.35444,47.93426 -54.46088,14.96709 z"
+       id="path1766"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:path-effect="#path-effect1267"
+       inkscape:original-d="m 324.90833,111.928 -49.97076,-7.06479 -9.72861,6.92229 -4.11595,73.71052 9.35444,47.93426 54.46088,14.96709 z"
+       transform="translate(-324.90833)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Animalist">
+    <path
+       id="path4645"
+       style="fill:#808080;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 169.33333,111.88006 c -38.55477,0 -57.82851,9.35447 -57.82851,9.35447 0,0 -2.24483,19.29698 -2.24483,57.10556 0,47.69424 25.18026,70.86338 60.07334,70.86338 34.89308,0 60.07334,-23.16914 60.07334,-70.86338 0,-37.80858 -2.24483,-57.10556 -2.24483,-57.10556 0,0 -19.27374,-9.35447 -57.82851,-9.35447 z"
+       sodipodi:nodetypes="scssscs"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       id="path4645-2"
+       style="fill:none;stroke:#000000;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 169.33333,111.88006 c -38.55477,0 -57.82851,9.35447 -57.82851,9.35447 0,0 -2.24483,19.29698 -2.24483,57.10556 0,47.69424 25.18026,70.86286 60.07334,70.86286 34.89308,0 60.07334,-23.16862 60.07334,-70.86286 0,-37.80858 -2.24483,-57.10556 -2.24483,-57.10556 0,0 -19.27374,-9.35447 -57.82851,-9.35447 z"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="HeadM/F"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <ellipse
+       style="mix-blend-mode:luminosity;fill:#ff0000;fill-opacity:1;stroke:#0000ff;stroke-width:11.2822;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path584"
+       cx="169.33333"
+       cy="173.10056"
+       rx="56.642265"
+       ry="73.114761"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Back.png"
+       inkscape:export-xdpi="9.6000004"
+       inkscape:export-ydpi="9.6000004" />
+  </g>
+</svg>

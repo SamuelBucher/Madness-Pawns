@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1280"
+   height="1280"
+   viewBox="0 0 338.66666 338.66668"
+   version="1.1"
+   id="svg5"
+   shape-rendering="crispEdges"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="WarMask_south.svg"
+   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\WarMask\WarMask_south.png"
+   inkscape:export-xdpi="19.200001"
+   inkscape:export-ydpi="19.200001"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     showguides="true"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="636.3961"
+     inkscape:cy="689.42911"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:guide-bbox="true"
+     inkscape:snap-object-midpoints="false"
+     inkscape:snap-global="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid23"
+       visible="true"
+       enabled="true"
+       dotted="false" />
+    <sodipodi:guide
+       position="169.33333,165.56612"
+       orientation="1,0"
+       id="guide96" />
+    <sodipodi:guide
+       position="169.33333,165.56612"
+       orientation="0,-1"
+       id="guide98" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,150.33239"
+       end_point="169.33333,162.49317"
+       center_point="169.33333,156.41278"
+       id="path-effect2848"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="639.99997,736.26616"
+       end_point="639.99997,856.82084"
+       center_point="639.99997,796.5435"
+       id="path-effect2446"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,108.88561"
+       end_point="169.33333,123.66561"
+       center_point="169.33333,116.27561"
+       id="path-effect1104"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,53.41381"
+       end_point="169.33333,239.16116"
+       center_point="169.33333,146.28749"
+       id="path-effect936"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,162.26983"
+       end_point="169.33333,183.93127"
+       center_point="169.33333,173.10055"
+       id="path-effect2786"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="164.56532,168.80302"
+       end_point="164.56532,177.53426"
+       center_point="164.56532,173.16864"
+       id="path-effect1193"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="HeadM"
+     style="display:none;opacity:1">
+    <ellipse
+       style="display:inline;mix-blend-mode:normal;fill:#ff0000;fill-opacity:1;stroke:#0000ff;stroke-width:11.2822;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path584"
+       cx="169.33333"
+       cy="173.09944"
+       rx="56.642174"
+       ry="73.114799"
+       inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
+       inkscape:export-xdpi="9.6000004"
+       inkscape:export-ydpi="9.6000004" />
+    <path
+       style="display:inline;mix-blend-mode:normal;fill:none;stroke:#00ff00;stroke-width:4.56407;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 169.33333,135.44891 c 0,75.30323 0,75.30323 0,75.30323"
+       id="path1875" />
+    <path
+       style="display:inline;mix-blend-mode:normal;fill:none;stroke:#00ff00;stroke-width:4.56407;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 140.93325,173.10053 c 27.79153,0 27.79153,0 56.80016,0"
+       id="path2880"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
+       inkscape:export-xdpi="9.6000004"
+       inkscape:export-ydpi="9.6000004" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="HeadF"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <ellipse
+       style="display:inline;mix-blend-mode:normal;fill:#ff0000;fill-opacity:1;stroke:#0000ff;stroke-width:11.2822;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path584-9"
+       cx="169.33333"
+       cy="173.10056"
+       rx="56.642292"
+       ry="73.114799"
+       inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
+       inkscape:export-xdpi="9.6000004"
+       inkscape:export-ydpi="9.6000004" />
+    <path
+       style="display:inline;mix-blend-mode:normal;fill:#00ff00;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 136.82639,167.77323 -3.83646,-2.38124 c 0,0 6.14022,25.52562 34.13125,14.05775 -3.82152,-14.26212 -11.70044,-19.98448 -20.40668,-19.98448 -7.20585,0 -9.88811,6.62076 -9.88811,8.30797 z m 65.01388,0 3.83646,-2.38124 c 0,0 -6.14022,25.52562 -34.13125,14.05775 3.82152,-14.26212 11.70044,-19.98448 20.40668,-19.98448 7.20585,0 9.88811,6.62076 9.88811,8.30797 z"
+       id="path2267"
+       sodipodi:nodetypes="cccsc"
+       inkscape:path-effect="#path-effect2786"
+       inkscape:original-d="m 136.82639,167.77323 -3.83646,-2.38124 c 0,0 6.14022,25.52562 34.13125,14.05775 -3.82152,-14.26212 -11.70044,-19.98448 -20.40668,-19.98448 -7.20585,0 -9.88811,6.62076 -9.88811,8.30797 z"
+       transform="matrix(1.15,0,0,1.15,-25.400059,-24.245072)" />
+    <path
+       style="display:inline;mix-blend-mode:normal;fill:#ff00ff;stroke:#808080;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path1191"
+       inkscape:path-effect="#path-effect1193"
+       sodipodi:type="arc"
+       sodipodi:cx="150.74635"
+       sodipodi:cy="174.6219"
+       sodipodi:rx="2.778125"
+       sodipodi:ry="5.6885414"
+       transform="matrix(1.15,0,0,1.15,-19.916851,-24.861259)"
+       d="m 153.52448,174.6219 c 0,3.1417 -1.24381,5.68854 -2.77813,5.68854 -1.53431,0 -2.77812,-2.54684 -2.77812,-5.68854 0,-3.14169 1.24381,-5.68854 2.77812,-5.68854 1.53432,0 2.77813,2.54685 2.77813,5.68854 z m 22.08168,0 c 0,3.1417 1.24381,5.68854 2.77813,5.68854 1.53431,0 2.77812,-2.54684 2.77812,-5.68854 0,-3.14169 -1.24381,-5.68854 -2.77812,-5.68854 -1.53432,0 -2.77813,2.54685 -2.77813,5.68854 z" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="New">
+    <path
+       style="fill:#999999;stroke:#000000;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 169.33333,111.92798 -49.97076,-7.06479 -9.72861,6.92229 -4.11595,73.71052 9.35444,47.93426 54.46088,14.96709 m 0,-136.46937 49.97076,-7.06479 9.72861,6.92229 4.11595,73.71052 -9.35444,47.93426 -54.46088,14.96709"
+       id="path901"
+       inkscape:path-effect="#path-effect936"
+       inkscape:original-d="m 169.33333,111.92798 -49.97076,-7.06479 -9.72861,6.92229 -4.11595,73.71052 9.35444,47.93426 54.46088,14.96709"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\WarMask\WarMask.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 109.63396,111.78548 59.69937,8.3744 m 59.69937,-8.3744 -59.69937,8.3744"
+       id="path971"
+       inkscape:path-effect="#path-effect1104"
+       inkscape:original-d="m 109.63396,111.78548 59.69937,8.3744"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\WarMask\WarMask.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="opacity:0.2;fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 169.33333,120.15988 -59.69937,-8.3744 -4.11595,73.71052 9.35444,47.93426 54.46088,14.96709 z"
+       id="path1766"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\WarMask\WarMask.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       id="path2020"
+       style="opacity:1;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:round"
+       d="m 151.27267,160.98154 c 0,2.89314 -3.42662,5.94007 -7.24969,5.94007 -6.4689,0 -12.23356,-6.30493 -12.23356,-9.19807 0,-3.04285 1.80721,-5.75362 8.44502,-5.02067 5.50686,0.60806 11.03823,3.88883 11.03823,8.27867 z m 36.12132,0 c 0,2.89314 3.42662,5.94007 7.24969,5.94007 6.4689,0 12.23356,-6.30493 12.23356,-9.19807 0,-3.04285 -1.80721,-5.75362 -8.44502,-5.02067 -5.50686,0.60806 -11.03823,3.88883 -11.03823,8.27867 z"
+       sodipodi:nodetypes="sssss"
+       inkscape:path-effect="#path-effect2848"
+       inkscape:original-d="m 151.27267,160.98154 c 0,2.89314 -3.42662,5.94007 -7.24969,5.94007 -6.4689,0 -12.23356,-6.30493 -12.23356,-9.19807 0,-3.04285 1.80721,-5.75362 8.44502,-5.02067 5.50686,0.60806 11.03823,3.88883 11.03823,8.27867 z"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\WarMask\WarMask.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       id="path2160"
+       style="opacity:1;fill:#000000;stroke:none;stroke-width:25.2378;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 583.79297,733.49219 c -6.65199,5.6e-4 -12.04436,5.39293 -12.04492,12.04492 -5.1e-4,6.65275 5.39217,12.04631 12.04492,12.04687 6.65352,5.1e-4 12.04738,-5.39335 12.04687,-12.04687 -5.6e-4,-6.65275 -5.39412,-12.04543 -12.04687,-12.04492 z m 7.60351,48.23047 c -6.65275,5.6e-4 -12.04543,5.39412 -12.04492,12.04687 5.6e-4,6.65199 5.39293,12.04436 12.04492,12.04492 6.65276,5.2e-4 12.04632,-5.39216 12.04688,-12.04492 5.1e-4,-6.65352 -5.39336,-12.04739 -12.04688,-12.04687 z M 599,829.95312 c -6.65352,-5.2e-4 -12.0474,5.39336 -12.04688,12.04688 -5.2e-4,6.65352 5.39336,12.0474 12.04688,12.04688 6.65352,5.2e-4 12.0474,-5.39336 12.04688,-12.04688 5.2e-4,-6.65352 -5.39336,-12.0474 -12.04688,-12.04688 z m 97.20697,-96.46093 c 6.65199,5.6e-4 12.04436,5.39293 12.04492,12.04492 5.1e-4,6.65275 -5.39217,12.04631 -12.04492,12.04687 -6.65352,5.1e-4 -12.04738,-5.39335 -12.04687,-12.04687 5.6e-4,-6.65275 5.39412,-12.04543 12.04687,-12.04492 z m -7.60351,48.23047 c 6.65275,5.6e-4 12.04543,5.39412 12.04492,12.04687 -5.6e-4,6.65199 -5.39293,12.04436 -12.04492,12.04492 -6.65276,5.2e-4 -12.04632,-5.39216 -12.04688,-12.04492 -5.1e-4,-6.65352 5.39336,-12.04739 12.04688,-12.04687 z m -7.60352,48.23046 c 6.65352,-5.2e-4 12.0474,5.39336 12.04688,12.04688 5.2e-4,6.65352 -5.39336,12.0474 -12.04688,12.04688 -6.65352,5.2e-4 -12.0474,-5.39336 -12.04688,-12.04688 -5.2e-4,-6.65352 5.39336,-12.0474 12.04688,-12.04688 z"
+       transform="scale(0.26458334)"
+       inkscape:path-effect="#path-effect2446"
+       inkscape:original-d="m 583.79297,733.49219 c -6.65199,5.6e-4 -12.04436,5.39293 -12.04492,12.04492 -5.1e-4,6.65275 5.39217,12.04631 12.04492,12.04687 6.65352,5.1e-4 12.04738,-5.39335 12.04687,-12.04687 -5.6e-4,-6.65275 -5.39412,-12.04543 -12.04687,-12.04492 z m 7.60351,48.23047 c -6.65275,5.6e-4 -12.04543,5.39412 -12.04492,12.04687 5.6e-4,6.65199 5.39293,12.04436 12.04492,12.04492 6.65276,5.2e-4 12.04632,-5.39216 12.04688,-12.04492 5.1e-4,-6.65352 -5.39336,-12.04739 -12.04688,-12.04687 z M 599,829.95312 c -6.65352,-5.2e-4 -12.0474,5.39336 -12.04688,12.04688 -5.2e-4,6.65352 5.39336,12.0474 12.04688,12.04688 6.65352,5.2e-4 12.0474,-5.39336 12.04688,-12.04688 5.2e-4,-6.65352 -5.39336,-12.0474 -12.04688,-12.04688 z"
+       sodipodi:nodetypes="ssssssssssccccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\WarMask\WarMask.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+  </g>
+</svg>

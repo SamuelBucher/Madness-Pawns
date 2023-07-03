@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1280"
+   height="1280"
+   viewBox="0 0 338.66666 338.66668"
+   version="1.1"
+   id="svg5"
+   shape-rendering="crispEdges"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="WarMaskAnimalist_south.svg"
+   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist_south.png"
+   inkscape:export-xdpi="19.200001"
+   inkscape:export-ydpi="19.200001"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     showguides="true"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="552.9575"
+     inkscape:cy="706.75323"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2"
+     inkscape:guide-bbox="true"
+     inkscape:snap-object-midpoints="false"
+     inkscape:snap-global="false"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-page="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid23"
+       visible="true"
+       enabled="true"
+       dotted="false" />
+    <sodipodi:guide
+       position="169.33333,165.56612"
+       orientation="1,0"
+       id="guide96" />
+    <sodipodi:guide
+       position="169.33333,165.56612"
+       orientation="0,-1"
+       id="guide98" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,-39.662794"
+       end_point="169.33333,97.660286"
+       center_point="169.33333,28.998746"
+       id="path-effect4746"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,150.33239"
+       end_point="169.33333,162.49317"
+       center_point="169.33333,156.41278"
+       id="path-effect2848"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="639.99997,736.26616"
+       end_point="639.99997,856.82084"
+       center_point="639.99997,796.5435"
+       id="path-effect2446"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,108.88561"
+       end_point="169.33333,123.66561"
+       center_point="169.33333,116.27561"
+       id="path-effect1104"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,53.41381"
+       end_point="169.33333,239.16116"
+       center_point="169.33333,146.28749"
+       id="path-effect936"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="169.33333,162.26983"
+       end_point="169.33333,183.93127"
+       center_point="169.33333,173.10055"
+       id="path-effect2786"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="164.56532,168.80302"
+       end_point="164.56532,177.53426"
+       center_point="164.56532,173.16864"
+       id="path-effect1193"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter14583"
+       x="-0.0953238"
+       y="-0.10176787"
+       width="1.1875071"
+       height="1.2113824">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.1024618"
+         id="feGaussianBlur14585" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter16070"
+       x="-0.2443639"
+       y="-0.27990798"
+       width="1.4887278"
+       height="1.559816">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.8485921"
+         id="feGaussianBlur16072" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter20061"
+       x="-0.074510124"
+       y="-0.079737414"
+       width="1.1490203"
+       height="1.1594748">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="4.4162767"
+         id="feGaussianBlur20063" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter20452"
+       x="-0.37447854"
+       y="-0.38739162"
+       width="1.7489571"
+       height="1.7747832">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.43787916"
+         id="feGaussianBlur20454" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter22959"
+       x="-0.032595648"
+       y="-0.061966593"
+       width="1.0651913"
+       height="1.1239332">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="4.8282306"
+         id="feGaussianBlur22961" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter24541"
+       x="-0.043832212"
+       y="-0.21450456"
+       width="1.0876644"
+       height="1.4290091">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.152634"
+         id="feGaussianBlur24543" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter26323"
+       x="-0.28033188"
+       y="-0.16565069"
+       width="1.5606637"
+       height="1.3313014">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.4090502"
+         id="feGaussianBlur26325" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter28933"
+       x="-0.20823831"
+       y="-0.23059948"
+       width="1.4164766"
+       height="1.461199">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.6784332"
+         id="feGaussianBlur28935" />
+    </filter>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="HeadM"
+     style="display:none;opacity:1">
+    <ellipse
+       style="display:inline;mix-blend-mode:normal;fill:#ff0000;fill-opacity:1;stroke:#0000ff;stroke-width:11.2822;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path584"
+       cx="169.33333"
+       cy="173.09944"
+       rx="56.642174"
+       ry="73.114799"
+       inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
+       inkscape:export-xdpi="9.6000004"
+       inkscape:export-ydpi="9.6000004" />
+    <path
+       style="display:inline;mix-blend-mode:normal;fill:none;stroke:#00ff00;stroke-width:4.56407;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 169.33333,135.44891 c 0,75.30323 0,75.30323 0,75.30323"
+       id="path1875" />
+    <path
+       style="display:inline;mix-blend-mode:normal;fill:none;stroke:#00ff00;stroke-width:4.56407;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 140.93325,173.10053 c 27.79153,0 27.79153,0 56.80016,0"
+       id="path2880"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
+       inkscape:export-xdpi="9.6000004"
+       inkscape:export-ydpi="9.6000004" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="HeadF"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <ellipse
+       style="display:inline;mix-blend-mode:normal;fill:#ff0000;fill-opacity:1;stroke:#0000ff;stroke-width:11.2822;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path584-9"
+       cx="169.33333"
+       cy="173.10056"
+       rx="56.642292"
+       ry="73.114799"
+       inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
+       inkscape:export-xdpi="9.6000004"
+       inkscape:export-ydpi="9.6000004" />
+    <path
+       style="display:inline;mix-blend-mode:normal;fill:#00ff00;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 136.82639,167.77323 -3.83646,-2.38124 c 0,0 6.14022,25.52562 34.13125,14.05775 -3.82152,-14.26212 -11.70044,-19.98448 -20.40668,-19.98448 -7.20585,0 -9.88811,6.62076 -9.88811,8.30797 z m 65.01388,0 3.83646,-2.38124 c 0,0 -6.14022,25.52562 -34.13125,14.05775 3.82152,-14.26212 11.70044,-19.98448 20.40668,-19.98448 7.20585,0 9.88811,6.62076 9.88811,8.30797 z"
+       id="path2267"
+       sodipodi:nodetypes="cccsc"
+       inkscape:path-effect="#path-effect2786"
+       inkscape:original-d="m 136.82639,167.77323 -3.83646,-2.38124 c 0,0 6.14022,25.52562 34.13125,14.05775 -3.82152,-14.26212 -11.70044,-19.98448 -20.40668,-19.98448 -7.20585,0 -9.88811,6.62076 -9.88811,8.30797 z"
+       transform="matrix(1.15,0,0,1.15,-25.400059,-24.245072)" />
+    <path
+       style="display:inline;mix-blend-mode:normal;fill:#ff00ff;stroke:#808080;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path1191"
+       inkscape:path-effect="#path-effect1193"
+       sodipodi:type="arc"
+       sodipodi:cx="150.74635"
+       sodipodi:cy="174.6219"
+       sodipodi:rx="2.778125"
+       sodipodi:ry="5.6885414"
+       transform="matrix(1.15,0,0,1.15,-19.916851,-24.861259)"
+       d="m 153.52448,174.6219 c 0,3.1417 -1.24381,5.68854 -2.77813,5.68854 -1.53431,0 -2.77812,-2.54684 -2.77812,-5.68854 0,-3.14169 1.24381,-5.68854 2.77812,-5.68854 1.53432,0 2.77813,2.54685 2.77813,5.68854 z m 22.08168,0 c 0,3.1417 1.24381,5.68854 2.77813,5.68854 1.53431,0 2.77812,-2.54684 2.77812,-5.68854 0,-3.14169 -1.24381,-5.68854 -2.77812,-5.68854 -1.53432,0 -2.77813,2.54685 -2.77813,5.68854 z" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Original"
+     sodipodi:insensitive="true"
+     style="display:none">
+    <path
+       style="fill:#999999;stroke:#000000;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 169.33333,111.92798 -49.97076,-7.06479 -9.72861,6.92229 -4.11595,73.71052 9.35444,47.93426 54.46088,14.96709 m 0,-136.46937 49.97076,-7.06479 9.72861,6.92229 4.11595,73.71052 -9.35444,47.93426 -54.46088,14.96709"
+       id="path901"
+       inkscape:path-effect="#path-effect936"
+       inkscape:original-d="m 169.33333,111.92798 -49.97076,-7.06479 -9.72861,6.92229 -4.11595,73.71052 9.35444,47.93426 54.46088,14.96709"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\WarMask\WarMask.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001"
+       transform="translate(-169.33333)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 109.63396,111.78548 59.69937,8.3744 m 59.69937,-8.3744 -59.69937,8.3744"
+       id="path971"
+       inkscape:path-effect="#path-effect1104"
+       inkscape:original-d="m 109.63396,111.78548 59.69937,8.3744"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\WarMask\WarMask.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001"
+       transform="translate(-169.33333)" />
+    <path
+       style="opacity:0.2;fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 4.0975002e-6,120.15988 -59.699366,111.78548 l -4.11595,73.71052 9.35444,47.93426 L 4.0975002e-6,248.39735 Z"
+       id="path1766"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\WarMask\WarMask.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       id="path2020"
+       style="opacity:1;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:round"
+       d="m 151.27267,160.98154 c 0,2.89314 -3.42662,5.94007 -7.24969,5.94007 -6.4689,0 -12.23356,-6.30493 -12.23356,-9.19807 0,-3.04285 1.80721,-5.75362 8.44502,-5.02067 5.50686,0.60806 11.03823,3.88883 11.03823,8.27867 z m 36.12132,0 c 0,2.89314 3.42662,5.94007 7.24969,5.94007 6.4689,0 12.23356,-6.30493 12.23356,-9.19807 0,-3.04285 -1.80721,-5.75362 -8.44502,-5.02067 -5.50686,0.60806 -11.03823,3.88883 -11.03823,8.27867 z"
+       sodipodi:nodetypes="sssss"
+       inkscape:path-effect="#path-effect2848"
+       inkscape:original-d="m 151.27267,160.98154 c 0,2.89314 -3.42662,5.94007 -7.24969,5.94007 -6.4689,0 -12.23356,-6.30493 -12.23356,-9.19807 0,-3.04285 1.80721,-5.75362 8.44502,-5.02067 5.50686,0.60806 11.03823,3.88883 11.03823,8.27867 z"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\WarMask\WarMask.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001"
+       transform="translate(-169.33333)" />
+    <path
+       id="path2160"
+       style="opacity:1;fill:#000000;stroke:none;stroke-width:25.2378;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 583.79297,733.49219 c -6.65199,5.6e-4 -12.04436,5.39293 -12.04492,12.04492 -5.1e-4,6.65275 5.39217,12.04631 12.04492,12.04687 6.65352,5.1e-4 12.04738,-5.39335 12.04687,-12.04687 -5.6e-4,-6.65275 -5.39412,-12.04543 -12.04687,-12.04492 z m 7.60351,48.23047 c -6.65275,5.6e-4 -12.04543,5.39412 -12.04492,12.04687 5.6e-4,6.65199 5.39293,12.04436 12.04492,12.04492 6.65276,5.2e-4 12.04632,-5.39216 12.04688,-12.04492 5.1e-4,-6.65352 -5.39336,-12.04739 -12.04688,-12.04687 z M 599,829.95312 c -6.65352,-5.2e-4 -12.0474,5.39336 -12.04688,12.04688 -5.2e-4,6.65352 5.39336,12.0474 12.04688,12.04688 6.65352,5.2e-4 12.0474,-5.39336 12.04688,-12.04688 5.2e-4,-6.65352 -5.39336,-12.0474 -12.04688,-12.04688 z m 97.20697,-96.46093 c 6.65199,5.6e-4 12.04436,5.39293 12.04492,12.04492 5.1e-4,6.65275 -5.39217,12.04631 -12.04492,12.04687 -6.65352,5.1e-4 -12.04738,-5.39335 -12.04687,-12.04687 5.6e-4,-6.65275 5.39412,-12.04543 12.04687,-12.04492 z m -7.60351,48.23047 c 6.65275,5.6e-4 12.04543,5.39412 12.04492,12.04687 -5.6e-4,6.65199 -5.39293,12.04436 -12.04492,12.04492 -6.65276,5.2e-4 -12.04632,-5.39216 -12.04688,-12.04492 -5.1e-4,-6.65352 5.39336,-12.04739 12.04688,-12.04687 z m -7.60352,48.23046 c 6.65352,-5.2e-4 12.0474,5.39336 12.04688,12.04688 5.2e-4,6.65352 -5.39336,12.0474 -12.04688,12.04688 -6.65352,5.2e-4 -12.0474,-5.39336 -12.04688,-12.04688 -5.2e-4,-6.65352 5.39336,-12.0474 12.04688,-12.04688 z"
+       transform="matrix(0.26458334,0,0,0.26458334,-169.33333,0)"
+       inkscape:path-effect="#path-effect2446"
+       inkscape:original-d="m 583.79297,733.49219 c -6.65199,5.6e-4 -12.04436,5.39293 -12.04492,12.04492 -5.1e-4,6.65275 5.39217,12.04631 12.04492,12.04687 6.65352,5.1e-4 12.04738,-5.39335 12.04687,-12.04687 -5.6e-4,-6.65275 -5.39412,-12.04543 -12.04687,-12.04492 z m 7.60351,48.23047 c -6.65275,5.6e-4 -12.04543,5.39412 -12.04492,12.04687 5.6e-4,6.65199 5.39293,12.04436 12.04492,12.04492 6.65276,5.2e-4 12.04632,-5.39216 12.04688,-12.04492 5.1e-4,-6.65352 -5.39336,-12.04739 -12.04688,-12.04687 z M 599,829.95312 c -6.65352,-5.2e-4 -12.0474,5.39336 -12.04688,12.04688 -5.2e-4,6.65352 5.39336,12.0474 12.04688,12.04688 6.65352,5.2e-4 12.0474,-5.39336 12.04688,-12.04688 5.2e-4,-6.65352 -5.39336,-12.0474 -12.04688,-12.04688 z"
+       sodipodi:nodetypes="ssssssssssccccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\WarMask\WarMask.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Animalistic">
+    <path
+       id="path7924"
+       style="fill:#666666;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 820.5,504.5 456.66992,530.02148 466.74023,635.70703 547,755 558.5,879 744.5,865.5 826.81445,765.50586 828,638 Z m -83.72266,55.37891 43.41602,2.17968 -2.26367,33.82813 9.63867,7.96094 -11.22461,15.03125 c -19.3992,-4.67179 -36.99819,-13.71552 -51.73633,-29.70703 z m -172.70703,21.47656 -23.51367,31.75781 -30.02539,-30.81055 c 18.61731,-3.14245 36.5909,-6.03311 53.53906,-0.94726 z M 783,769 774.00977,780.43555 748.68359,815.80469 729.5625,832.65625 720.5,848.5 l -127.5,2 -11.74264,-23.06066 10.09619,-15.56066 102.63473,-9.12673 z"
+       transform="scale(0.26458334)"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       id="path4645"
+       style="fill:#b3b3b3;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 640,422.84961 c -145.71881,0 -218.56445,35.35547 -218.56445,35.35547 0,0 -8.48438,72.93346 -8.48438,215.83203 0,180.26169 95.16947,267.83008 227.04883,267.83008 131.87936,0 227.04883,-87.56839 227.04883,-267.83008 0,-142.89857 -8.48438,-215.83203 -8.48438,-215.83203 0,0 -72.84564,-35.35547 -218.56445,-35.35547 z M 564.07107,581.35534 540.55635,613.1127 482.3934,589.52691 c 28.35748,-11.77658 55.18765,-11.33471 81.67767,-8.17157 z m 172.7071,-21.47666 c 18.15006,-1.5917 36.90884,-2.40076 59.66519,1.92991 l -8.875,42.03907 -11.22521,15.03102 c -17.24552,-4.57832 -34.49103,-12.0283 -51.73655,-29.70711 z M 783,769 810.67213,769.30256 770.49999,814 749.22092,842.15978 720.5,848.5 l -135.98528,2 -22.96447,-24.86396 22.15686,-24.25736 110.28123,1.37308 L 708.5,806.5 l 24.36254,-16.27309 14.4786,-2.78312 z"
+       transform="scale(0.26458334)"
+       sodipodi:nodetypes="scssscsccccccccccccccccccccccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       id="path22690"
+       style="opacity:0.35040431;fill:#000000;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter22959)"
+       d="M 791 724.5 L 766 754 L 738 767.5 L 717 749 L 705.5 778.5 L 591 787 L 558 782 L 565 799.5 L 556.5 810 L 483 808 L 493 819.5 L 548 844.5 L 598.5 876 L 615.5 911.5 L 636.5 876 L 748 867.5 L 776 835.5 L 800 837.5 L 798.5 811.5 L 838.5 771 L 827 748.5 L 788 753 L 791 724.5 z M 780.5 770 L 806.5 771 L 752 838.5 L 723 849.5 L 583.5 852.5 L 559 825.5 L 583 799.5 L 705.5 805.5 L 780.5 770 z "
+       transform="scale(0.26458334)"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="opacity:0.43126685;fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter28933)"
+       d="m 184.84361,152.66436 -0.93544,27.87621 30.86963,-5.05139 -7.56788,-9.24288 -17.87618,-7.22093 z"
+       id="path28865"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       id="path19601"
+       style="opacity:0.45283019;fill:#000000;stroke:#ff0000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter20061)"
+       d="M 717.00736,534.32538 707,593.75 750.5,651 l 20,-17.75 45,34 -21,-41.5 17.46447,-19.67157 35.38172,8.71446 -30.3033,-23.03553 L 849.25,573 820.3566,549.12132 740.22487,548.48223 Z M 738,559.5 l 58,1.25 -6.5,42 -11.75,14.75 c -19.06156,-4.7562 -37.16315,-12.23221 -52.25,-28.25 z"
+       transform="matrix(0.26458334,0,0,0.26458334,-0.09354471,0)"
+       sodipodi:nodetypes="ccccccccccccccccccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       id="path4645-2"
+       style="fill:none;stroke:#000000;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 169.33334,111.87896 c -38.55477,0 -57.82851,9.35447 -57.82851,9.35447 0,0 -2.24483,19.29698 -2.24483,57.10556 0,47.69424 25.18026,70.86286 60.07334,70.86286 34.89308,0 60.07334,-23.16862 60.07334,-70.86286 0,-37.80858 -2.24483,-57.10556 -2.24483,-57.10556 0,0 -19.27374,-9.35447 -57.82851,-9.35447 z"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.32291668;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 148.57684,218.44954 -12.84559,-1.22662"
+       id="path13144"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.32291668;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 161.52813,225.29271 0.52917,4.63021 1.85208,1.5875 -0.79375,5.55625"
+       id="path13146"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.32291668;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 154.43918,211.30385 -2.97462,-2.18006"
+       id="path13148"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.32291668;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 193.90322,209.08088 -2.55978,-3.77957 -1.10802,-4.21797"
+       id="path13150"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.32291668;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 207.16876,203.46459 -1.43252,-3.8885 2.49085,-4.71046"
+       id="path13152"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.32292;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 215.00483,203.96559 3.87174,-4.46975 1.5875,-6.21771"
+       id="path13154"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.79375001;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 198.08921,215.84833 5.77225,-0.47749"
+       id="path13156"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.32291668;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 194.93901,148.13463 -4.06208,-4.44983"
+       id="path13160"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.32291668;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 205.40747,163.74499 4.31747,5.74333"
+       id="path13162"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="fill:#000000;stroke:none;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 196.71771,160.4698 1.04894,7.0408 1.76342,-5.6789 z"
+       id="path13164"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.32291668;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 210.72565,148.6452 5.60998,-1.81084"
+       id="path13166"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.32291668;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 208.37747,159.76803 4.8861,-0.79219"
+       id="path13168"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.32292;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 127.53972,155.32419 -5.18597,2.56787"
+       id="path13170"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="opacity:0.42318059;mix-blend-mode:normal;fill:#000000;stroke:#000000;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter14583)"
+       d="m 127.1323,156.89792 c 2.1654,-0.33939 8.98944,2.54643 15.61041,5.29167 l 7.27604,-10.05417 7.27604,2.24896 c -0.20564,8.88462 -0.42539,17.76118 -3.04271,25.2677 0,0 -3.96875,-9.525 -3.30729,-21.03437 l -10.71561,11.37709 c -4.15164,-3.1887 -8.26096,-6.14465 -13.09688,-13.09688 z"
+       id="path14548"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="opacity:0.46361186;fill:#000000;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter16070)"
+       d="m 134.14375,153.59063 c 0.39052,-2.42535 1.29242,-4.85069 3.43959,-7.27604 3.5929,2.04789 4.00106,4.49387 4.89479,6.87916 z"
+       id="path16035"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <ellipse
+       style="opacity:0.60107817;fill:#000000;stroke:#ff0000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter20452)"
+       id="path20450"
+       cx="217.58412"
+       cy="179.09064"
+       rx="1.4031651"
+       ry="1.3563929"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="opacity:0.28571429;mix-blend-mode:normal;fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter24541)"
+       d="m 110.56941,135.95088 0.74835,-14.71742 c 9.56581,-11.97015 88.53481,-12.73643 115.43371,-0.74835 l 1.6838,13.03361 c -36.46643,-11.38399 -74.47243,-15.56684 -117.86586,2.43216 z"
+       id="path24406"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="opacity:0.2722372;fill:#000000;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter26323)"
+       d="m 139.00688,169.87652 15.34127,13.28329 13.84457,-8.60608 -0.56127,-40.78533 -17.58633,0.93545 2.99341,19.27013 z"
+       id="path26288"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\ApparelStyles\WarMaskAnimalist\WarMaskAnimalist.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+  </g>
+</svg>
