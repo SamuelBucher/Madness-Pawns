@@ -25,4 +25,43 @@
 			</operations>
 		</match>
 	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.biotech">
+					<xpath>Defs/ThingDef[defName="Apparel_AirwireHeadset"]/apparel/hatRenderedFrontOfFace</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.biotech">
+					<xpath>Defs/ThingDef[defName="Apparel_ArrayHeadset"]/apparel/hatRenderedFrontOfFace</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.biotech">
+					<xpath>Defs/ThingDef[defName="Apparel_IntegratorHeadset"]/apparel/hatRenderedFrontOfFace</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
 </Patch>
