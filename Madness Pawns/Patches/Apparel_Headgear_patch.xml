@@ -31,6 +31,9 @@
 				<li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.biotech">
 					<xpath>Defs/ThingDef[defName="Apparel_IntegratorHeadset"]/apparel/hatRenderedFrontOfFace</xpath>
 				</li>
+				<li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.biotech">
+					<xpath>Defs/ThingDef[defName="Apparel_ClothMask"]/apparel/hatRenderedFrontOfFace</xpath>
+				</li>
 			</operations>
 		</match>
 	</Operation>
