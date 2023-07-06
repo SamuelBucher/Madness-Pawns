@@ -13,10 +13,10 @@
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
 		</li>
     </modDependencies>
-	<loadBefore>
-		<li>mlie.showmeyourhands</li>
-	</loadBefore>
+	<!--<loadBefore>
+	</loadBefore>-->
 	<loadAfter>
+		<li>mlie.showmeyourhands</li>
 		<li>brrainz.harmony</li>
 	</loadAfter>
     <incompatibleWith>

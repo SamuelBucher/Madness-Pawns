@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1280"
+   height="1280"
+   viewBox="0 0 338.66666 338.66668"
+   version="1.1"
+   id="svg5"
+   shape-rendering="crispEdges"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="ArrayHeadset_east.svg"
+   inkscape:export-filename="D:\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\Gunlink\Gunlink_east.png"
+   inkscape:export-xdpi="19.200001"
+   inkscape:export-ydpi="19.200001"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     showguides="true"
+     inkscape:zoom="1.5132085"
+     inkscape:cx="679.68162"
+     inkscape:cy="675.05568"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:guide-bbox="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-global="true"
+     inkscape:snap-intersection-paths="false"
+     inkscape:snap-smooth-nodes="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid23"
+       visible="true"
+       enabled="true"
+       dotted="false" />
+    <sodipodi:guide
+       position="169.33333,169.35973"
+       orientation="1,0"
+       id="guide96" />
+    <sodipodi:guide
+       position="169.33333,169.35973"
+       orientation="0,-1"
+       id="guide116813" />
+    <sodipodi:guide
+       position="206.70481,169.35974"
+       orientation="1,0"
+       id="guide834" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="HeadM"
+     style="display:inline;mix-blend-mode:normal"
+     sodipodi:insensitive="true">
+    <ellipse
+       style="opacity:1;mix-blend-mode:luminosity;fill:#ff0000;fill-opacity:1;stroke:#0000ff;stroke-width:11.2928;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path584"
+       cx="169.33333"
+       cy="169.30695"
+       rx="56.751221"
+       ry="73.109589"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Back.png"
+       inkscape:export-xdpi="9.6000004"
+       inkscape:export-ydpi="9.6000004" />
+    <path
+       style="display:inline;opacity:1;fill:none;stroke:#00ff00;stroke-width:4.56838;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 199.84553,132.08267 c 9.24723,24.64811 9.04383,49.75743 0,75.29775"
+       id="path1875"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Back.png"
+       inkscape:export-xdpi="9.6000004"
+       inkscape:export-ydpi="9.6000004" />
+    <path
+       style="display:inline;opacity:1;fill:none;stroke:#00ff00;stroke-width:4.16554;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 179.61774,169.27628 c 15.75682,0 31.06152,0 47.31523,0"
+       id="path2880"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Back.png"
+       inkscape:export-xdpi="9.6000004"
+       inkscape:export-ydpi="9.6000004" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="HeadF"
+     style="display:none">
+    <ellipse
+       style="display:inline;mix-blend-mode:luminosity;fill:#ff0000;fill-opacity:1;stroke:#0000ff;stroke-width:11.2822;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path584-9"
+       cx="169.33333"
+       cy="169.30695"
+       rx="56.642292"
+       ry="73.114799"
+       inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Back.png"
+       inkscape:export-xdpi="9.6000004"
+       inkscape:export-ydpi="9.6000004" />
+    <path
+       id="path2267"
+       style="display:inline;fill:#00ff00;stroke:none;stroke-width:0.30427px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 179.69628,156.08184 c -8.28673,0 -11.37152,7.61393 -11.37152,9.55423 l -4.41193,-2.73843 c 0,0 7.06125,29.35481 39.25095,16.16676 -4.39475,-16.40145 -13.45531,-22.98256 -23.4675,-22.98256 z"
+       sodipodi:nodetypes="scccs" />
+    <ellipse
+       style="display:inline;fill:#ff00ff;stroke:#808080;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path1191"
+       cx="194.79512"
+       cy="173.42856"
+       rx="3.1948452"
+       ry="6.5418253" />
+    <path
+       d="m 226.17775,156.08184 c -7.11081,0 -13.54577,6.58111 -16.66697,22.98256 22.86162,13.18805 27.87662,-16.16678 27.87662,-16.16678 l -3.13341,2.73845 c 0,-1.9403 -2.19087,-9.55423 -8.07624,-9.55423 z"
+       style="display:inline;fill:#00ff00;stroke:none;stroke-width:0.256421px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path2436" />
+    <ellipse
+       style="display:inline;fill:#ff00ff;stroke:#808080;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path1191-9"
+       cx="219.59142"
+       cy="173.42856"
+       rx="3.1948452"
+       ry="6.5418253" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="New" />
+</svg>
