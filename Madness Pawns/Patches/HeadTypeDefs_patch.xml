@@ -26,7 +26,7 @@
 					<eyeOffsetEastWest>(0.04, 0, 0.25)</eyeOffsetEastWest>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd">
+			<li Class="PatchOperationAdd" MayRequire="ludeon.rimworld.biotech">
 				<xpath>Defs/HeadTypeDef[@Name="HeavyJawBase"]</xpath>
 				<value>
 					<eyeOffsetEastWest>(0.04, 0, 0.25)</eyeOffsetEastWest>

@@ -97,17 +97,6 @@ namespace Madness_Pawns
             }
         }*/
 
-        /*[HarmonyPatch(typeof(PawnGraphicSet))]
-        [HarmonyPatch("HairMeshSet", MethodType.Getter)]
-        public static class HairMeshSetPatch
-        {
-            [HarmonyPostfix]
-            public static GraphicMeshSet HairMeshSetPostfix()
-            {
-                return MeshPool.GetMeshSetForWidth(MeshPool.HumanlikeHeadNarrowWidth);
-            }
-        }*/
-
         [HarmonyPatch(typeof(HumanlikeMeshPoolUtility), "GetHumanlikeHairSetForPawn")]
         public static class GetHumanlikeHairSetForPawnPatch
         {
@@ -142,37 +131,12 @@ namespace Madness_Pawns
             }
         }
 
-        /*[HarmonyPatch(typeof(HumanlikeMeshPoolUtility), "GetHumanlikeBodySetForPawn")]
-        public static class GetHumanlikeBodySetForPawnPatch
-        {
-            [HarmonyPrefix]
-            public static bool GetHumanlikeBodySetForPawnPrefix(ref GraphicMeshSet __result, Pawn pawn)
-            {
-                if (ModsConfig.BiotechActive && pawn.ageTracker.CurLifeStage.bodyWidth != null)
-                {
-                    BodyTypeDef bodyType = Misc.getPawnBodyType(pawn);
-
-                    if (bodyType == BodyTypeDefOf.Child || bodyType == BodyTypeDefOf.Thin)
-                        __result = MeshPool.GetMeshSetForWidth(pawn.ageTracker.CurLifeStage.bodyWidth.Value);
-                    else
-                        __result = MeshPool.GetMeshSetForWidth(1.5f);
-
-                    return false;
-                }
-                __result = MeshPool.humanlikeBodySet;
-
-                return false;
-            }
-        }*/
-
         [HarmonyPatch(typeof(PawnRenderer), "OffsetBeardLocationForHead")]
         class OffsetBeardLocationForHeadPatch
         {
             [HarmonyPrefix]
             public static bool OffsetBeardLocationForHeadPrefix(ref PawnRenderer __instance, ref Vector3 __result, HeadTypeDef head, Rot4 headFacing, Vector3 beardLoc)
             {
-                //var pawn = typeof(PawnRenderer).GetField("pawn");
-                //var pawn = PawnRenderer.GetType().GetField("MethodName");
                 Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
 
                 if (headFacing == Rot4.East)
@@ -433,7 +397,7 @@ namespace Madness_Pawns
             {
                 for (int i = 0; i < __instance.bodyTypeGraphicPaths.Count; i++)
                 {
-                    if (/*__instance.bodyTypeGraphicPaths[i].bodyType == pawn.story.bodyType*/ __instance.bodyTypeGraphicPaths[i].bodyType == Misc.getPawnBodyType(pawn))
+                    if (__instance.bodyTypeGraphicPaths[i].bodyType == Misc.getPawnBodyType(pawn))
                     {
                         __result =  __instance.bodyTypeGraphicPaths[i].texturePath; ;
                         return false;
