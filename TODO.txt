@@ -1,4 +1,4 @@
-
+Missing (and presumably freshly lost) eye sprite is still drawn. Maybe I can ignore it.
 
 Testing:
 

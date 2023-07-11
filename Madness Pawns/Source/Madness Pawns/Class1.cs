@@ -219,7 +219,6 @@ namespace Madness_Pawns
             }
         }
 
-        //Unknown
         [HarmonyPatch(typeof(PawnRenderer), "HeadGeneDrawLocation")]
         class HeadGeneDrawLocationPatch
         {
@@ -393,7 +392,7 @@ namespace Madness_Pawns
         class GetFurBodyGraphicPathPatch
         {
             [HarmonyPrefix]
-            public static bool GetFurBodyGraphicPathPrefix(ref FurDef __instance, ref string __result, Pawn pawn)
+            public static bool GetFurBodyGraphicPathPrefix(ref FurDef __instance, ref string __result, ref Pawn pawn)
             {
                 for (int i = 0; i < __instance.bodyTypeGraphicPaths.Count; i++)
                 {
@@ -407,6 +406,140 @@ namespace Madness_Pawns
                 return false;
             }
         }
+
+        //[HarmonyPatch(typeof(PawnRenderer), "DrawExtraEyeGraphic")]
+        [HarmonyPatch]
+        class DrawExtraEyeGraphicPatch
+        {
+            public static MethodBase TargetMethod()
+            {
+                var type = AccessTools.FirstInner(typeof(PawnRenderer), t => t.Name.Contains("c__DisplayClass54_0"));
+                return AccessTools.FirstMethod(type, method => method.Name.Contains("g__DrawExtraEyeGraphic"));
+            }
+
+            [HarmonyPrefix]
+            public static bool DrawExtraEyeGraphicPrefix(ref object __instance, ref Graphic graphic, ref float scale, ref float yOffset, ref bool drawLeft, ref bool drawRight)
+            {
+                //From PawnRenderer
+                PawnRenderer parent = Traverse.Create(__instance).Field("<>4__this").GetValue() as PawnRenderer;
+                Pawn pawn = Traverse.Create(parent).Field("pawn").GetValue() as Pawn;
+
+                //From <>c__DisplayClass54_0
+                Vector3? rootLoc = Traverse.Create(__instance).Field("rootLoc").GetValue() as Vector3?;
+                Vector3? headOffset = Traverse.Create(__instance).Field("headOffset").GetValue() as Vector3?;
+                Quaternion? quat = Traverse.Create(__instance).Field("quat").GetValue() as Quaternion?;
+                Rot4? headFacing = Traverse.Create(__instance).Field("headFacing").GetValue() as Rot4?;
+                PawnRenderFlags? flags = Traverse.Create(__instance).Field("flags").GetValue() as PawnRenderFlags?;
+
+                /*PawnRenderer.<> c__DisplayClass54_1 CS$<> 8__locals1 = new PawnRenderer.<> c__DisplayClass54_1();
+                CS$<> 8__locals1.CS$<> 8__locals1 = this;*/
+                //CS$<> 8__locals1.narrowCrown = parent.pawn.story.headType.narrow;
+                bool narrowCrown = pawn.story.headType.narrow;
+
+                Vector3? eyeOffsetEastWest = pawn.story.headType.eyeOffsetEastWest;
+                Vector3 a = (Vector3)(rootLoc + headOffset + new Vector3(0f, 0.026061773f + yOffset, 0f) + quat * new Vector3(0f, 0f, -0.25f));
+                //BodyTypeDef.WoundAnchor woundAnchor = pawn.story.bodyType.woundAnchors.FirstOrDefault(new Predicate<BodyTypeDef.WoundAnchor>(/*CS$<> 8__locals1.< DrawHeadHair > b__7*/));
+                BodyTypeDef.WoundAnchor woundAnchor = pawn.story.bodyType.woundAnchors.FirstOrDefault((BodyTypeDef.WoundAnchor w) => 
+                                                                                                        w.tag == "LeftEye" 
+                                                                                                        && w.rotation == headFacing 
+                                                                                                        && (headFacing == Rot4.South 
+                                                                                                            || w.narrowCrown.GetValueOrDefault() == narrowCrown));
+                //BodyTypeDef.WoundAnchor woundAnchor2 = pawn.story.bodyType.woundAnchors.FirstOrDefault(new Predicate<BodyTypeDef.WoundAnchor>(/*CS$<> 8__locals1.< DrawHeadHair > b__8*/));
+                BodyTypeDef.WoundAnchor woundAnchor2 = pawn.story.bodyType.woundAnchors.FirstOrDefault((BodyTypeDef.WoundAnchor w) => 
+                                                                                                        w.tag == "RightEye" 
+                                                                                                        && w.rotation == headFacing 
+                                                                                                        && (headFacing == Rot4.South 
+                                                                                                            || w.narrowCrown.GetValueOrDefault() == narrowCrown));
+                Material mat = graphic.MatAt((Rot4)headFacing, null);
+                if (headFacing == Rot4.South)
+                {
+                    if (woundAnchor == null || woundAnchor2 == null)
+                    {
+                        return false;
+                    }
+                    if (drawLeft)
+                    {
+                        GenDraw.DrawMeshNowOrLater(MeshPool.GridPlaneFlip(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * woundAnchor.offset), (Quaternion)quat, Vector3.one), mat, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
+                    }
+                    if (drawRight)
+                    {
+                        GenDraw.DrawMeshNowOrLater(MeshPool.GridPlane(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * woundAnchor2.offset), (Quaternion)quat, Vector3.one), mat, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
+                    }
+                }
+                if (headFacing == Rot4.East && drawRight)
+                {
+                    if (woundAnchor2 == null)
+                    {
+                        return false;
+                    }
+                    Vector3 point = eyeOffsetEastWest ?? woundAnchor2.offset;
+                    GenDraw.DrawMeshNowOrLater(MeshPool.GridPlane(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * point), (Quaternion)quat, Vector3.one), mat, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
+                }
+                if (headFacing == Rot4.West && drawLeft)
+                {
+                    if (woundAnchor == null)
+                    {
+                        return false;
+                    }
+                    Vector3 point2 = woundAnchor.offset;
+                    if (eyeOffsetEastWest != null)
+                    {
+                        point2 = eyeOffsetEastWest.Value.ScaledBy(new Vector3(-1f, 1f, 1f));
+                    }
+                    GenDraw.DrawMeshNowOrLater(MeshPool.GridPlaneFlip(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * point2), (Quaternion)quat, Vector3.one), mat, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
+                }
+
+                return false;
+            }
+        }
+
+        /*[HarmonyPatch]
+        class b__7Patch
+        {
+            public static MethodBase TargetMethod()
+            {
+                var type = AccessTools.Inner(typeof(PawnRenderer), "c__DisplayClass54_1");
+                return AccessTools.Method(type, "b__7");
+            }
+
+            [HarmonyPrefix]
+            public static bool b__7Prefix(ref MethodBase __instance, ref bool __result, ref BodyTypeDef.WoundAnchor a)
+            {
+                __result = false;
+                return false;
+                var DisplayClass54_0 = AccessTools.FirstInner(typeof(PawnRenderer), t => t.Name.Contains("c__DisplayClass54_0"));
+                var locals1 = AccessTools.Property(DisplayClass54_0, "CS$<>8__locals1");
+
+                if (a.tag == "LeftEye")
+                {
+                    Rot4? rotation = a.rotation;
+                    var local_headFacing = AccessTools.FirstProperty(locals1, prop => prop.Name.Contains("headFacing"));
+                    Rot4 headFacing = PropertyInfo.GetValue(local_headFacing);
+                    if (rotation != null && (rotation == null || rotation.GetValueOrDefault() == headFacing))
+                    {
+                        return this.CS$<> 8__locals1.headFacing == Rot4.South || a.narrowCrown.GetValueOrDefault() == this.narrowCrown;
+                    }
+                }
+                return false;
+            }
+        }
+
+        [HarmonyPatch]
+        class b__8Patch
+        {
+            public static MethodBase TargetMethod()
+            {
+                var type = AccessTools.FirstInner(typeof(PawnRenderer), t => t.Name.Contains("c__DisplayClass54_1"));
+                return AccessTools.FirstMethod(type, method => method.Name.Contains("b__8"));
+            }
+
+            [HarmonyPrefix]
+            public static bool b__8Prefix(ref bool __result, ref BodyTypeDef.WoundAnchor a)
+            {
+                __result = false;
+                return false;
+            }
+        }*/
     }
 
     public class Misc
