@@ -9,7 +9,7 @@
    id="svg5"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
    sodipodi:docname="TribalA_Male_east.svg"
-   inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\TribalA\TribalA_Male_east.png"
+   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Apparel\TribalA\TribalA_Male_east.png"
    inkscape:export-xdpi="19.200001"
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -35,9 +35,9 @@
      inkscape:bbox-nodes="false"
      inkscape:snap-bbox-midpoints="false"
      inkscape:snap-page="true"
-     inkscape:zoom="1.0449791"
-     inkscape:cx="548.33633"
-     inkscape:cy="775.6136"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="399.51533"
+     inkscape:cy="762.96821"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -185,15 +185,15 @@
        id="path15889-2"
        sodipodi:nodetypes="cc" />
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:1.32292;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:2.64583336;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 147.83658,117.84087 c -11.88459,0.88468 -22.67964,4.72323 -25.36775,30.54056 -3.82894,46.42763 9.57446,105.95428 -18.35534,139.62104 l 19.64761,-6.92446 -6.70464,9.34254 c 20.59605,-5.58771 42.97659,-4.56846 65.92121,-5.79452 18.52891,1.70505 23.13146,-8.19278 22.00853,-21.16655 l -18.08056,-14.23363 17.69587,1.81355 -0.60452,-50.99925 c -52.94823,-0.94142 -53.1634,-49.27363 -56.16041,-82.19928 z"
        id="path1169-6"
        sodipodi:nodetypes="ccccccccccc" />
     <path
        style="fill:#000000;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 148.51882,121.61782 -0.41131,-7.62504 c -10.58115,-0.19077 -28.66417,4.33535 -30.0313,37.19141 -0.61118,33.64355 -1.53047,70.86314 -2.54691,104.4969 -0.54356,12.65075 -9.15177,28.20621 -15.702378,35.2074 8.463438,-0.95877 13.727218,-3.63646 19.125858,-6.17512 l -6.04873,9.47995 c 19.04454,-7.83652 46.69062,-7.95253 70.22296,-6.99606 24.05296,0.26401 26.95129,-12.00889 25.78936,-24.20087 l -11.74289,-9.64998 11.62395,0.88044 -1.05124,-54.83341 -7.91309,-0.0121 0.80766,48.45174 -20.64577,-1.62201 24.00066,19.30097 c -0.31364,10.89666 -3.43703,16.44944 -22.49799,16.44944 -21.93827,0.24772 -48.79798,0.27164 -58.37165,5.09729 l 6.25833,-11.06569 c -4.64139,1.86763 -9.11686,3.79747 -15.35874,5.06491 2.60476,-4.72179 7.47219,-8.50112 9.68768,-25.19786 l 2.12242,-104.40117 c 1.73011,-25.13953 11.53935,-29.17714 22.68312,-29.84115 z"
+       d="m 148.89874,113.99278 c -11.27892,-0.20335 -29.4554,4.33535 -30.82253,37.19141 -0.61118,33.64355 -1.53047,70.86314 -2.54691,104.4969 -0.54356,12.65075 -9.15177,28.20621 -15.702378,35.2074 8.463438,-0.95877 13.727218,-3.63646 19.125858,-6.17512 l -6.04873,9.47995 c 19.04454,-7.83652 46.69062,-7.95253 70.22296,-6.99606 24.05296,0.26401 26.95129,-12.00889 25.78936,-24.20087 l -11.74289,-9.64998 11.62395,0.88044 -1.14619,-55.5297 -7.91309,-0.0121 0.90261,49.14803 -20.64577,-1.62201 24.00066,19.30097 c -0.31364,10.89666 -3.43703,16.44944 -22.49799,16.44944 -21.93827,0.24772 -48.79798,0.27164 -58.37165,5.09729 l 6.25833,-11.06569 c -4.64139,1.86763 -9.11686,3.79747 -15.35874,5.06491 2.60476,-4.72179 7.47219,-8.50112 9.68768,-25.19786 l 2.12242,-104.40117 c 1.73011,-25.13953 11.42609,-29.1212 23.50846,-29.84114 z"
        id="path6033"
-       sodipodi:nodetypes="cccccccccccccccccccccccc" />
+       sodipodi:nodetypes="ccccccccccccccccccccccc" />
     <path
        style="fill:none;stroke:#999999;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 128.98012,167.91443 2.48541,4.98739"

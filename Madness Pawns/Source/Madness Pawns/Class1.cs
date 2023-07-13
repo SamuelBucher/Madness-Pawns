@@ -434,26 +434,68 @@ namespace Madness_Pawns
 
                 //if drawRight and facing west or drawleft and facing east, change texture path
                 
-                //graphic.data.texPath = graphic.data.texPath.Replace("east", "west");
+                //if (((Rot4)headFacing).IsHorizontal)                    graphic.data.texPath = graphic.data.texPath.Replace("_east", "_west");
 
-                bool narrowCrown = pawn.story.headType.narrow;
+                //bool narrowCrown = pawn.story.headType.narrow;
 
-                Vector3? eyeOffsetEastWest = pawn.story.headType.eyeOffsetEastWest;
+
+                //Vector3? eyeOffsetEastWest = pawn.story.headType.eyeOffsetEastWest; //to remove
+
+
                 Vector3 a = (Vector3)(rootLoc + headOffset + new Vector3(0f, 0.026061773f + yOffset, 0f) + quat * new Vector3(0f, 0f, -0.25f));
                 //BodyTypeDef.WoundAnchor woundAnchor = pawn.story.bodyType.woundAnchors.FirstOrDefault(new Predicate<BodyTypeDef.WoundAnchor>(/*CS$<> 8__locals1.< DrawHeadHair > b__7*/));
                 BodyTypeDef.WoundAnchor woundAnchorLeft = pawn.story.bodyType.woundAnchors.FirstOrDefault((BodyTypeDef.WoundAnchor w) => 
                                                                                                         w.tag == "LeftEye" 
-                                                                                                        && w.rotation == headFacing 
-                                                                                                        && (headFacing == Rot4.South 
-                                                                                                            || w.narrowCrown.GetValueOrDefault() == narrowCrown));
+                                                                                                        && w.rotation == headFacing);
+                                                                                                        //&& (headFacing == Rot4.South || w.narrowCrown.GetValueOrDefault() == narrowCrown));
                 //BodyTypeDef.WoundAnchor woundAnchor2 = pawn.story.bodyType.woundAnchors.FirstOrDefault(new Predicate<BodyTypeDef.WoundAnchor>(/*CS$<> 8__locals1.< DrawHeadHair > b__8*/));
                 BodyTypeDef.WoundAnchor woundAnchorRight = pawn.story.bodyType.woundAnchors.FirstOrDefault((BodyTypeDef.WoundAnchor w) => 
                                                                                                         w.tag == "RightEye" 
-                                                                                                        && w.rotation == headFacing 
-                                                                                                        && (headFacing == Rot4.South 
-                                                                                                            || w.narrowCrown.GetValueOrDefault() == narrowCrown));
-                Material mat = graphic.MatAt((Rot4)headFacing, null);
+                                                                                                        && w.rotation == headFacing);
+                //&& (headFacing == Rot4.South || w.narrowCrown.GetValueOrDefault() == narrowCrown));
+                //Material mat = graphic.MatAt((Rot4)headFacing, null);
+                Material mat1, mat2;
+                /*if ((drawRight && ((Rot4)headFacing).AsInt == Rot4.West.AsInt) || (drawLeft && ((Rot4)headFacing).AsInt == Rot4.East.AsInt))
+                    mat = graphic.MatAt(((Rot4)headFacing).Opposite, null);
+                else
+                    mat = graphic.MatAt((Rot4)headFacing, null);*/
+                mat1 = graphic.MatAt((Rot4)headFacing, null);
+                mat2 = graphic.MatAt(((Rot4)headFacing).Opposite, null);
+
                 if (headFacing == Rot4.South)
+                {
+                    if (woundAnchorLeft == null || woundAnchorRight == null)
+                    {
+                        return false;
+                    }
+                    mat2 = mat1;
+                    if (drawLeft)
+                    {
+                        GenDraw.DrawMeshNowOrLater(MeshPool.GridPlaneFlip(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * woundAnchorLeft.offset), (Quaternion)quat, Vector3.one), mat1, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
+                    }
+                    if (drawRight)
+                    {
+                        GenDraw.DrawMeshNowOrLater(MeshPool.GridPlane(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * woundAnchorRight.offset), (Quaternion)quat, Vector3.one), mat2, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
+                    }
+                }
+                if (headFacing == Rot4.East)// && drawRight)
+                {
+                    if (woundAnchorLeft == null || woundAnchorRight == null)
+                    {
+                        return false;
+                    }
+                    if (drawRight)
+                    {
+                        Vector3 point = /*eyeOffsetEastWest ??*/ woundAnchorRight.offset;
+                        GenDraw.DrawMeshNowOrLater(MeshPool.GridPlane(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * point), (Quaternion)quat, Vector3.one), mat1, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
+                    }
+                    if (drawLeft)
+                    {
+                        Vector3 point = /*eyeOffsetEastWest ??*/ woundAnchorLeft.offset;
+                        GenDraw.DrawMeshNowOrLater(MeshPool.GridPlaneFlip(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * point), (Quaternion)quat, Vector3.one), mat2, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
+                    }
+                }
+                if (headFacing == Rot4.West)// && drawLeft)
                 {
                     if (woundAnchorLeft == null || woundAnchorRight == null)
                     {
@@ -461,34 +503,22 @@ namespace Madness_Pawns
                     }
                     if (drawLeft)
                     {
-                        GenDraw.DrawMeshNowOrLater(MeshPool.GridPlaneFlip(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * woundAnchorLeft.offset), (Quaternion)quat, Vector3.one), mat, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
+                        Vector3 point2 = woundAnchorLeft.offset;
+                        /*if (eyeOffsetEastWest != null)
+                        {
+                            point2 = eyeOffsetEastWest.Value.ScaledBy(new Vector3(-1f, 1f, 1f));
+                        }*/
+                        GenDraw.DrawMeshNowOrLater(MeshPool.GridPlaneFlip(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * point2), (Quaternion)quat, Vector3.one), mat2, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
                     }
                     if (drawRight)
                     {
-                        GenDraw.DrawMeshNowOrLater(MeshPool.GridPlane(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * woundAnchorRight.offset), (Quaternion)quat, Vector3.one), mat, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
+                        Vector3 point2 = woundAnchorRight.offset;
+                        /*if (eyeOffsetEastWest != null)
+                        {
+                            point2 = eyeOffsetEastWest.Value.ScaledBy(new Vector3(-1f, 1f, 1f));
+                        }*/
+                        GenDraw.DrawMeshNowOrLater(MeshPool.GridPlane(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * point2), (Quaternion)quat, Vector3.one), mat1, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
                     }
-                }
-                if (headFacing == Rot4.East && drawRight)
-                {
-                    if (woundAnchorRight == null)
-                    {
-                        return false;
-                    }
-                    Vector3 point = eyeOffsetEastWest ?? woundAnchorRight.offset;
-                    GenDraw.DrawMeshNowOrLater(MeshPool.GridPlane(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * point), (Quaternion)quat, Vector3.one), mat, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
-                }
-                if (headFacing == Rot4.West && drawLeft)
-                {
-                    if (woundAnchorLeft == null)
-                    {
-                        return false;
-                    }
-                    Vector3 point2 = woundAnchorLeft.offset;
-                    if (eyeOffsetEastWest != null)
-                    {
-                        point2 = eyeOffsetEastWest.Value.ScaledBy(new Vector3(-1f, 1f, 1f));
-                    }
-                    GenDraw.DrawMeshNowOrLater(MeshPool.GridPlaneFlip(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * point2), (Quaternion)quat, Vector3.one), mat, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
                 }
 
                 return false;

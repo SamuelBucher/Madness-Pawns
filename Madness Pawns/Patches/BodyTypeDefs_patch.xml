@@ -3,6 +3,7 @@
 	<Operation Class="PatchOperationSequence">
         <operations>
 		<!-- Male -->
+			<!-- South -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/BodyTypeDef[defName="Male"]/woundAnchors/li[rotation="South" and tag="RightEye"]</xpath>
 				<value>
@@ -31,7 +32,66 @@
 					  </li>
 				</value>
 			</li>
+			<!-- East -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/BodyTypeDef[defName="Male"]/woundAnchors/li[rotation="East" and tag="RightEye" and not(narrowCrown)]</xpath>
+				<value>
+					  <li>
+						<rotation>East</rotation>
+						<tag>RightEye</tag>
+						<canMirror>false</canMirror>
+						<offset>(0.05, 0, 0.25)</offset>
+						<range>0</range>
+						<layer>Head</layer>
+						<debugColor>(1,1,1,1)</debugColor>
+					  </li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/BodyTypeDef[defName="Male"]/woundAnchors/li[rotation="West" and tag="LeftEye" and narrowCrown="true"]</xpath>
+				<value>
+					  <li>
+						<rotation>East</rotation>
+						<tag>LeftEye</tag>
+						<canMirror>false</canMirror>
+						<offset>(0.22, 0, 0.25)</offset>
+						<range>0</range>
+						<layer>Head</layer>
+						<debugColor>(1,1,1,1)</debugColor>
+					  </li>
+				</value>
+			</li>
+			<!-- West -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/BodyTypeDef[defName="Male"]/woundAnchors/li[rotation="West" and tag="LeftEye" and not(narrowCrown)]</xpath>
+				<value>
+					  <li>
+						<rotation>West</rotation>
+						<tag>LeftEye</tag>
+						<canMirror>false</canMirror>
+						<offset>(-0.05, 0, 0.25)</offset>
+						<range>0</range>
+						<layer>Head</layer>
+						<debugColor>(1,1,1,1)</debugColor>
+					  </li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/BodyTypeDef[defName="Male"]/woundAnchors/li[rotation="East" and tag="RightEye" and narrowCrown="true"]</xpath>
+				<value>
+					  <li>
+						<rotation>West</rotation>
+						<tag>RightEye</tag>
+						<canMirror>false</canMirror>
+						<offset>(-0.22, 0, 0.25)</offset>
+						<range>0</range>
+						<layer>Head</layer>
+						<debugColor>(1,1,1,1)</debugColor>
+					  </li>
+				</value>
+			</li>
 		<!-- Female -->
+			<!-- South -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/BodyTypeDef[defName="Female"]/woundAnchors/li[rotation="South" and tag="RightEye"]</xpath>
 				<value>
@@ -60,7 +120,10 @@
 					  </li>
 				</value>
 			</li>
+			<!-- East -->
+			<!-- West -->
 		<!-- Thin -->
+			<!-- South -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/BodyTypeDef[defName="Thin"]/woundAnchors/li[rotation="South" and tag="RightEye"]</xpath>
 				<value>
@@ -89,7 +152,10 @@
 					  </li>
 				</value>
 			</li>
+			<!-- East -->
+			<!-- West -->
 		<!-- Hulk -->
+			<!-- South -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/BodyTypeDef[defName="Hulk"]/woundAnchors/li[rotation="South" and tag="RightEye"]</xpath>
 				<value>
@@ -118,7 +184,10 @@
 					  </li>
 				</value>
 			</li>
+			<!-- East -->
+			<!-- West -->
 		<!-- Fat -->
+			<!-- South -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/BodyTypeDef[defName="Fat"]/woundAnchors/li[rotation="South" and tag="RightEye"]</xpath>
 				<value>
@@ -147,7 +216,10 @@
 					  </li>
 				</value>
 			</li>
+			<!-- East -->
+			<!-- West -->
 		<!-- Child -->
+			<!-- South -->
 			<li Class="PatchOperationReplace" MayRequire="ludeon.rimworld.biotech">
 				<xpath>Defs/BodyTypeDef[defName="Child"]/woundAnchors/li[rotation="South" and tag="RightEye"]</xpath>
 				<value>
@@ -176,6 +248,8 @@
 					  </li>
 				</value>
 			</li>
+			<!-- East -->
+			<!-- West -->
         </operations>
 	</Operation>
 </Patch>
