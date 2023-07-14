@@ -17,5 +17,5 @@ Beards
 Tattoos
 Revise old sprites
 
-Female specific head option
 Draw both eye hediffs on the side view (eye genes are symetric, messing with scaling might work)
+Female specific head option (requires missing eyes to work)

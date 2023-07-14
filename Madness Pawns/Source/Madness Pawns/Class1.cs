@@ -10,6 +10,7 @@ using RimWorld;
 using Verse;
 using HarmonyLib;
 using System.Security.Cryptography;
+using static RimWorld.FleshTypeDef;
 
 namespace Madness_Pawns
 {
@@ -432,35 +433,24 @@ namespace Madness_Pawns
                 Rot4? headFacing = Traverse.Create(__instance).Field("headFacing").GetValue() as Rot4?;
                 PawnRenderFlags? flags = Traverse.Create(__instance).Field("flags").GetValue() as PawnRenderFlags?;
 
-                //if drawRight and facing west or drawleft and facing east, change texture path
-                
-                //if (((Rot4)headFacing).IsHorizontal)                    graphic.data.texPath = graphic.data.texPath.Replace("_east", "_west");
-
-                //bool narrowCrown = pawn.story.headType.narrow;
-
-
-                //Vector3? eyeOffsetEastWest = pawn.story.headType.eyeOffsetEastWest; //to remove
-
 
                 Vector3 a = (Vector3)(rootLoc + headOffset + new Vector3(0f, 0.026061773f + yOffset, 0f) + quat * new Vector3(0f, 0f, -0.25f));
-                //BodyTypeDef.WoundAnchor woundAnchor = pawn.story.bodyType.woundAnchors.FirstOrDefault(new Predicate<BodyTypeDef.WoundAnchor>(/*CS$<> 8__locals1.< DrawHeadHair > b__7*/));
+
                 BodyTypeDef.WoundAnchor woundAnchorLeft = pawn.story.bodyType.woundAnchors.FirstOrDefault((BodyTypeDef.WoundAnchor w) => 
                                                                                                         w.tag == "LeftEye" 
                                                                                                         && w.rotation == headFacing);
-                                                                                                        //&& (headFacing == Rot4.South || w.narrowCrown.GetValueOrDefault() == narrowCrown));
-                //BodyTypeDef.WoundAnchor woundAnchor2 = pawn.story.bodyType.woundAnchors.FirstOrDefault(new Predicate<BodyTypeDef.WoundAnchor>(/*CS$<> 8__locals1.< DrawHeadHair > b__8*/));
                 BodyTypeDef.WoundAnchor woundAnchorRight = pawn.story.bodyType.woundAnchors.FirstOrDefault((BodyTypeDef.WoundAnchor w) => 
                                                                                                         w.tag == "RightEye" 
                                                                                                         && w.rotation == headFacing);
-                //&& (headFacing == Rot4.South || w.narrowCrown.GetValueOrDefault() == narrowCrown));
-                //Material mat = graphic.MatAt((Rot4)headFacing, null);
                 Material mat1, mat2;
-                /*if ((drawRight && ((Rot4)headFacing).AsInt == Rot4.West.AsInt) || (drawLeft && ((Rot4)headFacing).AsInt == Rot4.East.AsInt))
-                    mat = graphic.MatAt(((Rot4)headFacing).Opposite, null);
-                else
-                    mat = graphic.MatAt((Rot4)headFacing, null);*/
+
+                if ((drawLeft != drawRight) && (drawRight && ((Rot4)headFacing).AsInt == Rot4.West.AsInt || drawLeft && ((Rot4)headFacing).AsInt == Rot4.East.AsInt))
+                {
+                    graphic = GraphicDatabase.Get<Graphic_Single>(graphic.path.Replace("_east", "_west"));
+                }
+
                 mat1 = graphic.MatAt((Rot4)headFacing, null);
-                mat2 = graphic.MatAt(((Rot4)headFacing).Opposite, null);
+                mat2 = graphic.MatAt(((Rot4)headFacing).Opposite, null);                
 
                 if (headFacing == Rot4.South)
                 {
@@ -478,7 +468,7 @@ namespace Madness_Pawns
                         GenDraw.DrawMeshNowOrLater(MeshPool.GridPlane(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * woundAnchorRight.offset), (Quaternion)quat, Vector3.one), mat2, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
                     }
                 }
-                if (headFacing == Rot4.East)// && drawRight)
+                if (headFacing == Rot4.East)
                 {
                     if (woundAnchorLeft == null || woundAnchorRight == null)
                     {
@@ -486,16 +476,16 @@ namespace Madness_Pawns
                     }
                     if (drawRight)
                     {
-                        Vector3 point = /*eyeOffsetEastWest ??*/ woundAnchorRight.offset;
+                        Vector3 point = woundAnchorRight.offset;
                         GenDraw.DrawMeshNowOrLater(MeshPool.GridPlane(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * point), (Quaternion)quat, Vector3.one), mat1, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
                     }
                     if (drawLeft)
                     {
-                        Vector3 point = /*eyeOffsetEastWest ??*/ woundAnchorLeft.offset;
+                        Vector3 point = woundAnchorLeft.offset;
                         GenDraw.DrawMeshNowOrLater(MeshPool.GridPlaneFlip(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * point), (Quaternion)quat, Vector3.one), mat2, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
                     }
                 }
-                if (headFacing == Rot4.West)// && drawLeft)
+                if (headFacing == Rot4.West)
                 {
                     if (woundAnchorLeft == null || woundAnchorRight == null)
                     {
@@ -504,19 +494,11 @@ namespace Madness_Pawns
                     if (drawLeft)
                     {
                         Vector3 point2 = woundAnchorLeft.offset;
-                        /*if (eyeOffsetEastWest != null)
-                        {
-                            point2 = eyeOffsetEastWest.Value.ScaledBy(new Vector3(-1f, 1f, 1f));
-                        }*/
                         GenDraw.DrawMeshNowOrLater(MeshPool.GridPlaneFlip(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * point2), (Quaternion)quat, Vector3.one), mat2, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
                     }
                     if (drawRight)
                     {
                         Vector3 point2 = woundAnchorRight.offset;
-                        /*if (eyeOffsetEastWest != null)
-                        {
-                            point2 = eyeOffsetEastWest.Value.ScaledBy(new Vector3(-1f, 1f, 1f));
-                        }*/
                         GenDraw.DrawMeshNowOrLater(MeshPool.GridPlane(Vector2.one * scale), Matrix4x4.TRS((Vector3)(a + quat * point2), (Quaternion)quat, Vector3.one), mat1, ((PawnRenderFlags)flags).FlagSet(PawnRenderFlags.DrawNow));
                     }
                 }
@@ -524,54 +506,6 @@ namespace Madness_Pawns
                 return false;
             }
         }
-
-        /*[HarmonyPatch]
-        class b__7Patch
-        {
-            public static MethodBase TargetMethod()
-            {
-                var type = AccessTools.Inner(typeof(PawnRenderer), "c__DisplayClass54_1");
-                return AccessTools.Method(type, "b__7");
-            }
-
-            [HarmonyPrefix]
-            public static bool b__7Prefix(ref MethodBase __instance, ref bool __result, ref BodyTypeDef.WoundAnchor a)
-            {
-                __result = false;
-                return false;
-                var DisplayClass54_0 = AccessTools.FirstInner(typeof(PawnRenderer), t => t.Name.Contains("c__DisplayClass54_0"));
-                var locals1 = AccessTools.Property(DisplayClass54_0, "CS$<>8__locals1");
-
-                if (a.tag == "LeftEye")
-                {
-                    Rot4? rotation = a.rotation;
-                    var local_headFacing = AccessTools.FirstProperty(locals1, prop => prop.Name.Contains("headFacing"));
-                    Rot4 headFacing = PropertyInfo.GetValue(local_headFacing);
-                    if (rotation != null && (rotation == null || rotation.GetValueOrDefault() == headFacing))
-                    {
-                        return this.CS$<> 8__locals1.headFacing == Rot4.South || a.narrowCrown.GetValueOrDefault() == this.narrowCrown;
-                    }
-                }
-                return false;
-            }
-        }
-
-        [HarmonyPatch]
-        class b__8Patch
-        {
-            public static MethodBase TargetMethod()
-            {
-                var type = AccessTools.FirstInner(typeof(PawnRenderer), t => t.Name.Contains("c__DisplayClass54_1"));
-                return AccessTools.FirstMethod(type, method => method.Name.Contains("b__8"));
-            }
-
-            [HarmonyPrefix]
-            public static bool b__8Prefix(ref bool __result, ref BodyTypeDef.WoundAnchor a)
-            {
-                __result = false;
-                return false;
-            }
-        }*/
     }
 
     public class Misc
@@ -594,7 +528,7 @@ namespace Madness_Pawns
             List<HeadTypeDef> headDefList = DefDatabase<HeadTypeDef>.AllDefsListForReading;
 
             //Conditional female head
-            /*if (pawn.gender == Gender.Female && LoadedModManager.GetMod<MadnessPawns>().GetSettings<Settings>().differentFemaleHead)
+            if (pawn.gender == Gender.Female && LoadedModManager.GetMod<MadnessPawns>().GetSettings<Settings>().differentFemaleHead)
             {
                 if (pawn.story.headType.defName.Contains("Furskin"))
                 {
@@ -610,7 +544,7 @@ namespace Madness_Pawns
                 if (pawn.story.headType.defName.Contains("Gaunt"))
                     return headDefList.Find(x => x.defName == "Female_NarrowNormal");
                 return headDefList.Find(x => x.defName == "Female_AverageNormal");
-            }*/
+            }
 
             //Standard choice
             if (pawn.story.headType.defName.Contains("Furskin"))
@@ -633,7 +567,7 @@ namespace Madness_Pawns
     {
         public bool renderMaleHair;
         public bool renderFemaleHair;
-        //public bool differentFemaleHead;
+        public bool differentFemaleHead;
         public bool enableFemaleBodyType;
         public bool thinBodies;
 
@@ -641,7 +575,7 @@ namespace Madness_Pawns
         {
             Scribe_Values.Look(ref renderMaleHair, "renderMaleHair", false);
             Scribe_Values.Look(ref renderFemaleHair, "renderFemaleHair", false);
-            //Scribe_Values.Look(ref differentFemaleHead, "differentFemaleHead", false);
+            Scribe_Values.Look(ref differentFemaleHead, "differentFemaleHead", false);
             Scribe_Values.Look(ref enableFemaleBodyType, "enableFemaleBodyType", false);
             Scribe_Values.Look(ref thinBodies, "thinBodies", false);
             base.ExposeData();
@@ -663,7 +597,7 @@ namespace Madness_Pawns
             listingStandard.Begin(inRect);
             listingStandard.CheckboxLabeled("Render hair on men", ref settings.renderMaleHair, "Requires reload");
             listingStandard.CheckboxLabeled("Render hair on women", ref settings.renderFemaleHair, "Requires reload");
-            //listingStandard.CheckboxLabeled("Enable alt head for women", ref settings.differentFemaleHead, "Requires reload");
+            listingStandard.CheckboxLabeled("Enable alt head for women", ref settings.differentFemaleHead, "Requires reload");
             listingStandard.CheckboxLabeled("Enable different body type for women", ref settings.enableFemaleBodyType, "Requires reload");
             listingStandard.CheckboxLabeled("Use vanilla thin body instead of standard grunt body (for modded apparel compatability)", ref settings.thinBodies, "Requires reload");
             listingStandard.End();
