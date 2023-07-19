@@ -9,8 +9,6 @@ using UnityEngine;
 using RimWorld;
 using Verse;
 using HarmonyLib;
-using System.Security.Cryptography;
-using static RimWorld.FleshTypeDef;
 
 namespace Madness_Pawns
 {
@@ -65,39 +63,6 @@ namespace Madness_Pawns
                     __result = ShaderDatabase.Cutout;
             }
         }
-
-        /*[HarmonyPatch(typeof(PawnGraphicSet), "ResolveGeneGraphics")]
-        class ResolveGeneGraphicsPatch
-        {
-            [HarmonyPrefix]
-            public static bool ResolveGeneGraphicsPrefix(ref PawnGraphicSet __instance)
-            {
-                if (!ModsConfig.BiotechActive || __instance.pawn.genes == null)
-                {
-                    return false;
-                }
-                Color rottingColor = __instance.pawn.story.SkinColorOverriden ? (PawnGraphicSet.RottingColorDefault * __instance.pawn.story.SkinColor) : PawnGraphicSet.RottingColorDefault;
-                //Shader skinShader = ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden);
-
-                Shader skinShader;
-                if (__instance.pawn.story.SkinColorOverriden)
-                    skinShader = ShaderDatabase.CutoutSkinColorOverride;
-                else
-                    skinShader = ShaderDatabase.CutoutSkin;
-
-                __instance.geneGraphics.Clear();
-                foreach (Gene gene in __instance.pawn.genes.GenesListForReading)
-                {
-                    if (gene.def.HasGraphic && gene.Active)
-                    {
-                        ValueTuple<Graphic, Graphic> graphics = gene.def.graphicData.GetGraphics(__instance.pawn, skinShader, rottingColor);
-                        __instance.geneGraphics.Add(new GeneGraphicRecord(graphics.Item1, graphics.Item2, gene));
-                    }
-                }
-
-                return false;
-            }
-        }*/
 
         [HarmonyPatch(typeof(HumanlikeMeshPoolUtility), "GetHumanlikeHairSetForPawn")]
         public static class GetHumanlikeHairSetForPawnPatch
@@ -262,50 +227,6 @@ namespace Madness_Pawns
             }
         }
 
-        /*[HarmonyPatch(typeof(PawnRenderer), "GetBodyOverlayMeshSet")]
-        class GetBodyOverlayMeshSetPatch
-        {
-            [HarmonyPrefix]
-            public static bool GetBodyOverlayMeshSetPrefix(ref PawnRenderer __instance, ref GraphicMeshSet __result)
-            {
-                Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
-
-                if (!pawn.RaceProps.Humanlike)
-                {
-                    __result = HumanlikeMeshPoolUtility.GetHumanlikeBodySetForPawn(pawn);
-                    return false;
-                }
-                BodyTypeDef bodyType = Misc.getPawnBodyType(pawn);
-                if (bodyType == BodyTypeDefOf.Male)
-                {
-                    __result = MeshPool.humanlikeBodySet_Male;
-                    return false;
-                }
-                if (bodyType == BodyTypeDefOf.Female)
-                {
-                    __result = MeshPool.humanlikeBodySet_Female;
-                    return false;
-                }
-                if (bodyType == BodyTypeDefOf.Thin)
-                {
-                    __result = MeshPool.humanlikeBodySet_Thin;
-                    return false;
-                }
-                if (bodyType == BodyTypeDefOf.Fat)
-                {
-                    __result = MeshPool.humanlikeBodySet_Fat;
-                    return false;
-                }
-                if (bodyType == BodyTypeDefOf.Hulk)
-                {
-                    __result = MeshPool.humanlikeBodySet_Hulk;
-                    return false;
-                }
-                __result = HumanlikeMeshPoolUtility.GetHumanlikeBodySetForPawn(pawn);
-                return false;
-            }
-        }*/
-
         [HarmonyPatch(typeof(BeardDef), "GetOffset")]
         class GetOffsetPatch
         {
@@ -409,7 +330,6 @@ namespace Madness_Pawns
             }
         }
 
-        //[HarmonyPatch(typeof(PawnRenderer), "DrawExtraEyeGraphic")]
         [HarmonyPatch]
         class DrawExtraEyeGraphicPatch
         {
