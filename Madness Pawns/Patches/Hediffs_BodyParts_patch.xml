@@ -8,6 +8,12 @@
 					<eyeGraphicScale>0.33</eyeGraphicScale>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/HediffDef[defName="ArchotechEye"]/eyeGraphicScale</xpath>
+				<value>
+					<eyeGraphicScale>0.33</eyeGraphicScale>
+				</value>
+			</li>
         </operations>
 	</Operation>
 </Patch>

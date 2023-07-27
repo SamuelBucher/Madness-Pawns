@@ -15,6 +15,12 @@
 					<displayOrderInCategory>0</displayOrderInCategory>				
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/GeneDef[defName="Eyes_Red"]/graphicData/drawScale</xpath>
+				<value>
+					<drawScale>0.33</drawScale>				
+				</value>
+			</li>
 		  </operations>
 		</match>
 	</Operation>
