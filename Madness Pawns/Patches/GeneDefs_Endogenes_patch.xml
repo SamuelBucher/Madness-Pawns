@@ -18,7 +18,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/GeneDef[defName="Eyes_Red"]/graphicData/drawScale</xpath>
 				<value>
-					<drawScale>0.33</drawScale>				
+					<drawScale>0.3</drawScale>				
 				</value>
 			</li>
 		  </operations>
