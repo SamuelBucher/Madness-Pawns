@@ -351,6 +351,30 @@ namespace Madness_Pawns
             }
         }
 
+        /*[HarmonyPatch(typeof(HeadTypeDef), "GetGraphic")]
+        class GetGraphicPatch
+        {
+            [HarmonyPrefix]
+            public static bool GetGraphicPrefix(ref HeadTypeDef __instance, ref Graphic_Multi __result, ref Color color, ref bool dessicated, ref bool skinColorOverriden)
+            {
+                List<KeyValuePair<Color, Graphic_Multi>> graphics = Traverse.Create(__instance).Field("graphics").GetValue() as List<KeyValuePair<Color, Graphic_Multi>>;
+
+                Shader shader = (!dessicated) ? ShaderUtility.GetSkinShader(skinColorOverriden) : ShaderDatabase.CutoutComplex;
+                for (int i = 0; i < graphics.Count; i++)
+                {
+                    if (color.IndistinguishableFrom(graphics[i].Key) && graphics[i].Value.Shader == shader)
+                    {
+                        __result = graphics[i].Value;
+                        return false;
+                    }
+                }
+                Graphic_Multi graphic_Multi = (Graphic_Multi)GraphicDatabase.Get<Graphic_Multi>(__instance.graphicPath, shader, Vector2.one, color);
+                graphics.Add(new KeyValuePair<Color, Graphic_Multi>(color, graphic_Multi));
+                __result = graphic_Multi;
+                return false;
+            }
+        }*/
+
         [HarmonyPatch]
         class DrawExtraEyeGraphicPatch
         {
