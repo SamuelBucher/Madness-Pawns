@@ -133,7 +133,7 @@ namespace Madness_Pawns
 
                 MethodInfo OverrideMaterialIfNeeded = __instance.GetType().GetMethod("OverrideMaterialIfNeeded", BindingFlags.NonPublic | BindingFlags.Instance);
 
-                Vector2 bodyGraphicScale = Misc.getPawnBodyType(pawn).bodyGraphicScale;
+                Vector2 bodyGraphicScale = Utility.getPawnBodyType(pawn).bodyGraphicScale;
                 float num = (bodyGraphicScale.x + bodyGraphicScale.y) / 2f;
                 foreach (GeneGraphicRecord geneGraphicRecord in __instance.graphics.geneGraphics)
                 {
@@ -163,7 +163,7 @@ namespace Madness_Pawns
             {
                 Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
 
-                Vector2 vector = Misc.getPawnBodyType(pawn).headOffset * Mathf.Sqrt(pawn.ageTracker.CurLifeStage.bodySizeFactor);
+                Vector2 vector = Utility.getPawnBodyType(pawn).headOffset * Mathf.Sqrt(pawn.ageTracker.CurLifeStage.bodySizeFactor);
                 switch (rotation.AsInt)
                 {
                     case 0:
@@ -263,7 +263,7 @@ namespace Madness_Pawns
                 __instance.ClearCache();
                 __instance.apparelGraphics.Clear();
 
-                BodyTypeDef bodyType = Misc.getPawnBodyType(__instance.pawn);
+                BodyTypeDef bodyType = Utility.getPawnBodyType(__instance.pawn);
 
                 using (List<Apparel>.Enumerator enumerator = __instance.pawn.apparel.WornApparel.GetEnumerator())
                 {
@@ -289,11 +289,11 @@ namespace Madness_Pawns
             {
                 if (__instance.pawn.RaceProps.Humanlike)
                 {
-                    BodyTypeDef bodyType = Misc.getPawnBodyType(__instance.pawn);
+                    BodyTypeDef bodyType = Utility.getPawnBodyType(__instance.pawn);
 
                     Color color = __instance.pawn.story.SkinColorOverriden ? (PawnGraphicSet.RottingColorDefault * __instance.pawn.story.SkinColor) : PawnGraphicSet.RottingColorDefault;
 
-                    __instance.headGraphic = Misc.getPawnHeadType(__instance.pawn).GetGraphic(__instance.pawn.story.SkinColor, false, __instance.pawn.story.SkinColorOverriden);
+                    __instance.headGraphic = Utility.getPawnHeadType(__instance.pawn).GetGraphic(__instance.pawn.story.SkinColor, false, __instance.pawn.story.SkinColorOverriden);
                     __instance.nakedGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyNakedGraphicPath, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, __instance.pawn.story.SkinColor);
                     __instance.rottingGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyNakedGraphicPath, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, color);
                     __instance.dessicatedGraphic = GraphicDatabase.Get<Graphic_Multi>(bodyType.bodyDessicatedGraphicPath, ShaderDatabase.Cutout);
@@ -311,6 +311,27 @@ namespace Madness_Pawns
             }
         }
 
+        [HarmonyPatch(typeof(GeneGraphicData), "GraphicPathFor")]
+        class GraphicPathForPatch
+        {
+            [HarmonyPrefix]
+            public static bool GraphicPathForPrefix(ref GeneGraphicData __instance, ref string __result, ref Pawn pawn)
+            {
+                if (!__instance.graphicPaths.NullOrEmpty<string>())
+                {
+                    __result = __instance.graphicPaths[pawn.thingIDNumber % __instance.graphicPaths.Count];
+                    return false;
+                }
+                if (pawn.gender == Gender.Female && !__instance.graphicPathFemale.NullOrEmpty() && LoadedModManager.GetMod<MadnessPawns>().GetSettings<Settings>().differentFemaleHead)
+                {
+                    __result = __instance.graphicPathFemale;
+                    return false;
+                }
+                __result = __instance.graphicPath;
+                return false;
+            }
+        }
+
         [HarmonyPatch(typeof(FurDef), "GetFurBodyGraphicPath")]
         class GetFurBodyGraphicPathPatch
         {
@@ -319,9 +340,9 @@ namespace Madness_Pawns
             {
                 for (int i = 0; i < __instance.bodyTypeGraphicPaths.Count; i++)
                 {
-                    if (__instance.bodyTypeGraphicPaths[i].bodyType == Misc.getPawnBodyType(pawn))
+                    if (__instance.bodyTypeGraphicPaths[i].bodyType == Utility.getPawnBodyType(pawn))
                     {
-                        __result =  __instance.bodyTypeGraphicPaths[i].texturePath; ;
+                        __result = __instance.bodyTypeGraphicPaths[i].texturePath; ;
                         return false;
                     }
                 }
@@ -428,7 +449,7 @@ namespace Madness_Pawns
         }
     }
 
-    public class Misc
+    public class Utility
     {
         public static BodyTypeDef getPawnBodyType(Pawn pawn)
         {
