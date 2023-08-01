@@ -1,13 +1,12 @@
 Missing (and presumably freshly lost) eye sprite is still drawn. Maybe I can ignore it (no I can't).
+Fix hediff alignment for children
 
 Testing:
 
 
 Spritework:
-Red eyes
-Grey eyes
-Archotech eye
-Missing eye(?)
+Missing eye
+Fresh missing eye
 
 
 Long term goals:
@@ -16,5 +15,4 @@ Beards
 Tattoos
 Revise old sprites
 
-Draw both eye hediffs on the side view (eye genes are symetric, messing with scaling might work)
 Female specific head option (requires missing eyes to work) (smaller chin? lower head offset?)

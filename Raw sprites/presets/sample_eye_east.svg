@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    shape-rendering="crispEdges"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    sodipodi:docname="sample_eye_east.svg"
    inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Wounds\BionicEye_east.png"
    inkscape:export-xdpi="38.400002"
@@ -29,9 +29,9 @@
      showgrid="false"
      units="px"
      showguides="true"
-     inkscape:zoom="1"
-     inkscape:cx="83"
-     inkscape:cy="109.5"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="225.21351"
+     inkscape:cy="161.5739"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -49,21 +49,30 @@
      inkscape:bbox-paths="true"
      inkscape:object-nodes="true"
      inkscape:snap-nodes="true"
-     inkscape:snap-smooth-nodes="true">
+     inkscape:snap-smooth-nodes="true"
+     inkscape:showpageshadow="0"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="xygrid"
        id="grid23"
-       visible="true"
+       visible="false"
        enabled="true"
-       dotted="false" />
+       dotted="false"
+       originx="0"
+       originy="0"
+       spacingy="1"
+       spacingx="1"
+       units="px" />
     <sodipodi:guide
        position="42.333334,42.333335"
        orientation="1,0"
-       id="guide47299" />
+       id="guide47299"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="42.333334,42.333335"
        orientation="0,-1"
-       id="guide47301" />
+       id="guide47301"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
      id="defs2">
