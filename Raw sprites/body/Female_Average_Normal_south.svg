@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    shape-rendering="crispEdges"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    sodipodi:docname="Female_Average_Normal_south.svg"
    inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Female\Female_Average_Normal_south.png"
    inkscape:export-xdpi="19.200001"
@@ -29,38 +29,63 @@
      inkscape:document-units="px"
      showgrid="false"
      units="px"
-     showguides="false"
-     inkscape:zoom="1"
-     inkscape:cx="763.5"
-     inkscape:cy="670.5"
+     showguides="true"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="654.78088"
+     inkscape:cy="652.65956"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer1"
      inkscape:guide-bbox="true"
      inkscape:snap-object-midpoints="false"
      inkscape:snap-global="true"
      inkscape:snap-bbox="false"
-     inkscape:snap-to-guides="true">
+     inkscape:snap-to-guides="true"
+     inkscape:showpageshadow="0"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="xygrid"
        id="grid23"
-       visible="true"
+       visible="false"
        enabled="true"
-       dotted="false" />
+       dotted="false"
+       originx="0"
+       originy="0"
+       spacingy="1"
+       spacingx="1"
+       units="px" />
     <sodipodi:guide
        position="169.33333,165.56612"
        orientation="1,0"
-       id="guide96" />
+       id="guide96"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="169.33333,165.56612"
        orientation="0,-1"
-       id="guide98" />
+       id="guide98"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
      id="defs2">
+    <inkscape:path-effect
+       center_point="169.33333,22.024421"
+       end_point="169.33333,85.602467"
+       start_point="169.33333,-41.553625"
+       effect="mirror_symmetry"
+       id="path-effect1"
+       is_visible="true"
+       lpeversion="1.2"
+       lpesatellites=""
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false"
+       link_styles="false" />
     <inkscape:path-effect
        effect="mirror_symmetry"
        start_point="169.33333,162.26983"
@@ -132,8 +157,8 @@
        r="54.159453" />
     <inkscape:path-effect
        effect="mirror_symmetry"
-       start_point="169.33333,160.98661"
-       end_point="169.33333,218.13661"
+       start_point="169.33333,161.31401"
+       end_point="169.33333,218.46401"
        center_point="169.33333,189.88901"
        id="path-effect943"
        is_visible="true"
@@ -155,16 +180,13 @@
        id="layer2"
        inkscape:label="Head"
        style="display:inline">
-      <ellipse
-         style="mix-blend-mode:luminosity;fill:url(#radialGradient246293);fill-opacity:1;stroke:#000000;stroke-width:9.81062;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+      <path
          id="path584"
-         cx="169.33333"
-         cy="173.1015"
-         rx="49.254143"
-         ry="63.578056"
-         inkscape:export-filename="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Male\Male_Narrow_Normal_south.png"
-         inkscape:export-xdpi="9.6000004"
-         inkscape:export-ydpi="9.6000004" />
+         style="mix-blend-mode:luminosity;fill:url(#radialGradient246293);stroke:#000000;stroke-width:9.81062"
+         d="m 169.33333,236.67956 c -27.20231,0 -49.25414,-28.46487 -49.25414,-63.57806 0,-35.11319 22.05183,-63.57805 49.25414,-63.57805 m 0,127.15611 c 27.20231,0 49.25414,-28.46487 49.25414,-63.57806 0,-35.11319 -22.05183,-63.57805 -49.25414,-63.57805"
+         sodipodi:nodetypes="csc"
+         inkscape:path-effect="#path-effect1"
+         inkscape:original-d="m 169.33333,236.67956 c -27.20231,0 -49.25414,-28.46487 -49.25414,-63.57806 0,-35.11319 22.05183,-63.57805 49.25414,-63.57805" />
     </g>
     <g
        inkscape:groupmode="layer"

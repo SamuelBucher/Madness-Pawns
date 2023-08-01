@@ -1,12 +1,9 @@
-Missing (and presumably freshly lost) eye sprite is still drawn. Maybe I can ignore it (no I can't).
-Fix hediff alignment for children
+Missing and freshly lost eye hediff alignment (I'm giving up on this, at least for now)
 
 Testing:
 
 
 Spritework:
-Missing eye
-Fresh missing eye
 
 
 Long term goals:
@@ -14,5 +11,3 @@ Hair
 Beards
 Tattoos
 Revise old sprites
-
-Female specific head option (requires missing eyes to work) (smaller chin? lower head offset?)
