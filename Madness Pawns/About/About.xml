@@ -20,6 +20,7 @@
 		<li>brrainz.harmony</li>
 	</loadAfter>
     <incompatibleWith>
+        <li>erdelf.HumanoidAlienRaces</li>
         <li>SamBucher.RimBald</li>
         <li>SamBucher.MadnessPawns</li>
         <li>SamBucher.MadnessPawnsThin</li>
