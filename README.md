@@ -1,5 +1,6 @@
 # Madness-Pawns
 A Madness Combat themed mod for RimWorld.
+![Thumbnail](/"Steam page images"/Options.png)
 
 ## Features
 Makes RimWorld's human pawns look like grunts from Madness Combat. Everyone will have the same body and head type, with no hair (but beards remain). Bodily apparel has been retextured to accommodate that.
