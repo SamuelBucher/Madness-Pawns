@@ -37,6 +37,7 @@ May God have mercy on your soul if you try to use this mod along with Facial Ani
 - [HD Pawn Rendering](https://steamcommunity.com/sharedfiles/filedetails/?id=2538746878) - my mod's textures are 256x256, but Rimworld limits the render resolution for pawns to 128x128. This mod fixes that.
 
 ## Long term goals
+- See if I can rework my mod on the basis of Humanoid Alien Races for extra compatibility;
 - Retexture hair, beards, and tattoos to better accomodate the grunt look.
 
 ![Shrek](https://i.redd.it/25j0bn2swva51.jpg)
