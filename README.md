@@ -1,3 +1,4 @@
+[Also on Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2996910118)
 # Madness-Pawns
 A Madness Combat themed mod for RimWorld.
 ![Thumbnail](/Steam%20page%20images/Preview.png)
