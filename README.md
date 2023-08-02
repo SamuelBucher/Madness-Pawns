@@ -20,6 +20,8 @@ Options to toggle hair rendering and RimWorld's vanilla female body for female p
 **Inspired by the Newgrounds animated series Madness Combat by Krinkels, [make sure to check it out](https://youtube.com/playlist?list=PL4F761764995C5F15).**
 
 ## Compatibity
+Probably incompatible with Humanoid Alien Races.
+
 Incompatible with its older versions (obviously), and my other mod, RimBald (not why anyone would use that, though).).
 
 Any modded bodily apparel may look really out of place.
