@@ -4,8 +4,6 @@ Not compatible with HAR
 Many things, like skin color and no hair, are harcoded
 Probably more
 
-Ability to use the original body types (Normal, Hulk) or modded ones.
-
 Testing:
 
 
