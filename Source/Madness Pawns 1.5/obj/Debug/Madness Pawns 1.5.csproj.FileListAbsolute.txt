@@ -1,0 +1,9 @@
+C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Source\Madness Pawns 1.5\bin\Debug\Madness Pawns 1.5.dll
+C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Source\Madness Pawns 1.5\bin\Debug\Madness Pawns 1.5.pdb
+C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Source\Madness Pawns 1.5\bin\Debug\0Harmony.dll
+C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Source\Madness Pawns 1.5\bin\Debug\0Harmony.pdb
+C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Source\Madness Pawns 1.5\obj\Debug\Madness Pawns 1.5.csproj.AssemblyReference.cache
+C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Source\Madness Pawns 1.5\obj\Debug\Madness Pawns 1.5.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Source\Madness Pawns 1.5\obj\Debug\Madness Pawns 1.5.csproj.CopyComplete
+C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Source\Madness Pawns 1.5\obj\Debug\Madness Pawns 1.5.dll
+C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Source\Madness Pawns 1.5\obj\Debug\Madness Pawns 1.5.pdb

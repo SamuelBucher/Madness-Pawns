@@ -1,6 +1,5 @@
 Issues:
 Missing and freshly lost eye hediff alignment (I'm giving up on this, at least for now)
-Not compatible with HAR
 Many things, like skin color and no hair, are harcoded
 Probably more
 
