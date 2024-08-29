@@ -8,9 +8,9 @@
    version="1.1"
    id="svg5"
    shape-rendering="crispEdges"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    sodipodi:docname="Female_Average_Normal_east.svg"
-   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\Heads\Female\Female_Average_Normal_east.png"
+   inkscape:export-filename="..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Madness Pawns\1.5\Textures\Things\Pawn\Humanlike\Heads\Grunt\Female\Grunt_Female_eastm.png"
    inkscape:export-xdpi="19.200001"
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -30,41 +30,52 @@
      showgrid="false"
      units="px"
      showguides="true"
-     inkscape:zoom="1"
-     inkscape:cx="746.5"
-     inkscape:cy="642.5"
+     inkscape:zoom="0.5"
+     inkscape:cx="644"
+     inkscape:cy="637"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer6"
      inkscape:guide-bbox="true"
      inkscape:snap-object-midpoints="true"
      inkscape:object-paths="true"
-     inkscape:snap-to-guides="false">
+     inkscape:snap-to-guides="false"
+     inkscape:showpageshadow="0"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="xygrid"
        id="grid23"
-       visible="true"
+       visible="false"
        enabled="true"
-       dotted="false" />
+       dotted="false"
+       originx="0"
+       originy="0"
+       spacingy="1"
+       spacingx="1"
+       units="px" />
     <sodipodi:guide
        position="169.33333,165.56612"
        orientation="1,0"
-       id="guide96" />
+       id="guide96"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="169.33333,169.35973"
        orientation="0,-1"
-       id="guide116813" />
+       id="guide116813"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="169.33333,169.33334"
        orientation="1,0"
-       id="guide116815" />
+       id="guide116815"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="201.71172,169.35973"
        orientation="1,0"
-       id="guide878" />
+       id="guide878"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
      id="defs2">
@@ -145,9 +156,37 @@
      style="display:inline">
     <g
        inkscape:groupmode="layer"
+       id="layer6"
+       inkscape:label="Mask"
+       style="display:inline">
+      <rect
+         style="display:inline;fill:#ff0000;fill-rule:evenodd;stroke-width:0.264583;stroke-linecap:round;stroke-miterlimit:11.8"
+         id="rect1"
+         width="338.66669"
+         height="338.66669"
+         x="0"
+         y="0"
+         ry="0.15011059" />
+      <ellipse
+         style="display:inline;fill:#000000;stroke:#808080;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path1191-0"
+         cx="191.47401"
+         cy="172.91734"
+         rx="2.778125"
+         ry="5.6885414" />
+      <ellipse
+         style="display:inline;fill:#000000;stroke:#808080;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path1191-9-4"
+         cx="213.036"
+         cy="172.91734"
+         rx="2.778125"
+         ry="5.6885414" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
        id="layer2"
        inkscape:label="Head"
-       style="display:inline">
+       style="display:none">
       <ellipse
          style="mix-blend-mode:luminosity;fill:url(#radialGradient246293);fill-opacity:1;stroke:#000000;stroke-width:9.81062;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="path584"
@@ -185,7 +224,8 @@
     <g
        inkscape:groupmode="layer"
        id="layer4"
-       inkscape:label="Eyes">
+       inkscape:label="Eyes"
+       style="display:none">
       <path
          id="path2267"
          style="display:inline;fill:#000000;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"

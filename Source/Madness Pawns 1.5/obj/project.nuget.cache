@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JzKSnmAXe5ypj3Ss1a1/FsjoG8pbrvytjR1v7w32UDRB4OBSWKnLTL7JeltxyQGoeWiw/87QquPW2GZQLCvOiw==",
+  "dgSpecHash": "0zuUfeBO+uqMnwQeo6NZCeYDyq460iGVOoZBDFEzpPNV/FswzBuEQ8BvErEGRYAI2EMG3V2Q7HseEKK/HTdWgw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Maxim\\OneDrive\\Desktop\\Creative\\Modding\\RimWorld\\Madness Pawns\\Source\\Madness Pawns 1.5\\Madness Pawns 1.5.csproj",
+  "projectFilePath": "C:\\Users\\Maxim\\OneDrive\\Desktop\\Creative\\Modding\\RimWorld\\Madness Pawns\\Source\\Madness Pawns 1.5\\Madness Pawns.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maxim\\.nuget\\packages\\krafs.rimworld.ref\\1.5.4184-beta\\krafs.rimworld.ref.1.5.4184-beta.nupkg.sha512",
     "C:\\Users\\Maxim\\.nuget\\packages\\lib.harmony\\2.3.3\\lib.harmony.2.3.3.nupkg.sha512"

@@ -1,12 +1,35 @@
 Issues:
 Missing and freshly lost eye hediff alignment (I'm giving up on this, at least for now)
-Many things, like skin color and no hair, are harcoded
 Probably more
+
+
+Reimplement:
+Body type
+Pack offsets
+Gunlink drawing
+Eye draw tech
+Ghoul or shambler to MC zombie
+More?
+
 
 Testing:
 
 
 Spritework:
+Lab coat
+Ritual mask
+Ceremonial hood
+Shambler(zombie) head
+Shambler(zombie) icon
+Timeless one head
+Leathery head
+Leathery body
+Cult Escapee head
+Cult Escapee body
+Ghoul head
+Ghoul body
+Dark Scholar head
+
 
 
 Long term goals:

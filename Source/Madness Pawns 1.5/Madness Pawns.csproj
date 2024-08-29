@@ -7,17 +7,17 @@
     <ProjectGuid>{677ED4F1-0308-477F-B856-042AC30D9F8E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Madness_Pawns_1._5</RootNamespace>
-    <AssemblyName>Madness Pawns 1.5</AssemblyName>
+    <RootNamespace>Madness_Pawns</RootNamespace>
+    <AssemblyName>Madness Pawns</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\Madness Pawns\1.5\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -41,13 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MP_Cache.cs" />
+    <Compile Include="MP_HeadTypeDefOf.cs" />
+    <Compile Include="MP_Settings.cs" />
+    <Compile Include="MP_Utility.cs" />
+    <Compile Include="MP_Patches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
       <Version>1.5.4184-beta</Version>
     </PackageReference>
-    <PackageReference Include="Lib.Harmony">
+    <PackageReference Include="Lib.Harmony" ExcludeAssets="runtime">
       <Version>2.3.3</Version>
     </PackageReference>
   </ItemGroup>

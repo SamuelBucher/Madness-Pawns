@@ -100,7 +100,7 @@
           }
         },
         "runtime": {
-          "lib/net472/0Harmony.dll": {
+          "lib/net472/_._": {
             "related": ".pdb;.xml"
           }
         }
@@ -205,7 +205,7 @@
           }
         },
         "runtime": {
-          "lib/net472/0Harmony.dll": {
+          "lib/net472/_._": {
             "related": ".pdb;.xml"
           }
         }
@@ -310,7 +310,7 @@
           }
         },
         "runtime": {
-          "lib/net472/0Harmony.dll": {
+          "lib/net472/_._": {
             "related": ".pdb;.xml"
           }
         }
@@ -415,7 +415,7 @@
           }
         },
         "runtime": {
-          "lib/net472/0Harmony.dll": {
+          "lib/net472/_._": {
             "related": ".pdb;.xml"
           }
         }
@@ -520,7 +520,7 @@
           }
         },
         "runtime": {
-          "lib/net472/0Harmony.dll": {
+          "lib/net472/_._": {
             "related": ".pdb;.xml"
           }
         }
@@ -686,9 +686,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maxim\\OneDrive\\Desktop\\Creative\\Modding\\RimWorld\\Madness Pawns\\Source\\Madness Pawns 1.5\\Madness Pawns 1.5.csproj",
-      "projectName": "Madness Pawns 1.5",
-      "projectPath": "C:\\Users\\Maxim\\OneDrive\\Desktop\\Creative\\Modding\\RimWorld\\Madness Pawns\\Source\\Madness Pawns 1.5\\Madness Pawns 1.5.csproj",
+      "projectUniqueName": "C:\\Users\\Maxim\\OneDrive\\Desktop\\Creative\\Modding\\RimWorld\\Madness Pawns\\Source\\Madness Pawns 1.5\\Madness Pawns.csproj",
+      "projectName": "Madness Pawns",
+      "projectPath": "C:\\Users\\Maxim\\OneDrive\\Desktop\\Creative\\Modding\\RimWorld\\Madness Pawns\\Source\\Madness Pawns 1.5\\Madness Pawns.csproj",
       "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Maxim\\OneDrive\\Desktop\\Creative\\Modding\\RimWorld\\Madness Pawns\\Source\\Madness Pawns 1.5\\obj\\",
       "projectStyle": "PackageReference",
@@ -722,6 +722,7 @@
             "version": "[1.5.4184-beta, )"
           },
           "Lib.Harmony": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
             "version": "[2.3.3, )"
           }
