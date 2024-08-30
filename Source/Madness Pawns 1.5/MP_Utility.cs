@@ -25,11 +25,6 @@ namespace Madness_Pawns
             return origHeadType;
         }
 
-        public static Graphic_Multi getGruntHeadGraphic (PawnRenderNode_Head node, Pawn pawn)
-        {
-            return getGruntHead(pawn).GetGraphic(pawn, node.ColorFor(pawn));
-        }
-
         public static BodyTypeDef getGruntBody(Pawn pawn)
         {
             if (LoadedModManager.GetMod<MadnessPawns>().GetSettings<MP_Settings>().DefaultAdultBodyTypes)
@@ -46,6 +41,14 @@ namespace Madness_Pawns
             if (LoadedModManager.GetMod<MadnessPawns>().GetSettings<MP_Settings>().thinBodies)
                 return BodyTypeDefOf.Thin;
             return MP_BodyTypeDefOf.Grunt;
+        }
+
+        public static string checkGraphicPath(Apparel apparel, BodyTypeDef bodyType)
+        {
+            string path = apparel.WornGraphicPath + "_" + bodyType.defName;
+            if (bodyType == MP_BodyTypeDefOf.Grunt && ContentFinder<Texture2D>.Get(path + "_south", reportFailure: false) == null)
+                return apparel.WornGraphicPath + "_" + BodyTypeDefOf.Male;
+            return path;
         }
     }
 }

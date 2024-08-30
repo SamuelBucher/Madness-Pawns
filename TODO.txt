@@ -4,8 +4,6 @@ Probably more
 
 
 Reimplement:
-Body type
-Pack offsets
 Gunlink drawing
 Eye draw tech
 Ghoul or shambler to MC zombie

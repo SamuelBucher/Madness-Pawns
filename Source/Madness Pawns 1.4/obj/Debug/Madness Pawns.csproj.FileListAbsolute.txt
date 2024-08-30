@@ -17,3 +17,7 @@ C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Madness 
 C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Source\Madness Pawns\obj\Debug\Madness Pawns.csproj.AssemblyReference.cache
 C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Source\Madness Pawns\obj\Debug\Madness Pawns.csproj.CoreCompileInputs.cache
 C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Source\Madness Pawns\obj\Debug\Madness Pawns.dll
+C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Source\Madness Pawns 1.4\obj\Debug\Madness Pawns.csproj.AssemblyReference.cache
+C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Source\Madness Pawns 1.4\obj\Debug\Madness Pawns.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Source\Madness Pawns 1.4\obj\Debug\Madness Pawns.csproj.CopyComplete
+C:\Users\Maxim\OneDrive\Desktop\Creative\Modding\RimWorld\Madness Pawns\Source\Madness Pawns 1.4\obj\Debug\Madness Pawns.dll
