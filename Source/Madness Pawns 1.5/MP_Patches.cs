@@ -6,6 +6,8 @@ using RimWorld;
 using Verse;
 using HarmonyLib;
 using System.Reflection.Emit;
+using System.Reflection;
+using UnityEngine.Networking;
 
 namespace Madness_Pawns
 {
@@ -13,6 +15,11 @@ namespace Madness_Pawns
     public static class HarmonyPatches
     {
         private static readonly Type patchType = typeof(HarmonyPatches);
+
+        private static readonly FieldInfo story = AccessTools.Field(typeof(Pawn), nameof(Pawn.story));
+        private static readonly MethodInfo getGruntHead = AccessTools.Method(typeof(MP_Utility), "getGruntHead", new Type[] { typeof(Verse.Pawn) });
+        private static readonly MethodInfo getGruntHeadGraphic = AccessTools.Method(typeof(MP_Utility), "getGruntHeadGraphic", new Type[] { typeof(Verse.PawnRenderNode_Head), typeof(Verse.Pawn) });
+        private static readonly MethodInfo getGruntBody = AccessTools.Method(typeof(MP_Utility), "getGruntBody", new Type[] { typeof(Verse.Pawn) });
 
         static HarmonyPatches()
         {
@@ -80,7 +87,7 @@ namespace Madness_Pawns
                 {
                     code[startIndex - 4].opcode = OpCodes.Pop;
                     code[startIndex - 1] = new CodeInstruction(OpCodes.Nop);
-                    code[startIndex] = new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(MP_Utility), "getGruntHeadGraphic", new Type[] { typeof(Verse.PawnRenderNode_Head), typeof(Verse.Pawn)}));
+                    code[startIndex] = new CodeInstruction(OpCodes.Call, getGruntHeadGraphic);
                 }
 
                 return code;
@@ -89,7 +96,7 @@ namespace Madness_Pawns
 
         //Use the grunt head data for the beard offset
         [HarmonyPatch(typeof(PawnRenderNodeWorker_Beard), "OffsetFor")]
-        public static class OffsetFor_Patch
+        public static class OffsetFor_Beard_Patch
         {
             [HarmonyTranspiler]
             public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
@@ -104,7 +111,7 @@ namespace Madness_Pawns
                         over = true;
                         yield return code[i];
                         i += 2;
-                        yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(MP_Utility), "getGruntHead", new Type[] { typeof(Verse.Pawn) }));
+                        yield return new CodeInstruction(OpCodes.Call, getGruntHead);
                     }
                     else
                         yield return code[i];
@@ -125,7 +132,7 @@ namespace Madness_Pawns
                 {
                     if (code[i].opcode == OpCodes.Ldfld && i + 3 < code.Count && code[i + 3].opcode == OpCodes.Ldarg_1)
                     {
-                        yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(MP_Utility), "getGruntHead", new Type[] { typeof(Verse.Pawn) }));
+                        yield return new CodeInstruction(OpCodes.Call, getGruntHead);
                         i++;
                     }
                     else
@@ -147,7 +154,7 @@ namespace Madness_Pawns
                 {
                     if (code[i].opcode == OpCodes.Ldfld && i + 3 < code.Count && code[i + 3].opcode == OpCodes.Ldarg_1)
                     {
-                        yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(MP_Utility), "getGruntHead", new Type[] { typeof(Verse.Pawn) }));
+                        yield return new CodeInstruction(OpCodes.Call, getGruntHead);
                         i++;
                     }
                     else
@@ -155,5 +162,262 @@ namespace Madness_Pawns
                 }
             }
         }
+
+        [HarmonyPatch]
+        class BodyGetterPatches
+        {
+            static IEnumerable<MethodBase> TargetMethods()
+            {
+                List<MethodBase> toPatch = new List<MethodBase>();
+
+                //Use the grunt body instead of the pawn's actual body
+                toPatch.Add(AccessTools.Method(typeof(PawnRenderNode_Body), nameof(PawnRenderNode_Body.GraphicFor)));
+                //Use the furred grunt body instead for furred pawns
+                toPatch.Add(AccessTools.Method(typeof(FurDef), nameof(FurDef.GetFurBodyGraphicPath)));
+                //Use the grunt body type for clothes
+                Type weirdType = AccessTools.FirstInner(typeof(PawnRenderNode_Apparel), t => t.Name.Contains("<GraphicsFor>d__5"));
+                toPatch.Add(AccessTools.FirstMethod(weirdType, method => method.Name.Contains("MoveNext")));
+                //Use the grunt body's offsets for apparel
+                toPatch.Add(AccessTools.Method(typeof(PawnRenderNodeWorker_Apparel_Body), nameof(PawnRenderNodeWorker_Apparel_Body.OffsetFor)));
+                //Use the grunt body's scale for apparel
+                toPatch.Add(AccessTools.Method(typeof(PawnRenderNodeWorker_Apparel_Body), nameof(PawnRenderNodeWorker_Apparel_Body.ScaleFor)));
+                //Use the grunt body's scale for attachments
+                toPatch.Add(AccessTools.Method(typeof(PawnRenderNodeWorker_AttachmentBody), nameof(PawnRenderNodeWorker_AttachmentBody.ScaleFor)));
+                //Use the grunt body's wound anchors
+                toPatch.Add(AccessTools.Method(typeof(PawnRenderNodeWorker_Eye), "TryGetWoundAnchor"));
+                //Not entirely shure what this one does
+                toPatch.Add(AccessTools.Method(typeof(DrawData), nameof(DrawData.ScaleFor)));
+                //Might not need this one
+                toPatch.Add(AccessTools.Method(typeof(PawnRenderTree), "ProcessApparel"));
+                //Body position for the bed?
+                toPatch.Add(AccessTools.Method(typeof(PawnRenderer), "GetBodyPos"));
+                //Use grunt body head offset
+                toPatch.Add(AccessTools.Method(typeof(PawnRenderer), nameof(PawnRenderer.BaseHeadOffsetAt)));
+                //Everything seemed to work fine without this, but just to be certain
+                toPatch.Add(AccessTools.Method(typeof(PawnRenderNode), "TexPathFor"));
+                //Use grunt body grahpic scale, whatever that entails
+                toPatch.Add(AccessTools.Method(typeof(PawnRenderNodeWorker), nameof(PawnRenderNodeWorker.OffsetFor)));
+                //Use grunt attach points
+                toPatch.Add(AccessTools.PropertyGetter(typeof(HediffComp_AttachPoints), "Points"));
+                //Silhouette grunt bed offset
+                toPatch.Add(AccessTools.Method(typeof(Graphic_PawnBodySilhouette), nameof(Graphic_PawnBodySilhouette.DrawWorker)));
+
+                return toPatch;
+            }
+
+            [HarmonyTranspiler]
+            public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+            {
+                List<CodeInstruction> code = new List<CodeInstruction>(instructions);
+
+                for (int i = 0; i < code.Count; i++)
+                {
+                    if (code[i].LoadsField(story) && code[i + 1].opcode == OpCodes.Ldfld)
+                    {
+                        yield return new CodeInstruction(OpCodes.Call, getGruntBody);
+                        i++;
+                    }
+                    else
+                        yield return code[i];
+                }
+            }
+        }
+
+        //Dialog height because hulk isn't a thing anymore
+        //[HarmonyPatch(typeof(Dialog_NamePawn), MethodType.Constructor)]
+        [HarmonyPatch]
+        public static class Dialog_NamePawn_Patch
+        {
+            public static MethodBase TargetMethod()
+            {
+                return AccessTools.GetDeclaredConstructors(typeof(Dialog_NamePawn))[0];
+            }
+
+            [HarmonyTranspiler]
+            public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+            {
+                List<CodeInstruction> code = new List<CodeInstruction>(instructions);
+
+                for (int i = 0; i < code.Count; i++)
+                {
+                    if (code[i].opcode == OpCodes.Dup && code[i-1].LoadsField(story))
+                    {
+                        yield return new CodeInstruction(OpCodes.Nop);
+                        yield return code[++i];
+                        yield return new CodeInstruction(OpCodes.Nop);
+                        i++;
+                    }
+                    else if (code[i].opcode == OpCodes.Br_S && code[i + 1].opcode == OpCodes.Ldfld)
+                    {
+                        yield return new CodeInstruction(OpCodes.Ldarg_1);
+                        yield return new CodeInstruction(OpCodes.Call, getGruntBody);
+                    }
+                    else
+                        yield return code[i];
+                }
+            }
+        }
+
+        /*
+        //Use the grunt body instead of the pawn's actual body
+        [HarmonyPatch(typeof(PawnRenderNode_Body), "GraphicFor")]
+        public static class GraphicForBody_Patch
+        {
+            [HarmonyTranspiler]
+            public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+            {
+                List<CodeInstruction> code = new List<CodeInstruction>(instructions);
+
+                for (int i = 0; i < code.Count; i++)
+                {
+                    if (code[i].LoadsField(story) && code[i + 1].opcode == OpCodes.Ldfld)
+                    {
+                        yield return new CodeInstruction(OpCodes.Call, getGruntBody);
+                        i++;
+                    }
+                    else
+                        yield return code[i];
+                }
+            }
+        }
+        
+        //Use the furred grunt body instead for furred pawns
+        [HarmonyPatch(typeof(FurDef), "GetFurBodyGraphicPath")]
+        class GetFurBodyGraphicPath_Patch
+        {
+            [HarmonyTranspiler]
+            public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+            {
+                List<CodeInstruction> code = new List<CodeInstruction>(instructions);
+
+                for (int i = 0; i < code.Count; i++)
+                {
+                    if (code[i].LoadsField(story) && code[i + 1].opcode == OpCodes.Ldfld)
+                    {
+                        yield return new CodeInstruction(OpCodes.Call, getGruntBody);
+                        i++;
+                    }
+                    else
+                        yield return code[i];
+                }
+            }
+        }
+
+        //Use the grunt body type for clothes
+        [HarmonyPatch]
+        public static class PawnRenderNode_Apparely_Patch
+        {
+            public static MethodBase TargetMethod()
+            {
+                Type type = AccessTools.FirstInner(typeof(PawnRenderNode_Apparel), t => t.Name.Contains("<GraphicsFor>d__5"));
+                return AccessTools.FirstMethod(type, method => method.Name.Contains("MoveNext"));
+            }
+
+            [HarmonyTranspiler]
+            public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+            {
+                List<CodeInstruction> code = new List<CodeInstruction>(instructions);
+
+                for (int i = 0; i < code.Count; i++)
+                {
+                    if (code[i].LoadsField(story) && code[i + 1].opcode == OpCodes.Ldfld)
+                    {
+                        yield return new CodeInstruction(OpCodes.Call, getGruntBody);
+                        i++;
+                    }
+                    else
+                        yield return code[i];
+                }
+            }
+        }
+        
+        //Use the grunt body's offsets for apparel
+        [HarmonyPatch(typeof(PawnRenderNodeWorker_Apparel_Body), "OffsetFor")]
+        public static class OffsetFor_Apparel_Patch
+        {
+            [HarmonyTranspiler]
+            public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+            {
+                List<CodeInstruction> code = new List<CodeInstruction>(instructions);
+
+                for (int i = 0; i < code.Count; i++)
+                {
+                    if (code[i].LoadsField(story) && code[i + 1].opcode == OpCodes.Ldfld)
+                    {
+                        yield return new CodeInstruction(OpCodes.Call, getGruntBody);
+                        i++;
+                    }
+                    else
+                        yield return code[i];
+                }
+            }
+        }
+        
+        //Use the grunt body's scale for apparel
+        [HarmonyPatch(typeof(PawnRenderNodeWorker_Apparel_Body), "ScaleFor")]
+        public static class ScaleFor_Apparel_Patch
+        {
+            [HarmonyTranspiler]
+            public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+            {
+                List<CodeInstruction> code = new List<CodeInstruction>(instructions);
+
+                for (int i = 0; i < code.Count; i++)
+                {
+                    if (code[i].LoadsField(story) && code[i + 1].opcode == OpCodes.Ldfld)
+                    {
+                        yield return new CodeInstruction(OpCodes.Call, getGruntBody);
+                        i++;
+                    }
+                    else
+                        yield return code[i];
+                }
+            }
+        }
+
+        //Use the grunt body's scale for attachments
+        [HarmonyPatch(typeof(PawnRenderNodeWorker_AttachmentBody), "ScaleFor")]
+        public static class ScaleFor_AttachmentBody_Patch
+        {
+            [HarmonyTranspiler]
+            public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+            {
+                List<CodeInstruction> code = new List<CodeInstruction>(instructions);
+
+                for (int i = 0; i < code.Count; i++)
+                {
+                    if (code[i].LoadsField(story) && code[i + 1].opcode == OpCodes.Ldfld)
+                    {
+                        yield return new CodeInstruction(OpCodes.Call, getGruntBody);
+                        i++;
+                    }
+                    else
+                        yield return code[i];
+                }
+            }
+        }
+
+        //Use the grunt body's wound anchors
+        [HarmonyPatch(typeof(PawnRenderNodeWorker_Eye), "TryGetWoundAnchor")]
+        public static class TryGetWoundAnchor_Patch
+        {
+            [HarmonyTranspiler]
+            public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+            {
+                List<CodeInstruction> code = new List<CodeInstruction>(instructions);
+
+                for (int i = 0; i < code.Count; i++)
+                {
+                    if (code[i].LoadsField(story) && code[i + 1].opcode == OpCodes.Ldfld)
+                    {
+                        yield return new CodeInstruction(OpCodes.Call, getGruntBody);
+                        i++;
+                    }
+                    else
+                        yield return code[i];
+                }
+            }
+        }
+        */
     }
 }

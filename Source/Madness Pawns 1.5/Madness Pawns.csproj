@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MP_BodyTypeDefOf.cs" />
     <Compile Include="MP_Cache.cs" />
     <Compile Include="MP_HeadTypeDefOf.cs" />
     <Compile Include="MP_Settings.cs" />
