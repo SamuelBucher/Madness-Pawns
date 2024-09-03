@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd" MayRequire="ludeon.rimworld.royalty">
+					<xpath>/Defs/ThingDef[defName="Apparel_Gunlink"]</xpath>
+					<value>
+						<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+							<options>
+								<li>
+									<weight>1</weight>
+									<only>(1,1,1,1)</only>
+								</li>
+							</options>
+						</colorGenerator>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.biotech">
+					<xpath>Defs/ThingDef[@Name="MechanitorHeadsetBase"]/colorGenerator</xpath>
+				</li>
+				<li Class="PatchOperationAdd" MayRequire="ludeon.rimworld.biotech">
+					<xpath>Defs/ThingDef[defName="Apparel_IntegratorHeadset"]</xpath>
+					<value>
+						<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+							<options>
+								<li>
+									<weight>1</weight>
+									<only>(1,1,1,1)</only>
+								</li>
+							</options>
+						</colorGenerator>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

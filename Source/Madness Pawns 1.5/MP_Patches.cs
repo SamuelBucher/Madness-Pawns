@@ -8,6 +8,8 @@ using HarmonyLib;
 using System.Reflection.Emit;
 using System.Reflection;
 
+using WAYCAN;
+
 namespace Madness_Pawns
 {
     [StaticConstructorOnStartup]
@@ -128,6 +130,8 @@ namespace Madness_Pawns
                 toPatch.Add(AccessTools.Method(typeof(PawnDrawUtility), nameof(PawnDrawUtility.AnchorUsable)));
                 //Anchor 3
                 toPatch.Add(AccessTools.Method(typeof(PawnDrawUtility), nameof(PawnDrawUtility.CalcAnchorData)));
+                //WAYCAN patch
+                toPatch.Add(AccessTools.Method(typeof(WAYCAN_Method), nameof(WAYCAN_Method.ifNarrowMesh)));
 
                 return toPatch;
             }
@@ -171,6 +175,28 @@ namespace Madness_Pawns
                 }
             }
         }
+
+        //Narrow head headhear
+        /*[HarmonyPatch(typeof(PawnRenderNode_Apparel), nameof(PawnRenderNode_Apparel.MeshSetFor))]
+        public static class MeshSetFor_Apparel_Patch
+        {
+            [HarmonyTranspiler]
+            public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+            {
+                List<CodeInstruction> code = new List<CodeInstruction>(instructions);
+
+                for (int i = 0; i < code.Count; i++)
+                {
+                    if (code[i].opcode == OpCodes.Ldc_R4 && code[i + 2].Calls(getHumanlikeHeadSetForPawn))
+                    {
+                        yield return new CodeInstruction(OpCodes.Call, isNarrowMesh);
+                        i += 2;
+                    }
+                    else
+                        yield return code[i];
+                }
+            }
+        }*/
 
         [HarmonyPatch]
         class BodyGetterPatches

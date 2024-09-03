@@ -13,12 +13,18 @@
 			<displayName>Harmony</displayName>
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
 		</li>
+		<li>
+			<packageId>SamBucher.WAYCAN</packageId>
+			<displayName>Who are you calling a narrowhead?</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3323282298</steamWorkshopUrl>
+		</li>
     </modDependencies>
 	<!--<loadBefore>
 	</loadBefore>-->
 	<loadAfter>
 		<li>mlie.showmeyourhands</li>
 		<li>brrainz.harmony</li>
+		<li>SamBucher.WAYCAN</li>
 	</loadAfter>
     <incompatibleWith>
         <li>erdelf.HumanoidAlienRaces</li>

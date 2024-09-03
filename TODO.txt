@@ -1,11 +1,12 @@
 Issues:
 Missing and freshly lost eye hediff alignment (I'm giving up on this, at least for now)
+I don't like the beard offset
 Probably more
 
 
 Reimplement:
-Gunlink drawing
 Eye draw tech
+Nose drawing
 Ghoul or shambler to MC zombie
 More?
 
@@ -27,6 +28,8 @@ Cult Escapee body
 Ghoul head
 Ghoul body
 Dark Scholar head
+Marine helmet
+Recon helmet
 
 
 

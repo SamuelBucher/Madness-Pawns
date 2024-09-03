@@ -4,7 +4,7 @@
   
 	<BodyTypeDef>
 		<defName>Grunt</defName>
-		<headOffset>(0.04, 0.34)</headOffset>
+		<headOffset>(0.1, 0.34)</headOffset>
 		<bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_Grunt</bodyNakedGraphicPath>
 		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
 		<bodyGraphicScale>(1, 0.9)</bodyGraphicScale>

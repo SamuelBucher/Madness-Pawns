@@ -4,7 +4,7 @@
 	<HeadTypeDef Name="GruntBase" Abstract="True">
 		<hairMeshSize>(1.3, 1.5)</hairMeshSize>
 		<beardMeshSize>(1.3, 1.5)</beardMeshSize>
-		<beardOffset>(0, 0, -0.05)</beardOffset>
+		<beardOffset>(0, 0, 0)</beardOffset>
 		<beardOffsetXEast>-0.05</beardOffsetXEast>
 		<eyeOffsetEastWest>(0.10, 0, 0.17)</eyeOffsetEastWest> <!-- ??? -->
 		<narrow>true</narrow>
@@ -31,7 +31,7 @@
 	<HeadTypeDef ParentName="GruntBase" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>Grunt_Male_Heavy</defName>
 		<graphicPath>Things/Pawn/Humanlike/Heads/Grunt/Male/Genes/Grunt_Male_Heavy</graphicPath>
-		<beardMeshSize>(1.7, 1.5)</beardMeshSize>
+		<beardMeshSize>(1.6, 1.5)</beardMeshSize>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="GruntBase" MayRequire="Ludeon.RimWorld.Biotech">
@@ -47,7 +47,7 @@
 	<HeadTypeDef ParentName="GruntBase" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>Grunt_Male_Furskin_Heavy</defName>
 		<graphicPath>Things/Pawn/Humanlike/Heads/Grunt/Male/Genes/Grunt_Male_Furskin_Heavy</graphicPath>
-		<beardMeshSize>(1.7, 1.5)</beardMeshSize>
+		<beardMeshSize>(1.6, 1.5)</beardMeshSize>
 	</HeadTypeDef>
 	
 
@@ -59,7 +59,7 @@
 	<HeadTypeDef ParentName="GruntBase" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>Grunt_Female_Heavy</defName>
 		<graphicPath>Things/Pawn/Humanlike/Heads/Grunt/Female/Genes/Grunt_Female_Heavy</graphicPath>
-		<beardMeshSize>(1.7, 1.5)</beardMeshSize>
+		<beardMeshSize>(1.6, 1.5)</beardMeshSize>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="GruntBase" MayRequire="Ludeon.RimWorld.Biotech">
@@ -75,7 +75,7 @@
 	<HeadTypeDef ParentName="GruntBase" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>Grunt_Female_Furskin_Heavy</defName>
 		<graphicPath>Things/Pawn/Humanlike/Heads/Grunt/Female/Genes/Grunt_Female_Furskin_Heavy</graphicPath>
-		<beardMeshSize>(1.7, 1.5)</beardMeshSize>
+		<beardMeshSize>(1.6, 1.5)</beardMeshSize>
 	</HeadTypeDef>
 
 </Defs>
