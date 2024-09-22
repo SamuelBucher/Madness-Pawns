@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Reflection.Emit;
+using System.Reflection;
 using UnityEngine;
 using RimWorld;
 using Verse;
 using HarmonyLib;
-using System.Reflection.Emit;
-using System.Reflection;
-
 using WAYCAN;
 
 namespace Madness_Pawns
@@ -21,9 +19,12 @@ namespace Madness_Pawns
         private static readonly FieldInfo headType = AccessTools.Field(typeof(Pawn_StoryTracker), nameof(Pawn_StoryTracker.headType));
         private static readonly FieldInfo bodyType = AccessTools.Field(typeof(Pawn_StoryTracker), nameof(Pawn_StoryTracker.bodyType));
 
-        private static readonly MethodInfo getGruntHead = AccessTools.Method(typeof(MP_Utility), nameof(MP_Utility.getGruntHead), new Type[] { typeof(Verse.Pawn) });
-        private static readonly MethodInfo getGruntBody = AccessTools.Method(typeof(MP_Utility), nameof(MP_Utility.getGruntBody), new Type[] { typeof(Verse.Pawn) });
-        private static readonly MethodInfo checkGraphicPath = AccessTools.Method(typeof(MP_Utility), nameof(MP_Utility.checkGraphicPath), new Type[] { typeof(RimWorld.Apparel), typeof(RimWorld.BodyTypeDef) });
+        private static readonly MethodInfo get_IsHorizontal = AccessTools.Method(typeof(Rot4), "get_IsHorizontal", new Type[] { });
+        private static readonly MethodInfo get_Props = AccessTools.Method(typeof(PawnRenderNode), "get_Props", new Type[] { });
+
+        private static readonly MethodInfo getGruntHead = AccessTools.Method(typeof(MP_Utility), nameof(MP_Utility.GetGruntHead), new Type[] { typeof(Verse.Pawn) });
+        private static readonly MethodInfo getGruntBody = AccessTools.Method(typeof(MP_Utility), nameof(MP_Utility.GetGruntBody), new Type[] { typeof(Verse.Pawn) });
+        private static readonly MethodInfo checkGraphicPath = AccessTools.Method(typeof(MP_Utility), nameof(MP_Utility.CheckGraphicPath), new Type[] { typeof(RimWorld.Apparel), typeof(RimWorld.BodyTypeDef) });
 
         static HarmonyPatches()
         {
@@ -65,45 +66,6 @@ namespace Madness_Pawns
                 if ((!LoadedModManager.GetMod<MadnessPawns>().GetSettings<MP_Settings>().renderMaleHair && (pawn.gender == Gender.Male)) ||
                     (!LoadedModManager.GetMod<MadnessPawns>().GetSettings<MP_Settings>().renderFemaleHair && (pawn.gender == Gender.Female)))
                     __result = null;
-            }
-        }
-
-        //Proper belt apparel scale (male, custom in unfeasible)
-        [HarmonyPatch(typeof(WornGraphicData), "BeltScaleAt")]
-        public static class BeltScaleAt_Patch
-        {
-            [HarmonyPrefix]
-            public static bool BeltScaleAt_Prefix(ref Rot4 facing, ref BodyTypeDef bodyType, ref WornGraphicData __instance, ref Vector2 __result)
-            {
-                Vector2 scale1 = __instance.GetDirectionalData(facing).Scale;
-                if (bodyType == MP_BodyTypeDefOf.Grunt)
-                {
-                    scale1 *= __instance.male.Scale;
-
-                    __result = scale1;
-                    return false;
-                }
-                return true;
-            }
-        }
-
-        //Proper belt apparel offset (male, custom in unfeasible)
-        [HarmonyPatch(typeof(WornGraphicData), "BeltOffsetAt")]
-        public static class BeltOffsetAt_Patch
-        {
-            [HarmonyPrefix]
-            public static bool BeltOffsetAt_Prefix(ref Rot4 facing, ref BodyTypeDef bodyType, ref WornGraphicData __instance, ref Vector2 __result)
-            {
-                WornGraphicDirectionData directionalData1 = __instance.GetDirectionalData(facing);
-                Vector2 offset1 = directionalData1.offset;
-                if (bodyType == MP_BodyTypeDefOf.Grunt)
-                {
-                    offset1 += directionalData1.male.offset;
-
-                    __result = offset1;
-                    return false;
-                }
-                return true;
             }
         }
 
@@ -156,7 +118,7 @@ namespace Madness_Pawns
 
         //Use the grunt head instead of the pawn's actual head
         [HarmonyPatch(typeof(PawnRenderNode_Head), "GraphicFor")]
-        public static class GraphicForHead_Patch
+        public static class GraphicFor_Head_Patch
         {
             [HarmonyTranspiler]
             public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
@@ -175,28 +137,6 @@ namespace Madness_Pawns
                 }
             }
         }
-
-        //Narrow head headhear
-        /*[HarmonyPatch(typeof(PawnRenderNode_Apparel), nameof(PawnRenderNode_Apparel.MeshSetFor))]
-        public static class MeshSetFor_Apparel_Patch
-        {
-            [HarmonyTranspiler]
-            public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
-            {
-                List<CodeInstruction> code = new List<CodeInstruction>(instructions);
-
-                for (int i = 0; i < code.Count; i++)
-                {
-                    if (code[i].opcode == OpCodes.Ldc_R4 && code[i + 2].Calls(getHumanlikeHeadSetForPawn))
-                    {
-                        yield return new CodeInstruction(OpCodes.Call, isNarrowMesh);
-                        i += 2;
-                    }
-                    else
-                        yield return code[i];
-                }
-            }
-        }*/
 
         [HarmonyPatch]
         class BodyGetterPatches
@@ -324,6 +264,45 @@ namespace Madness_Pawns
                     else
                         yield return code[i];
                 }
+            }
+        }
+
+        //Proper belt apparel scale (male, custom in unfeasible)
+        [HarmonyPatch(typeof(WornGraphicData), "BeltScaleAt")]
+        public static class BeltScaleAt_Patch
+        {
+            [HarmonyPrefix]
+            public static bool BeltScaleAt_Prefix(ref Rot4 facing, ref BodyTypeDef bodyType, ref WornGraphicData __instance, ref Vector2 __result)
+            {
+                Vector2 scale1 = __instance.GetDirectionalData(facing).Scale;
+                if (bodyType == MP_BodyTypeDefOf.Grunt)
+                {
+                    scale1 *= __instance.male.Scale;
+
+                    __result = scale1;
+                    return false;
+                }
+                return true;
+            }
+        }
+
+        //Proper belt apparel offset (male, custom in unfeasible)
+        [HarmonyPatch(typeof(WornGraphicData), "BeltOffsetAt")]
+        public static class BeltOffsetAt_Patch
+        {
+            [HarmonyPrefix]
+            public static bool BeltOffsetAt_Prefix(ref Rot4 facing, ref BodyTypeDef bodyType, ref WornGraphicData __instance, ref Vector2 __result)
+            {
+                WornGraphicDirectionData directionalData1 = __instance.GetDirectionalData(facing);
+                Vector2 offset1 = directionalData1.offset;
+                if (bodyType == MP_BodyTypeDefOf.Grunt)
+                {
+                    offset1 += directionalData1.male.offset;
+
+                    __result = offset1;
+                    return false;
+                }
+                return true;
             }
         }
 

@@ -125,24 +125,7 @@
 				<range>0</range>
 				<layer>Head</layer>
 				<debugColor>(1,1,1,1)</debugColor>
-			</li>
-			<li>
-				<rotation>East</rotation>
-				<tag>LeftEye</tag>
-				<canMirror>false</canMirror>
-				<offset>(0.22, 0, 0.25)</offset>
-				<range>0</range>
-				<layer>Head</layer>
-				<debugColor>(1,1,1,1)</debugColor>
-			</li>
-			<li>
-				<rotation>East</rotation>
-				<tag>RightEye</tag>
-				<canMirror>false</canMirror>
-				<offset>(0.05, 0, 0.25)</offset>
-				<range>0</range>
-				<layer>Head</layer>
-				<debugColor>(1,1,1,1)</debugColor>
+				<narrowCrown>true</narrowCrown>
 			</li>
 			<li>
 				<rotation>West</rotation>
@@ -152,6 +135,27 @@
 				<range>0</range>
 				<layer>Head</layer>
 				<debugColor>(1,1,1,1)</debugColor>
+				<narrowCrown>true</narrowCrown>
+			</li>
+			<li>
+				<rotation>East</rotation>
+				<tag>LeftEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(0.22, 0, 0.25)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(1,1,1,1)</debugColor>
+				<narrowCrown>true</narrowCrown>
+			</li>
+			<li>
+				<rotation>East</rotation>
+				<tag>RightEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(0.05, 0, 0.25)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(1,1,1,1)</debugColor>
+				<narrowCrown>true</narrowCrown>
 			</li>
 		</woundAnchors>
 		<attachPoints>

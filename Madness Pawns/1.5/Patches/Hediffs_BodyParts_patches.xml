@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Bionic Eye -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="BionicEye"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/drawSize</xpath>
+		<value>
+			<drawSize>0.25</drawSize>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/HediffDef[defName="BionicEye"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/drawData/dataWest</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="BionicEye"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]</xpath>
+		<value>
+			<nodeClass>Madness_Pawns.MP_PawnRenderNode_Eye</nodeClass>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="BionicEye"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/workerClass</xpath>
+		<value>
+			<workerClass>Madness_Pawns.MP_PawnRenderNodeWorker_HediffEye</workerClass>
+		</value>
+	</Operation>
+	
+	<!-- Archotech Eye -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="ArchotechEye"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/drawSize</xpath>
+		<value>
+			<drawSize>0.25</drawSize>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/HediffDef[defName="ArchotechEye"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/drawData/dataWest</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="ArchotechEye"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]</xpath>
+		<value>
+			<nodeClass>Madness_Pawns.MP_PawnRenderNode_Eye</nodeClass>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="ArchotechEye"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/workerClass</xpath>
+		<value>
+			<workerClass>Madness_Pawns.MP_PawnRenderNodeWorker_HediffEye</workerClass>
+		</value>
+	</Operation>
+</Patch>

@@ -9,7 +9,7 @@ namespace Madness_Pawns
 {
     public static class MP_Utility
     {
-        public static HeadTypeDef getGruntHead(Pawn pawn)
+        public static HeadTypeDef GetGruntHead(Pawn pawn)
         {
             HeadTypeDef origHeadType = pawn.story.headType;
             HeadTypeDef newHeadType;
@@ -25,7 +25,7 @@ namespace Madness_Pawns
             return origHeadType;
         }
 
-        public static BodyTypeDef getGruntBody(Pawn pawn)
+        public static BodyTypeDef GetGruntBody(Pawn pawn)
         {
             if (LoadedModManager.GetMod<MadnessPawns>().GetSettings<MP_Settings>().DefaultAdultBodyTypes)
                 return pawn.story.bodyType;
@@ -43,7 +43,7 @@ namespace Madness_Pawns
             return MP_BodyTypeDefOf.Grunt;
         }
 
-        public static string checkGraphicPath(Apparel apparel, BodyTypeDef bodyType)
+        public static string CheckGraphicPath(Apparel apparel, BodyTypeDef bodyType)
         {
             string path = apparel.WornGraphicPath + "_" + bodyType.defName;
             if (bodyType == MP_BodyTypeDefOf.Grunt && ContentFinder<Texture2D>.Get(path + "_south", reportFailure: false) == null)

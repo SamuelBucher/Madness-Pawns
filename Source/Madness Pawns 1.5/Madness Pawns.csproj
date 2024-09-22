@@ -48,6 +48,7 @@
     <Compile Include="MP_BodyTypeDefOf.cs" />
     <Compile Include="MP_Cache.cs" />
     <Compile Include="MP_HeadTypeDefOf.cs" />
+    <Compile Include="MP_Eye_Render_Node_Workers.cs" />
     <Compile Include="MP_Settings.cs" />
     <Compile Include="MP_Utility.cs" />
     <Compile Include="MP_Patches.cs" />

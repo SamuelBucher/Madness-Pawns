@@ -8,7 +8,7 @@ Reimplement:
 Eye draw tech
 Nose drawing
 Ghoul or shambler to MC zombie
-More?
+Gene drawing?
 
 
 Testing:

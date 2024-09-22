@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef[defName="Human"]/corePart/parts/
+		li[def="Neck"]/parts/
+		li[def="Head"]/parts/
+		li[customLabel="left eye"]/visibleHediffRots</xpath>
+		<value>
+			<li>East</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef[defName="Human"]/corePart/parts/
+		li[def="Neck"]/parts/
+		li[def="Head"]/parts/
+		li[customLabel="right eye"]/visibleHediffRots</xpath>
+		<value>
+			<li>West</li>
+		</value>
+	</Operation>
+</Patch>

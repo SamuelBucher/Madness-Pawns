@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Red eyes -->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/side[text()="Right" or text()="Left"]</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/drawSize</xpath>
+					<value>
+						<drawSize>0.25</drawSize>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]</xpath>
+					<value>
+						<nodeClass>Madness_Pawns.MP_PawnRenderNode_Eye</nodeClass>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]</xpath>
+					<value>
+						<workerClass>Madness_Pawns.MP_PawnRenderNodeWorker_Eye</workerClass>
+					</value>
+				</li>
+				
+				<!-- Gray eyes -->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/side[text()="Right" or text()="Left"]</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/drawSize</xpath>
+					<value>
+						<drawSize>0.25</drawSize>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]</xpath>
+					<value>
+						<nodeClass>Madness_Pawns.MP_PawnRenderNode_Eye</nodeClass>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]</xpath>
+					<value>
+						<workerClass>Madness_Pawns.MP_PawnRenderNodeWorker_Eye</workerClass>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
