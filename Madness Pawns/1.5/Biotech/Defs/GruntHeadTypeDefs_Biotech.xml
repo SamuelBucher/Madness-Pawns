@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HeadTypeDef ParentName="GruntBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Grunt_Male_Gaunt</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Grunt/Male/Genes/Grunt_Male_Gaunt</graphicPath>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="GruntBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Grunt_Male_Heavy</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Grunt/Male/Genes/Grunt_Male_Heavy</graphicPath>
+		<beardMeshSize>(1.6, 1.5)</beardMeshSize>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="GruntBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Grunt_Male_Furskin</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Grunt/Male/Genes/Grunt_Male_Furskin</graphicPath>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="GruntBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Grunt_Male_Furskin_Gaunt</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Grunt/Male/Genes/Grunt_Male_Furskin_Gaunt</graphicPath>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="GruntBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Grunt_Male_Furskin_Heavy</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Grunt/Male/Genes/Grunt_Male_Furskin_Heavy</graphicPath>
+		<beardMeshSize>(1.6, 1.5)</beardMeshSize>
+	</HeadTypeDef>
+	
+
+	<HeadTypeDef ParentName="GruntBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Grunt_Female_Gaunt</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Grunt/Female/Genes/Grunt_Female_Gaunt</graphicPath>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="GruntBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Grunt_Female_Heavy</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Grunt/Female/Genes/Grunt_Female_Heavy</graphicPath>
+		<beardMeshSize>(1.6, 1.5)</beardMeshSize>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="GruntBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Grunt_Female_Furskin</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Grunt/Female/Genes/Grunt_Female_Furskin</graphicPath>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="GruntBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Grunt_Female_Furskin_Gaunt</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Grunt/Female/Genes/Grunt_Female_Furskin_Gaunt</graphicPath>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="GruntBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Grunt_Female_Furskin_Heavy</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Grunt/Female/Genes/Grunt_Female_Furskin_Heavy</graphicPath>
+		<beardMeshSize>(1.6, 1.5)</beardMeshSize>
+	</HeadTypeDef>
+
+</Defs>

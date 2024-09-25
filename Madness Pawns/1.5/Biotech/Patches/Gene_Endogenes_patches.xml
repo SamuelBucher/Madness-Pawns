@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Nose Pig -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/GeneDef[defName="Nose_Pig"]/renderNodeProperties/li/narrowCrownHorizontalOffset</xpath>
+	</Operation>
+				
+	<!-- MiniHorns -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="Headbone_MiniHorns"]/renderNodeProperties/li/drawData</xpath>
+		<value>
+			<scale>0.9</scale>
+		</value>
+	</Operation>
+				
+	<!-- CenterHorn -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="Headbone_CenterHorn"]/renderNodeProperties/li/drawData</xpath>
+		<value>
+			<scale>0.9</scale>
+		</value>
+	</Operation>
+				
+</Patch>

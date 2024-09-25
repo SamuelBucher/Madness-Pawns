@@ -8,6 +8,7 @@ namespace Madness_Pawns
     {
         public static BodyTypeDef Grunt;
 
+        [MayRequireBiotech]
         public static BodyTypeDef GruntChild;
     }
 }

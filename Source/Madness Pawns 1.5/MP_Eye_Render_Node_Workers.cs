@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 using Verse;
@@ -17,37 +18,33 @@ namespace Madness_Pawns
                 parms.facing = Rot4.East;
             return base.GetMesh(parms);
         }
-    }
-    /*
-    public class MP_PawnRenderNode_HediffEye : PawnRenderNode_AttachmentHead
-    {
-        public MP_PawnRenderNode_HediffEye(Pawn pawn, PawnRenderNodeProperties props, PawnRenderTree tree)
-        : base(pawn, props, tree)
-        {}
 
-        public override Mesh GetMesh(PawnDrawParms parms)
+        protected override string TexPathFor(Pawn pawn)
         {
-            if (meshSet == null)
+            if (pawn.gender == Gender.Female && LoadedModManager.GetMod<MadnessPawns>().GetSettings<MP_Settings>().differentFemaleHead)
             {
-                return null;
+                if (!props.texPathsFemale.NullOrEmpty())
+                {
+                    using (new RandBlock(TexSeedFor(pawn)))
+                    {
+                        return props.texPathsFemale.RandomElement();
+                    }
+                }
+                if (!props.texPathFemale.NullOrEmpty())
+                {
+                    return props.texPathFemale;
+                }
             }
-            Mesh mesh = meshSet.MeshAt(parms.facing);
-            bool flag = FlipGraphic;
-            if (hediff?.Part?.flipGraphic ?? false)
+            if (!props.texPaths.NullOrEmpty())
             {
-                flag = !flag;
+                using (new RandBlock(TexSeedFor(pawn)))
+                {
+                    return props.texPaths.RandomElement();
+                }
             }
-            if (Props.drawData != null && Props.drawData.FlipForRot(parms.facing))
-            {
-                flag = !flag;
-            }
-            if (flag )//&& hediff?.Part?.woundAnchorTag == "LeftEye")
-            {
-                mesh = MeshPool.GridPlaneFlip(MeshPool.SizeOf(mesh));
-            }
-            return mesh;
+            return props.texPath;
         }
-    }*/
+    }
 
     public class MP_PawnRenderNodeWorker_Eye : PawnRenderNodeWorker_Eye
     {

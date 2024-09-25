@@ -185,8 +185,10 @@ namespace Madness_Pawns
                 //Wound anchors 2
                 Type weirdType2 = AccessTools.FirstInner(typeof(PawnDrawUtility), t => t.Name.Contains("<FindAnchors>d__3"));
                 toPatch.Add(AccessTools.FirstMethod(weirdType2, method => method.Name.Contains("MoveNext")));
-                //TODO: MutantDef
-                //
+                //Mutant bodies
+                toPatch.Add(AccessTools.Method(typeof(MutantDef), nameof(MutantDef.GetBodyGraphicPath)));
+                //Creepjoiner bodies
+                toPatch.Add(AccessTools.Method(typeof(CreepJoinerFormKindDef), nameof(CreepJoinerFormKindDef.GetBodyGraphicPath)));
 
                 return toPatch;
             }

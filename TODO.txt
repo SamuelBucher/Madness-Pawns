@@ -1,14 +1,9 @@
 Issues:
 Missing and freshly lost eye hediff alignment (I'm giving up on this, at least for now)
-I don't like the beard offset
-Probably more
 
 
-Reimplement:
-Eye draw tech
-Nose drawing
+Implement:
 Ghoul or shambler to MC zombie
-Gene drawing?
 
 
 Testing:
@@ -32,9 +27,7 @@ Marine helmet
 Recon helmet
 
 
-
 Long term goals:
 Hair
 Beards
-Tattoos
 Revise old sprites

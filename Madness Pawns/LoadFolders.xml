@@ -8,5 +8,7 @@
 	<v1.5>
 		<li>/</li>
 		<li>1.5</li>
+		<li IfModActive="Ludeon.RimWorld.Biotech">1.5/Biotech</li>
+		<li IfModActive="Ludeon.RimWorld.Anomaly">1.5/Anomaly</li>
 	</v1.5>
 </loadFolders>

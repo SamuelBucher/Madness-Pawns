@@ -108,5 +108,37 @@ namespace Madness_Pawns
 
         [MayRequireBiotech]
         public static HeadTypeDef Furskin_Heavy3;
+
+
+        [MayRequireAnomaly]
+        public static HeadTypeDef Ghoul_Normal;
+
+        [MayRequireAnomaly]
+        public static HeadTypeDef Ghoul_Heavy;
+
+        [MayRequireAnomaly]
+        public static HeadTypeDef Ghoul_Narrow;
+        
+        [MayRequire("Ludeon.RimWorld.Ideology,Ludeon.RimWorld.Anomaly")]
+        public static HeadTypeDef Ghoul_Wide;
+
+        [MayRequireAnomaly]
+        public static HeadTypeDef CultEscapee;
+
+        [MayRequireAnomaly]
+        public static HeadTypeDef TimelessOne;
+
+        [MayRequireAnomaly]
+        public static HeadTypeDef DarkScholar_Female;
+
+        [MayRequireAnomaly]
+        public static HeadTypeDef DarkScholar_Male;
+
+        [MayRequireAnomaly]
+        public static HeadTypeDef Leathery_Female;
+
+        [MayRequireAnomaly]
+        public static HeadTypeDef Leathery_Male;
+
     }
 }

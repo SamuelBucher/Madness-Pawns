@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Red eyes -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/side[text()="Right" or text()="Left"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/drawSize</xpath>
+		<value>
+			<drawSize>0.25</drawSize>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]</xpath>
+		<value>
+			<nodeClass>Madness_Pawns.MP_PawnRenderNode_Eye</nodeClass>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]</xpath>
+		<value>
+			<workerClass>Madness_Pawns.MP_PawnRenderNodeWorker_Eye</workerClass>
+		</value>
+	</Operation>
+				
+	<!-- Gray eyes -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/side[text()="Right" or text()="Left"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/drawSize</xpath>
+		<value>
+			<drawSize>0.2</drawSize>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]</xpath>
+		<value>
+			<nodeClass>Madness_Pawns.MP_PawnRenderNode_Eye</nodeClass>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]</xpath>
+		<value>
+			<workerClass>Madness_Pawns.MP_PawnRenderNodeWorker_Eye</workerClass>
+		</value>
+	</Operation>
+				
+</Patch>
