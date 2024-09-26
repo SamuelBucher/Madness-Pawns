@@ -47,4 +47,19 @@
 		</value>
 	</Operation>
 				
+	<!-- Facial Ridges -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="FacialRidges"]/renderNodeProperties/li</xpath>
+		<value>
+			<drawData>
+				<dataEast>
+					<offset>(0.02, 0, 0)</offset>
+				</dataEast>
+				<dataWest>
+					<offset>(-0.02, 0, -0)</offset>
+				</dataWest>
+			</drawData>
+		</value>
+	</Operation>
+				
 </Patch>

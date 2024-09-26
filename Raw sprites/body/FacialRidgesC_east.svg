@@ -8,9 +8,9 @@
    version="1.1"
    id="svg5"
    shape-rendering="crispEdges"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    sodipodi:docname="FacialRidgesC_east.svg"
-   inkscape:export-filename="C:\Users\Maxim\OneDrive\Desktop\Modding\RimWorld\Madness Pawns\Madness Pawns\Textures\Things\Pawn\Humanlike\HeadAttachments\FacialRidges\FacialRidgesC_east.png"
+   inkscape:export-filename="..\..\Madness Pawns\Textures\Things\Pawn\Humanlike\HeadAttachments\FacialRidges\FacialRidgesC_east.png"
    inkscape:export-xdpi="19.200001"
    inkscape:export-ydpi="19.200001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -31,8 +31,8 @@
      units="px"
      showguides="true"
      inkscape:zoom="1.4142136"
-     inkscape:cx="713.82428"
-     inkscape:cy="616.24354"
+     inkscape:cx="714.53138"
+     inkscape:cy="615.53644"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -41,25 +41,35 @@
      inkscape:current-layer="layer1"
      inkscape:guide-bbox="true"
      inkscape:snap-object-midpoints="true"
-     inkscape:snap-global="false">
+     inkscape:snap-global="false"
+     inkscape:showpageshadow="0"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="xygrid"
        id="grid23"
-       visible="true"
+       visible="false"
        enabled="true"
-       dotted="false" />
+       dotted="false"
+       originx="0"
+       originy="0"
+       spacingy="1"
+       spacingx="1"
+       units="px" />
     <sodipodi:guide
        position="169.33333,165.56612"
        orientation="1,0"
-       id="guide96" />
+       id="guide96"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="169.33333,169.35973"
        orientation="0,-1"
-       id="guide116813" />
+       id="guide116813"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="169.33333,169.33334"
        orientation="1,0"
-       id="guide116815" />
+       id="guide116815"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
      id="defs2">
@@ -166,7 +176,7 @@
      style="display:inline">
     <path
        id="path9305"
-       style="opacity:0.3;fill:#000000;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#c4c4c4;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
        d="m 184.72175,105.06833 c -5.09776,-2.19211 -9.53543,4.85912 -5.01728,7.43132 4.10548,2.33728 16.59655,8.89864 21.52025,15.8903 0,-8.09147 -9.79253,-20.43603 -16.50297,-23.32162 z m -4.6956,14.83766 c -7.4403,0 -10.22684,7.41587 -7.7416,11.19954 10.4008,-2.13511 19.357,1.53776 30.1231,7.35617 0,-6.66776 -14.45369,-18.55571 -22.3815,-18.55571 z m -5.89673,19.6759 c -5.67094,2.1609 -5.69519,8.98057 -3.7608,9.69701 0,0 3.30411,-3.97846 9.77801,-4.17625 15.98786,-0.48846 24.55676,2.63487 24.55676,2.63487 -5.65986,-6.73451 -22.69147,-11.15925 -30.57397,-8.15563 z m 45.8618,-23.31544 c -4.09122,3.48176 -7.20698,8.5035 -8.78787,11.92086 -0.91782,-6.55157 2.67527,-14.1087 4.68707,-18.78801 z m 4.9002,16.9732 c -3.34815,1.33446 -6.77735,3.0546 -10.41293,5.01941 0,-3.24612 3.42569,-7.72949 7.85632,-11.47606 z m 2.91213,12.14239 c -8.31199,0.71837 -12.37858,2.35548 -12.37858,2.35548 2.31667,-2.75654 6.40276,-5.12611 10.96217,-6.75768 z"
        sodipodi:nodetypes="sscssccsscscscccccccccccc" />
   </g>
