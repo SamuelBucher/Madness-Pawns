@@ -3,7 +3,8 @@ Missing and freshly lost eye hediff alignment (I'm giving up on this, at least f
 
 
 Implement:
-Ghoul or shambler to MC zombie
+Make Shamblers look like MC zombies
+Make Ghouls look like MC G0L3Ms
 
 
 Testing:
