@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+        <operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/FleshTypeDef[defName="Normal"]/hediffWounds/li[hediff="MissingBodyPart"]/wounds/li[textureSouth="Things/Pawn/Wounds/MissingEye_Scar_south"]/drawOffsetSouth</xpath>
+				<value>
+					<drawOffsetSouth>(0, 0, -0.25)</drawOffsetSouth>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/FleshTypeDef[defName="Normal"]/hediffWounds/li[hediff="MissingBodyPart"]/wounds/li[textureSouth="Things/Pawn/Wounds/MissingEye_Scar_south"]/drawOffsetEastWest</xpath>
+				<value>
+					<drawOffsetEastWest>(-0.05, 0, -0.25)</drawOffsetEastWest>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/FleshTypeDef[defName="Normal"]/hediffWounds/li[hediff="MissingBodyPart"]/wounds/li[textureSouth="Things/Pawn/Wounds/MissingEye_Fresh"]/drawOffsetSouth</xpath>
+				<value>
+					<drawOffsetSouth>(0, 0, -0.25)</drawOffsetSouth>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/FleshTypeDef[defName="Normal"]/hediffWounds/li[hediff="MissingBodyPart"]/wounds/li[textureSouth="Things/Pawn/Wounds/MissingEye_Fresh"]/drawOffsetEastWest</xpath>
+				<value>
+					<drawOffsetEastWest>(-0.05, 0, -0.25)</drawOffsetEastWest>
+				</value>
+			</li>
+        </operations>
+	</Operation>
+</Patch>

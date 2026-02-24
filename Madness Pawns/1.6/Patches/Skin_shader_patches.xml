@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[debugLabel="Body"]/useSkinShader</xpath>
+		<value>
+			<useSkinShader>false</useSkinShader>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[debugLabel="Head"]/useSkinShader</xpath>
+		<value>
+			<useSkinShader>false</useSkinShader>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[debugLabel="Head stump"]/useSkinShader</xpath>
+		<value>
+			<useSkinShader>false</useSkinShader>
+		</value>
+	</Operation>
+</Patch>

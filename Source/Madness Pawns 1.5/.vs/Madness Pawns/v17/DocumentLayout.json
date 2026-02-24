@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Maxim\\OneDrive\\Desktop\\Creative\\Modding\\RimWorld\\Madness Pawns\\Source\\Madness Pawns 1.5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{677ED4F1-0308-477F-B856-042AC30D9F8E}|Madness Pawns.csproj|c:\\users\\maxim\\onedrive\\desktop\\creative\\modding\\rimworld\\madness pawns\\source\\madness pawns 1.5\\mp_settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{677ED4F1-0308-477F-B856-042AC30D9F8E}|Madness Pawns.csproj|solutionrelative:mp_settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{677ED4F1-0308-477F-B856-042AC30D9F8E}|Madness Pawns.csproj|C:\\Users\\Maxim\\OneDrive\\Desktop\\Creative\\Modding\\RimWorld\\Madness Pawns\\Source\\Madness Pawns 1.5\\mp_utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{677ED4F1-0308-477F-B856-042AC30D9F8E}|Madness Pawns.csproj|solutionrelative:mp_utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 199,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MP_Settings.cs",
+              "DocumentMoniker": "C:\\Users\\Maxim\\OneDrive\\Desktop\\Creative\\Modding\\RimWorld\\Madness Pawns\\Source\\Madness Pawns 1.5\\MP_Settings.cs",
+              "RelativeDocumentMoniker": "MP_Settings.cs",
+              "ToolTip": "C:\\Users\\Maxim\\OneDrive\\Desktop\\Creative\\Modding\\RimWorld\\Madness Pawns\\Source\\Madness Pawns 1.5\\MP_Settings.cs",
+              "RelativeToolTip": "MP_Settings.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC0AAACBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T06:42:54.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MP_Utility.cs",
+              "DocumentMoniker": "C:\\Users\\Maxim\\OneDrive\\Desktop\\Creative\\Modding\\RimWorld\\Madness Pawns\\Source\\Madness Pawns 1.5\\MP_Utility.cs",
+              "RelativeDocumentMoniker": "MP_Utility.cs",
+              "ToolTip": "C:\\Users\\Maxim\\OneDrive\\Desktop\\Creative\\Modding\\RimWorld\\Madness Pawns\\Source\\Madness Pawns 1.5\\MP_Utility.cs",
+              "RelativeToolTip": "MP_Utility.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T18:49:31.96Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationRemove" MayRequire="ludeon.rimworld.biotech">
+		<xpath>Defs/ThingDef[@Name="MechanitorHeadsetBase"]/colorGenerator</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd" MayRequire="ludeon.rimworld.biotech">
+		<xpath>Defs/ThingDef[defName="Apparel_IntegratorHeadset"]</xpath>
+		<value>
+			<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+				<options>
+					<li>
+						<weight>1</weight>
+						<only>(1,1,1,1)</only>
+					</li>
+				</options>
+			</colorGenerator>
+		</value>
+	</Operation>
+				
+</Patch>

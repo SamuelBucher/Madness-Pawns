@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FurDef/bodyTypeGraphicPaths</xpath>
+		<value>
+			<Grunt>Things/Pawn/Humanlike/Bodies/FurCovered_Grunt</Grunt>
+			<GruntChild>Things/Pawn/Humanlike/Bodies/FurCovered_GruntChild</GruntChild>
+		</value>
+	</Operation>
+		
+</Patch>

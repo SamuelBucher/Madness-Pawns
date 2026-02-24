@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HeadTypeDef Name="GruntBase" Abstract="True">
+		<hairMeshSize>(1.3, 1.5)</hairMeshSize>
+		<beardMeshSize>(1.3, 1.5)</beardMeshSize>
+		<beardOffset>(0, 0, 0)</beardOffset>
+		<beardOffsetXEast>-0.05</beardOffsetXEast>
+		<narrow>true</narrow>
+		<randomChosen>false</randomChosen>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="GruntBase">
+		<defName>Grunt_Male</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Grunt/Male/Grunt_Male</graphicPath>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="GruntBase">
+		<defName>Grunt_Female</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Grunt/Female/Grunt_Female</graphicPath>
+	</HeadTypeDef>
+
+</Defs>

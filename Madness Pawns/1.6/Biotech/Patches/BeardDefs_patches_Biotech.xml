@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BeardDef[defName="FurskinCurlyMoustache"]</xpath>
+		<value>
+			<offsetNarrowEast>(-0.01,0,0.01)</offsetNarrowEast>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BeardDef[defName="BeardFurskinKnots"]</xpath>
+		<value>
+			<offsetNarrowSouth>(0,0,0.04)</offsetNarrowSouth>
+			<offsetNarrowEast>(-0.01,0,0.02)</offsetNarrowEast>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BeardDef[defName="BeardFurskinMegabraid"]</xpath>
+		<value>
+			<offsetNarrowEast>(-0.01,0,0.02)</offsetNarrowEast>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BeardDef[defName="BeardFurskinMonkey"]</xpath>
+		<value>
+			<offsetNarrowEast>(-0.01,0,0.02)</offsetNarrowEast>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BeardDef[defName="BeardFurskinMoustache"]</xpath>
+		<value>
+			<offsetNarrowSouth>(0,0,0.04)</offsetNarrowSouth>
+			<offsetNarrowEast>(-0.04,0,0.02)</offsetNarrowEast>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BeardDef[defName="BeardFurskinScruffy"]</xpath>
+		<value>
+			<offsetNarrowEast>(-0.01,0,0)</offsetNarrowEast>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BeardDef[defName="BeardFurskinSenile"]</xpath>
+		<value>
+			<offsetNarrowSouth>(0,0,0.01)</offsetNarrowSouth>
+			<offsetNarrowEast>(-0.02,0,0.02)</offsetNarrowEast>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BeardDef[defName="BeardFurskinSideTufts"]</xpath>
+		<value>
+			<offsetNarrowEast>(-0.01,0,0.02)</offsetNarrowEast>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BeardDef[defName="BeardFurskinStrongChops"]</xpath>
+		<value>
+			<offsetNarrowEast>(0,0,0.02)</offsetNarrowEast>
+		</value>
+	</Operation>
+				
+</Patch>
